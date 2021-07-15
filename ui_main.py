@@ -663,29 +663,29 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_8.addWidget(self.btn_home)
 
-        self.btn_widgets = QPushButton(self.topMenu)
-        self.btn_widgets.setObjectName(u"btn_widgets")
-        sizePolicy.setHeightForWidth(self.btn_widgets.sizePolicy().hasHeightForWidth())
-        self.btn_widgets.setSizePolicy(sizePolicy)
-        self.btn_widgets.setMinimumSize(QSize(0, 45))
-        self.btn_widgets.setFont(font)
-        self.btn_widgets.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_widgets.setLayoutDirection(Qt.LeftToRight)
-        self.btn_widgets.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-gamepad.png);")
+        self.btn_graph = QPushButton(self.topMenu)
+        self.btn_graph.setObjectName(u"btn_graph")
+        sizePolicy.setHeightForWidth(self.btn_graph.sizePolicy().hasHeightForWidth())
+        self.btn_graph.setSizePolicy(sizePolicy)
+        self.btn_graph.setMinimumSize(QSize(0, 45))
+        self.btn_graph.setFont(font)
+        self.btn_graph.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_graph.setLayoutDirection(Qt.LeftToRight)
+        self.btn_graph.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-chart-line.png);")
 
-        self.verticalLayout_8.addWidget(self.btn_widgets)
+        self.verticalLayout_8.addWidget(self.btn_graph)
 
-        self.btn_new = QPushButton(self.topMenu)
-        self.btn_new.setObjectName(u"btn_new")
-        sizePolicy.setHeightForWidth(self.btn_new.sizePolicy().hasHeightForWidth())
-        self.btn_new.setSizePolicy(sizePolicy)
-        self.btn_new.setMinimumSize(QSize(0, 45))
-        self.btn_new.setFont(font)
-        self.btn_new.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_new.setLayoutDirection(Qt.LeftToRight)
-        self.btn_new.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-file.png);")
+        self.btn_infographics = QPushButton(self.topMenu)
+        self.btn_infographics.setObjectName(u"btn_infographics")
+        sizePolicy.setHeightForWidth(self.btn_infographics.sizePolicy().hasHeightForWidth())
+        self.btn_infographics.setSizePolicy(sizePolicy)
+        self.btn_infographics.setMinimumSize(QSize(0, 45))
+        self.btn_infographics.setFont(font)
+        self.btn_infographics.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_infographics.setLayoutDirection(Qt.LeftToRight)
+        self.btn_infographics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-clipboard.png);")
 
-        self.verticalLayout_8.addWidget(self.btn_new)
+        self.verticalLayout_8.addWidget(self.btn_infographics)
 
         self.btn_save = QPushButton(self.topMenu)
         self.btn_save.setObjectName(u"btn_save")
@@ -1036,14 +1036,14 @@ class Ui_MainWindow(object):
 "background-position: center;\n"
 "background-repeat: no-repeat;")
         self.stackedWidget.addWidget(self.home)
-        self.widgets = QWidget()
-        self.widgets.setObjectName(u"widgets")
-        self.widgets.setStyleSheet(u"b")
-        self.verticalLayout = QVBoxLayout(self.widgets)
+        self.graph = QWidget()
+        self.graph.setObjectName(u"graph")
+        self.graph.setStyleSheet(u"b")
+        self.verticalLayout = QVBoxLayout(self.graph)
         self.verticalLayout.setSpacing(10)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(10, 10, 10, 10)
-        self.row_1 = QFrame(self.widgets)
+        self.row_1 = QFrame(self.graph)
         self.row_1.setObjectName(u"row_1")
         self.row_1.setFrameShape(QFrame.StyledPanel)
         self.row_1.setFrameShadow(QFrame.Raised)
@@ -1126,7 +1126,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.row_1)
 
-        self.row_2 = QFrame(self.widgets)
+        self.row_2 = QFrame(self.graph)
         self.row_2.setObjectName(u"row_2")
         self.row_2.setMinimumSize(QSize(0, 150))
         self.row_2.setFrameShape(QFrame.StyledPanel)
@@ -1177,7 +1177,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 317, 222))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 326, 222))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"
@@ -1244,7 +1244,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.row_2)
 
-        self.row_3 = QFrame(self.widgets)
+        self.row_3 = QFrame(self.graph)
         self.row_3.setObjectName(u"row_3")
         self.row_3.setMinimumSize(QSize(0, 150))
         self.row_3.setFrameShape(QFrame.StyledPanel)
@@ -1377,18 +1377,18 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.row_3)
 
-        self.stackedWidget.addWidget(self.widgets)
-        self.new_page = QWidget()
-        self.new_page.setObjectName(u"new_page")
-        self.verticalLayout_20 = QVBoxLayout(self.new_page)
+        self.stackedWidget.addWidget(self.graph)
+        self.infographics = QWidget()
+        self.infographics.setObjectName(u"infographics")
+        self.verticalLayout_20 = QVBoxLayout(self.infographics)
         self.verticalLayout_20.setObjectName(u"verticalLayout_20")
-        self.label = QLabel(self.new_page)
+        self.label = QLabel(self.infographics)
         self.label.setObjectName(u"label")
         self.label.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_20.addWidget(self.label)
 
-        self.stackedWidget.addWidget(self.new_page)
+        self.stackedWidget.addWidget(self.infographics)
 
         self.verticalLayout_15.addWidget(self.stackedWidget)
 
@@ -1530,7 +1530,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1539,11 +1539,11 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.titleLeftApp.setText(QCoreApplication.translate("MainWindow", u"COVINFO", None))
-        self.titleLeftDescription.setText(QCoreApplication.translate("MainWindow", u"Modern GUI / Flat Style", None))
+        self.titleLeftDescription.setText(QCoreApplication.translate("MainWindow", u"Stay Safe", None))
         self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
-        self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Widgets", None))
-        self.btn_new.setText(QCoreApplication.translate("MainWindow", u"New", None))
+        self.btn_graph.setText(QCoreApplication.translate("MainWindow", u"Graph", None))
+        self.btn_infographics.setText(QCoreApplication.translate("MainWindow", u"Infographics", None))
         self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.toggleLeftBox.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
@@ -1659,4 +1659,3 @@ class Ui_MainWindow(object):
         self.creditsLabel.setText(QCoreApplication.translate("MainWindow", u"By: Wanderson M. Pimenta", None))
         self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0.3", None))
     # retranslateUi
-
