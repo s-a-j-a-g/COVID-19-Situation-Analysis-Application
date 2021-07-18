@@ -6,6 +6,10 @@ from PySide6.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTi
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide6.QtWidgets import *
 
+import csv
+# import numpy as np
+import pandas as pd
+
 # from modules import *
 
 # SET AS GLOBAL WIDGETS
@@ -22,6 +26,12 @@ from qt_material import *
 
 ## ==> GLOBALS
 counter = 0
+
+symptoms = []
+covid_19 = []
+common_cold = []
+flu = []
+allergies = []
 
 # MAIN APPLICATION
 class MainWindow(QMainWindow):
@@ -73,11 +83,18 @@ class MainWindow(QMainWindow):
         ## NAVIGATE TO HOME PAGE
         self.ui.btn_home.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.home))
 
-        ## NAVIGATE TO GRAPH PAGE
-        self.ui.btn_graph.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.graph))
+        ## NAVIGATE TO STATISTICS PAGE
+        self.ui.btn_statistics.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.statistics))
 
+         ## NAVIGATE TO STATISTICS PAGE
+        self.ui.btn_hospital.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.hospitals))
+        
         ## NAVIGATE TO INFOGRAPHICS PAGE
         self.ui.btn_infographics.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.infographics))
+
+        
+        ## SET DEFAULT TAB
+        # self.ui.tabWidget.setCurrentWidget(tabwidget.findChild(QWidget, self.ui.tableWidget_symptoms))
 
 
         ## EXIT WINDOW PRESSED
@@ -103,6 +120,15 @@ class MainWindow(QMainWindow):
 
         ## LEFT MENU TOGGLE BUTTON
         self.ui.toggleButton.clicked.connect(lambda: self.slideLeftMenu())
+
+
+        ##TABLE WIDGET CUSTOM SETTINGS
+        self.ui.tableWidget_symptoms.setColumnWidth(0, 175)
+        self.ui.tableWidget_symptoms.setColumnWidth(1, 120)
+        self.ui.tableWidget_symptoms.setColumnWidth(2, 120)
+        self.ui.tableWidget_symptoms.setColumnWidth(3, 120)
+        self.ui.tableWidget_symptoms.setColumnWidth(4, 120)
+        self.loadSymptoms()
 
 
         # # BUTTONS CLICK
@@ -172,6 +198,32 @@ class MainWindow(QMainWindow):
         if msg == QMessageBox.Yes:
             self.close()
 
+    def loadSymptoms(self):
+        data = pd.read_csv('Symptoms.csv')
+
+        symptoms = data['Symptoms'].tolist()
+        covid_19 = data['COVID-19'].tolist()
+        common_cold = data['Common Cold'].tolist()
+        flu = data['Flu'].tolist()
+        allergies = data['Allergies'].tolist()
+
+        # with open('Symptoms.csv') as csv_file:
+        #     csv_reader = csv.reader(csv_file)
+
+        #     for row in csv_reader:
+        #         symptoms.append(row[0])
+        #         covid_19.append(row[1])
+        #         common_cold.append(row[2])
+
+        row = 0
+        self.ui.tableWidget_symptoms.setRowCount(len(symptoms))
+        for item in symptoms:    
+            self.ui.tableWidget_symptoms.setItem(row, 0, QtWidgets.QTableWidgetItem(symptoms[row]))
+            self.ui.tableWidget_symptoms.setItem(row, 1, QtWidgets.QTableWidgetItem(covid_19[row]))
+            self.ui.tableWidget_symptoms.setItem(row, 2, QtWidgets.QTableWidgetItem(common_cold[row]))
+            self.ui.tableWidget_symptoms.setItem(row, 3, QtWidgets.QTableWidgetItem(flu[row]))
+            self.ui.tableWidget_symptoms.setItem(row, 4, QtWidgets.QTableWidgetItem(allergies[row]))
+            row = row + 1
 
 
 
