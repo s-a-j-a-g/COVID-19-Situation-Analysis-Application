@@ -96,6 +96,6 @@ class Ui_SplashScreen(object):
         self.label_title.setText(QCoreApplication.translate("SplashScreen", u"COVINFO", None))
         self.label_description.setText(QCoreApplication.translate("SplashScreen", u"COVID-19 Situation Analysis Application", None))
         self.label_3.setText(QCoreApplication.translate("SplashScreen", u"loading...", None))
-        self.label_credits.setText(QCoreApplication.translate("SplashScreen", u"<strong>Created</strong> by ASSD", None))
+        self.label_credits.setText(QCoreApplication.translate("SplashScreen", u"<html><head/><body><p><span style=\" font-weight:600;\">Created</span> by DASS</p></body></html>", None))
     # retranslateUi
 

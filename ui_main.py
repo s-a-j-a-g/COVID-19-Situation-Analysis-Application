@@ -1681,7 +1681,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, -442, 1122, 953))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, -422, 1122, 953))
         self.verticalLayout_22 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.verticalLayout_22.setContentsMargins(27, -1, -1, -1)
@@ -1772,15 +1772,61 @@ class Ui_MainWindow(object):
         self.frame = QFrame(self.frame_4)
         self.frame.setObjectName(u"frame")
         self.frame.setMaximumSize(QSize(650, 16777215))
+        self.frame.setStyleSheet(u"font: 75 18pt \"Lato\";\n"
+"")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_23 = QVBoxLayout(self.frame)
         self.verticalLayout_23.setObjectName(u"verticalLayout_23")
-        self.textEdit_2 = QTextEdit(self.frame)
-        self.textEdit_2.setObjectName(u"textEdit_2")
-        self.textEdit_2.setStyleSheet(u"background-color: rgba(33, 37, 43, 180)")
+        self.label_18 = QLabel(self.frame)
+        self.label_18.setObjectName(u"label_18")
 
-        self.verticalLayout_23.addWidget(self.textEdit_2)
+        self.verticalLayout_23.addWidget(self.label_18)
+
+        self.label_19 = QLabel(self.frame)
+        self.label_19.setObjectName(u"label_19")
+
+        self.verticalLayout_23.addWidget(self.label_19)
+
+        self.label_25 = QLabel(self.frame)
+        self.label_25.setObjectName(u"label_25")
+
+        self.verticalLayout_23.addWidget(self.label_25)
+
+        self.label_21 = QLabel(self.frame)
+        self.label_21.setObjectName(u"label_21")
+
+        self.verticalLayout_23.addWidget(self.label_21)
+
+        self.label_24 = QLabel(self.frame)
+        self.label_24.setObjectName(u"label_24")
+
+        self.verticalLayout_23.addWidget(self.label_24)
+
+        self.label_22 = QLabel(self.frame)
+        self.label_22.setObjectName(u"label_22")
+
+        self.verticalLayout_23.addWidget(self.label_22)
+
+        self.label_23 = QLabel(self.frame)
+        self.label_23.setObjectName(u"label_23")
+
+        self.verticalLayout_23.addWidget(self.label_23)
+
+        self.label_20 = QLabel(self.frame)
+        self.label_20.setObjectName(u"label_20")
+
+        self.verticalLayout_23.addWidget(self.label_20)
+
+        self.label_26 = QLabel(self.frame)
+        self.label_26.setObjectName(u"label_26")
+
+        self.verticalLayout_23.addWidget(self.label_26)
+
+        self.label_27 = QLabel(self.frame)
+        self.label_27.setObjectName(u"label_27")
+
+        self.verticalLayout_23.addWidget(self.label_27)
 
 
         self.horizontalLayout_6.addWidget(self.frame)
@@ -1974,7 +2020,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(3)
         self.tabWidget.setCurrentIndex(1)
 
 
@@ -2124,25 +2170,16 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem28.setText(QCoreApplication.translate("MainWindow", u"Allergies", None));
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_Symptoms), QCoreApplication.translate("MainWindow", u"Symptoms", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Preventions:", None))
-        self.textEdit_2.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Segoe UI'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:14pt; font-weight:600;\">\u00b7</span><span style=\" font-family:'Times New Roman'; font-size:14pt; font-weight:600;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-size:14pt; font-weight:600;\">Wear your mask </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:14pt; font-weight:600;\">\u00b7</span><span style=\" font-family:'Times New Roman'; font-size:14pt;"
-                        " font-weight:600;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-size:14pt; font-weight:600;\">Stay socially distant </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:14pt; font-weight:600;\">\u00b7</span><span style=\" font-family:'Times New Roman'; font-size:14pt; font-weight:600;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-size:14pt; font-weight:600;\">Keep washing your hands </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:14pt; font-weight:600;\">\u00b7</span><span style=\" font-family:'Times New Roman'; font-size:14pt; font-weight:600;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-size:14pt; font-weight:600;\">Keep holiday gatherings small </span></p>\n"
-"<p "
-                        "style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:14pt; font-weight:600;\">\u00b7</span><span style=\" font-family:'Times New Roman'; font-size:14pt; font-weight:600;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-size:14pt; font-weight:600;\">Dine out carefully </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:14pt; font-weight:600;\">\u00b7</span><span style=\" font-family:'Times New Roman'; font-size:14pt; font-weight:600;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-size:14pt; font-weight:600;\">Get your flu shot </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:14pt; font-"
-                        "weight:600;\">\u00b7</span><span style=\" font-family:'Times New Roman'; font-size:14pt; font-weight:600;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-size:14pt; font-weight:600;\">Differentiate between flu, colds, and COVID-19 </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:14pt; font-weight:600;\">\u00b7</span><span style=\" font-family:'Times New Roman'; font-size:14pt; font-weight:600;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-size:14pt; font-weight:600;\">Seek routine medical care </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:14pt; font-weight:600;\">\u00b7</span><span style=\" font-family:'Times New Roman'; font-size:14pt; font-weight:600;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0"
-                        "\u00a0 </span><span style=\" font-size:14pt; font-weight:600;\">Be mindful of your mental health </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:14pt; font-weight:600;\">\u00b7</span><span style=\" font-family:'Times New Roman'; font-size:14pt; font-weight:600;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-size:14pt; font-weight:600;\">Watch your weight </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Symbol'; font-size:14pt; font-weight:600;\">\u00b7</span><span style=\" font-family:'Times New Roman'; font-size:14pt; font-weight:600;\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 </span><span style=\" font-size:14pt; font-weight:600;\">Keep up the good (safety) work </span></p></body></html>", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"\u2022 Wear your mask", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"\u2022 Stay socially distant", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"\u2022 Keep washing your hands", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"\u2022 Keep holiday gatherings small", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"\u2022 Dine out carefully", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"\u2022 Get your flu shot", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"\u2022 Seek routine medical care", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"\u2022 Be mindful of your mental health", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"\u2022 Watch your weight", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"\u2022 Keep up the good (safety) work", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Prevention is Better than Cure", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_prevention), QCoreApplication.translate("MainWindow", u"Prevention", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
