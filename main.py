@@ -1,10 +1,13 @@
 import sys
 import os
 import platform
-from PySide6 import QtCore, QtGui, QtWidgets
-from PySide6.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt, QEvent)
-from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
-from PySide6.QtWidgets import *
+from PySide2 import QtCore, QtGui, QtWidgets
+from PySide2.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt, QEvent)
+from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
+from PySide2.QtWidgets import *
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvasQTAgg
+
+import matplotlib.pyplot as plt
 
 import csv
 # import numpy as np
@@ -131,6 +134,20 @@ class MainWindow(QMainWindow):
         self.loadSymptoms()
 
 
+        ##############################
+        ######## GRAPH #################
+        ##############################
+        self.graph = Canvas(self)
+        self.graph2 = Canvas(self)
+        self.graph3 = Canvas(self)
+        self.graph4 = Canvas(self)
+
+        self.ui.graph1.addWidget(self.graph)
+        self.ui.graph2.addWidget(self.graph2)
+        self.ui.graph3.addWidget(self.graph3)
+        self.ui.graph4.addWidget(self.graph4)
+
+
         # # BUTTONS CLICK
         # # ///////////////////////////////////////////////////////////////
 
@@ -225,6 +242,49 @@ class MainWindow(QMainWindow):
             self.ui.tableWidget_symptoms.setItem(row, 4, QtWidgets.QTableWidgetItem(allergies[row]))
             row = row + 1
 
+#CANVAS
+class Canvas1(FigureCanvasQTAgg):
+    def __init__(self, parent):
+        fig, self.ax = plt.subplots(figsize = (5, 4), dpi = 100)
+        super().__init__(fig)
+        self.setParent(parent)
+
+
+class Canvas(FigureCanvasQTAgg):
+    def __init__(self, parent):
+        fig, self.ax = plt.subplots(figsize = (5, 4), dpi = 100)
+        super().__init__(fig)
+        self.setParent(parent)
+
+        """ 
+        Matplotlib Script
+        """
+        plt.style.use('fivethirtyeight')
+
+        age = []
+        infected = []
+        recovered = []
+
+        data = pd.read_csv('Resources/ScrapedData/Agewise_Data.csv')
+        ids = data['Age']
+
+        age = data['Age'].tolist()
+        infected = data['Infected'].tolist()
+        plt.barh(age, infected, label = 'Infected')
+
+        print(age)
+        print(infected)
+
+        plt.title('Covid Cases by Age')
+        plt.xlabel('Age')
+        plt.ylabel('Total Cases')
+
+        plt.legend()
+        plt.grid(True)
+
+        plt.tight_layout() # works for small screen; solves padding issues
+
+        # plt.show(
 
 
 # SPLASH SCREEN
@@ -305,4 +365,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon("icon.ico"))
     window = SplashScreen()
-    sys.exit(app.exec())
+    sys.exit(app.exec_())
