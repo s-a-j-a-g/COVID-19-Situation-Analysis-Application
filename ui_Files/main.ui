@@ -2347,7 +2347,7 @@ font: 20px bold;
                                  </widget>
                                 </item>
                                 <item>
-                                 <widget class="QComboBox" name="comboBox">
+                                 <widget class="QComboBox" name="comboBox_dateStart">
                                   <property name="minimumSize">
                                    <size>
                                     <width>0</width>
@@ -2507,7 +2507,7 @@ font: 20px bold;
                                  </widget>
                                 </item>
                                 <item>
-                                 <widget class="QComboBox" name="comboBox_3">
+                                 <widget class="QComboBox" name="comboBox_monthStart">
                                   <property name="minimumSize">
                                    <size>
                                     <width>0</width>
@@ -2577,7 +2577,7 @@ font: 20px bold;
                                  </widget>
                                 </item>
                                 <item>
-                                 <widget class="QComboBox" name="comboBox_2">
+                                 <widget class="QComboBox" name="comboBox_yearStart">
                                   <property name="minimumSize">
                                    <size>
                                     <width>0</width>
@@ -2667,7 +2667,7 @@ font: 20px bold;
                                  </widget>
                                 </item>
                                 <item>
-                                 <widget class="QComboBox" name="comboBox_9">
+                                 <widget class="QComboBox" name="comboBox_dateEnd">
                                   <property name="minimumSize">
                                    <size>
                                     <width>0</width>
@@ -2827,7 +2827,7 @@ font: 20px bold;
                                  </widget>
                                 </item>
                                 <item>
-                                 <widget class="QComboBox" name="comboBox_8">
+                                 <widget class="QComboBox" name="comboBox_monthEnd">
                                   <property name="minimumSize">
                                    <size>
                                     <width>0</width>
@@ -2897,7 +2897,7 @@ font: 20px bold;
                                  </widget>
                                 </item>
                                 <item>
-                                 <widget class="QComboBox" name="comboBox_7">
+                                 <widget class="QComboBox" name="comboBox_yearEnd">
                                   <property name="minimumSize">
                                    <size>
                                     <width>0</width>
@@ -2925,7 +2925,7 @@ font: 20px bold;
                               </widget>
                              </item>
                              <item>
-                              <widget class="QPushButton" name="pushButton">
+                              <widget class="QPushButton" name="btn_select">
                                <property name="minimumSize">
                                 <size>
                                  <width>140</width>

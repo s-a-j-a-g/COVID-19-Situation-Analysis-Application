@@ -1,8 +1,4 @@
-# MAIN FILE
-# ///////////////////////////////////////////////////////////////
 from main import *
-
-import csv
 import pandas as pd
 
 class UIFunctions(MainWindow):
@@ -18,6 +14,7 @@ class UIFunctions(MainWindow):
             self.ui.maximizeRestoreAppBtn.setIcon(QtGui.QIcon(u":/icons/images/icons/icon_restore.png"))
 
 
+    ## EXPAND AND RESTORE LEFT MENU
     def slideLeftMenu(self):
         ## GET CURRENT LEFT MENU WIDTH
         width = self.ui.leftMenuBg.width()
@@ -37,6 +34,7 @@ class UIFunctions(MainWindow):
         self.animation.start()
 
 
+    ## SHOW WARNING MESSAGE BEFORE EXITING
     def warningMessage(self):
         msg = QMessageBox.warning(self, "Warning!!!", "Are you sure you want to exit?", QMessageBox.Yes | QMessageBox.No)
 
@@ -44,6 +42,7 @@ class UIFunctions(MainWindow):
             self.close()
 
 
+    ##  LOAD SYMPTOMS FROM CSV TO THE TABLE IN INFROGRAPHICS
     def loadSymptoms(self):
         data = pd.read_csv('Symptoms.csv')
 
@@ -62,3 +61,16 @@ class UIFunctions(MainWindow):
             self.ui.tableWidget_symptoms.setItem(row, 3, QtWidgets.QTableWidgetItem(flu[row]))
             self.ui.tableWidget_symptoms.setItem(row, 4, QtWidgets.QTableWidgetItem(allergies[row]))
             row = row + 1
+
+    ## GET START AND END DATE FROM THE USER
+    def getDate(self):
+        date_start = self.ui.comboBox_dateStart.currentText()
+        month_start = self.ui.comboBox_monthStart.currentText()
+        year_start =  self.ui.comboBox_yearStart.currentText()
+
+        date_end = self.ui.comboBox_dateEnd.currentText()
+        month_end = self.ui.comboBox_monthEnd.currentText()
+        year_end =  self.ui.comboBox_yearEnd.currentText()
+        
+        print(date_start, month_start, year_start)
+        print(date_end, month_end, year_end)

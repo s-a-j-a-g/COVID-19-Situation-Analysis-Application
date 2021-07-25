@@ -1,14 +1,10 @@
-import statistics
 import sys
-import os
-import platform
 from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt, QEvent)
 from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide2.QtWidgets import *
 
 from statistics import Canvas
-
 from ui_functions import *
 
 # SET AS GLOBAL WIDGETS
@@ -143,6 +139,10 @@ class MainWindow(QMainWindow):
         self.ui.graph2.addWidget(self.graph2)
         self.ui.graph3.addWidget(self.graph3)
         self.ui.graph4.addWidget(self.graph4)
+
+
+        ##DATE SELECTED
+        self.ui.btn_select.clicked.connect(lambda: UIFunctions.getDate(self))
 
 
         # # BUTTONS CLICK
