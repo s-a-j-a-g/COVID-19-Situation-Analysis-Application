@@ -29,8 +29,8 @@ class Canvas(FigureCanvasQTAgg):
         infected = data['Infected'].tolist()
         plt.barh(age, infected, label = 'Infected')
 
-        print(age)
-        print(infected)
+        # print(age)
+        # print(infected)
 
         plt.title('Covid Cases by Age')
         plt.xlabel('Age')
@@ -40,18 +40,3 @@ class Canvas(FigureCanvasQTAgg):
         plt.grid(True)
 
         plt.tight_layout() # works for small screen; solves padding issues
-
-        # plt.show()
-
-# class AppDemo(QWidget):
-#     def __init__(self):
-#         super().__init__()
-#         self.resize(1600, 800)
-
-#         chart = Canvas(self)
-
-
-# app = QApplication(sys.argv)
-# demo = AppDemo()
-# demo.show()
-# sys.exit(app.exec_())    

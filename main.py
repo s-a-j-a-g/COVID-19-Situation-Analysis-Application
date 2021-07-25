@@ -1,3 +1,4 @@
+import statistics
 import sys
 import os
 import platform
@@ -5,15 +6,10 @@ from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt, QEvent)
 from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide2.QtWidgets import *
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvasQTAgg
 
-import matplotlib.pyplot as plt
+from statistics import Canvas
 
-import csv
-# import numpy as np
-import pandas as pd
-
-# from modules import *
+from ui_functions import *
 
 # SET AS GLOBAL WIDGETS
 # ///////////////////////////////////////////////////////////////
@@ -75,7 +71,7 @@ class MainWindow(QMainWindow):
         self.ui.closeAppBtn.clicked.connect(lambda: self.close())
 
         ## MAXIMIZE/RESTORE WINDOW
-        self.ui.maximizeRestoreAppBtn.clicked.connect(lambda: self.restore_or_maximize_window())
+        self.ui.maximizeRestoreAppBtn.clicked.connect(lambda: UIFunctions.restore_or_maximize_window(self))
 
 
         ## STACKED PAGES NAVIGATION
@@ -101,7 +97,7 @@ class MainWindow(QMainWindow):
 
 
         ## EXIT WINDOW PRESSED
-        self.ui.btn_exit.clicked.connect(lambda: self.warningMessage())
+        self.ui.btn_exit.clicked.connect(lambda: UIFunctions.warningMessage(self))
 
 
         ## DRAG HANDLER - FUNCTION TO MOVE WINDOW ON MOUSE DRAG EVENT ON THE TITLE BAR
@@ -122,7 +118,7 @@ class MainWindow(QMainWindow):
 
 
         ## LEFT MENU TOGGLE BUTTON
-        self.ui.toggleButton.clicked.connect(lambda: self.slideLeftMenu())
+        self.ui.toggleButton.clicked.connect(lambda: UIFunctions.slideLeftMenu(self))
 
 
         ##TABLE WIDGET CUSTOM SETTINGS
@@ -131,12 +127,13 @@ class MainWindow(QMainWindow):
         self.ui.tableWidget_symptoms.setColumnWidth(2, 120)
         self.ui.tableWidget_symptoms.setColumnWidth(3, 120)
         self.ui.tableWidget_symptoms.setColumnWidth(4, 120)
-        self.loadSymptoms()
+        UIFunctions.loadSymptoms(self)
 
 
-        ##############################
-        ######## GRAPH #################
-        ##############################
+        ######################################
+        ############### GRAPH  ###############
+        ##### IMPORTED FROM statistics.py ####
+        ######################################
         self.graph = Canvas(self)
         self.graph2 = Canvas(self)
         self.graph3 = Canvas(self)
@@ -167,124 +164,11 @@ class MainWindow(QMainWindow):
         # QtCore.QTimer.singleShot(1500, lambda: self.setStyleSheet("background-color: #222; color: #FFF"))
 
 
-    ## UPDATE RESTORE BUTTON ICON ON MAXIMIZINGOR MINIMIZING WINDOW
-    def restore_or_maximize_window(self):
-        if self.isMaximized():
-            self.showNormal()
-            ## CHANGE ICON
-            self.ui.maximizeRestoreAppBtn.setIcon(QtGui.QIcon(u":/icons/images/icons/icon_maximize.png"))
-        else:
-            self.showMaximized()
-            ## CHANGE ICON
-            self.ui.maximizeRestoreAppBtn.setIcon(QtGui.QIcon(u":/icons/images/icons/icon_restore.png"))
-
-
     ## ADD MOUSE EVENTS TO THE WINDOW
     def mousePressEvent(self, event):
         ## GET THE CURRENT POSTITION OF THE MOUSE
         self.clickPosition = event.globalPos() 
         ## WE USE THIS VALUT TO MOVE THE WINDOW   
-
-
-    def slideLeftMenu(self):
-        ## GET CURRENT LEFT MENU WIDTH
-        width = self.ui.leftMenuBg.width()
-
-        ## IF MINIMIZED
-        if width == 60:
-            newWidth = 240  ## EXPAND MENU      
-        else: ## IF MAXIMIZED
-            newWidth = 60  ## RESTORE MENU
-
-        ## ANIMATE THE TRANSITION
-        self.animation = QPropertyAnimation(self.ui.leftMenuBg, b"minimumWidth") ## ANIMATE MINIMUM WIDTH
-        self.animation.setDuration(500)
-        self.animation.setStartValue(width) ## START VALUE IS THE CURRENT MENU WIDTH
-        self.animation.setEndValue(newWidth) ## END VALUE IS THE NEW MENU WIDTH
-        self.animation.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
-        self.animation.start()
-
-
-    def warningMessage(self):
-        # msg = QMessageBox()
-        # msg.setIcon(QMes/sageBox.Warning)
-        # msg.setText("Are you sure you want to exit?")
-        # msg.setWindowTitle("Warning!!!")
-        msg = QMessageBox.warning(self, "Warning!!!", "Are you sure you want to exit?", QMessageBox.Yes | QMessageBox.No)
-
-        if msg == QMessageBox.Yes:
-            self.close()
-
-    def loadSymptoms(self):
-        data = pd.read_csv('Symptoms.csv')
-
-        symptoms = data['Symptoms'].tolist()
-        covid_19 = data['COVID-19'].tolist()
-        common_cold = data['Common Cold'].tolist()
-        flu = data['Flu'].tolist()
-        allergies = data['Allergies'].tolist()
-
-        # with open('Symptoms.csv') as csv_file:
-        #     csv_reader = csv.reader(csv_file)
-
-        #     for row in csv_reader:
-        #         symptoms.append(row[0])
-        #         covid_19.append(row[1])
-        #         common_cold.append(row[2])
-
-        row = 0
-        self.ui.tableWidget_symptoms.setRowCount(len(symptoms))
-        for item in symptoms:    
-            self.ui.tableWidget_symptoms.setItem(row, 0, QtWidgets.QTableWidgetItem(symptoms[row]))
-            self.ui.tableWidget_symptoms.setItem(row, 1, QtWidgets.QTableWidgetItem(covid_19[row]))
-            self.ui.tableWidget_symptoms.setItem(row, 2, QtWidgets.QTableWidgetItem(common_cold[row]))
-            self.ui.tableWidget_symptoms.setItem(row, 3, QtWidgets.QTableWidgetItem(flu[row]))
-            self.ui.tableWidget_symptoms.setItem(row, 4, QtWidgets.QTableWidgetItem(allergies[row]))
-            row = row + 1
-
-#CANVAS
-class Canvas1(FigureCanvasQTAgg):
-    def __init__(self, parent):
-        fig, self.ax = plt.subplots(figsize = (5, 4), dpi = 100)
-        super().__init__(fig)
-        self.setParent(parent)
-
-
-class Canvas(FigureCanvasQTAgg):
-    def __init__(self, parent):
-        fig, self.ax = plt.subplots(figsize = (5, 4), dpi = 100)
-        super().__init__(fig)
-        self.setParent(parent)
-
-        """ 
-        Matplotlib Script
-        """
-        plt.style.use('fivethirtyeight')
-
-        age = []
-        infected = []
-        recovered = []
-
-        data = pd.read_csv('Resources/ScrapedData/Agewise_Data.csv')
-        ids = data['Age']
-
-        age = data['Age'].tolist()
-        infected = data['Infected'].tolist()
-        plt.barh(age, infected, label = 'Infected')
-
-        print(age)
-        print(infected)
-
-        plt.title('Covid Cases by Age')
-        plt.xlabel('Age')
-        plt.ylabel('Total Cases')
-
-        plt.legend()
-        plt.grid(True)
-
-        plt.tight_layout() # works for small screen; solves padding issues
-
-        # plt.show(
 
 
 # SPLASH SCREEN
