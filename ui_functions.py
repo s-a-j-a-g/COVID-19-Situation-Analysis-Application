@@ -34,6 +34,56 @@ class UIFunctions(MainWindow):
         self.animation.start()
 
 
+    ##SELECT/ DESELECT
+
+
+
+
+
+
+
+
+
+
+    # START - GUI DEFINITIONS
+    # ///////////////////////////////////////////////////////////////
+    def uiDefinitions(self):
+        ## DRAG HANDLER - FUNCTION TO MOVE WINDOW ON MOUSE DRAG EVENT ON THE TITLE BAR
+        def moveWindow(event):
+            # DETECT IF THE WINDOW IS NORMAL SIZE 
+            if self.isMaximized() == False: # (NOT MAXIMIZED - NORMAL SIZE) /// MOVE WINDOW ONLY WHEN WINDOW IS NORMAL SIZE
+                ## ONLY ACCEPT LEFT MOUSE BUTTON CLICKS
+                if event.buttons() == Qt.LeftButton:
+                    self.move(self.pos() + event.globalPos() - self.clickPosition)
+                    self.clickPosition = event.globalPos()
+                    event.accept()
+                    # if self.isMaximized() == True:
+                    #     self.showNormal()
+        self.ui.leftBox.mouseMoveEvent = moveWindow
+
+
+        ## DROP SHADOW EFFECT
+        self.shadow = QGraphicsDropShadowEffect(self)
+        self.shadow.setBlurRadius(50)
+        self.shadow.setXOffset(0)
+        self.shadow.setYOffset(0)
+        self.shadow.setColor(QColor(0, 0, 0, 60))
+        self.ui.bgApp.setGraphicsEffect(self.shadow)
+
+
+         ## WINDOW SIZE GRIP TO RESIZE WINDOW
+        QSizeGrip(self.ui.frame_size_grip)
+
+        ## MINIMIZE WINDOW
+        self.ui.minimizeAppBtn.clicked.connect(lambda: self.showMinimized())
+
+        ## CLOSE WINDOW
+        self.ui.closeAppBtn.clicked.connect(lambda: self.close())
+
+        ## MAXIMIZE/RESTORE WINDOW
+        self.ui.maximizeRestoreAppBtn.clicked.connect(lambda: UIFunctions.restore_or_maximize_window(self))
+
+
     ## SHOW WARNING MESSAGE BEFORE EXITING
     def warningMessage(self):
         msg = QMessageBox.warning(self, "Warning!!!", "Are you sure you want to exit?", QMessageBox.Yes | QMessageBox.No)

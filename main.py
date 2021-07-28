@@ -38,36 +38,16 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        # apply_stylesheet(app, theme = 'dark_cyan.xml')
-
-        ## UI ==> INTERFACE CODES
-        ########################################################################
 
         ## REMOVE TITLE BAR
         self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
         ## SET MAIN BACKGROUND TO TRANSPARENT
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
 
-        ## DROP SHADOW EFFECT
-        self.shadow = QGraphicsDropShadowEffect(self)
-        self.shadow.setBlurRadius(50)
-        self.shadow.setXOffset(0)
-        self.shadow.setYOffset(0)
-        self.shadow.setColor(QColor(0, 0, 0, 60))
-        self.ui.bgApp.setGraphicsEffect(self.shadow)
 
-
-        ## WINDOW SIZE GRIP TO RESIZE WINDOW
-        QSizeGrip(self.ui.frame_size_grip)
-
-        ## MINIMIZE WINDOW
-        self.ui.minimizeAppBtn.clicked.connect(lambda: self.showMinimized())
-
-        ## CLOSE WINDOW
-        self.ui.closeAppBtn.clicked.connect(lambda: self.close())
-
-        ## MAXIMIZE/RESTORE WINDOW
-        self.ui.maximizeRestoreAppBtn.clicked.connect(lambda: UIFunctions.restore_or_maximize_window(self))
+        # SET UI DEFINITIONS
+        # ///////////////////////////////////////////////////////////////
+        UIFunctions.uiDefinitions(self)
 
 
         ## STACKED PAGES NAVIGATION
@@ -96,21 +76,8 @@ class MainWindow(QMainWindow):
         self.ui.btn_exit.clicked.connect(lambda: UIFunctions.warningMessage(self))
 
 
-        ## DRAG HANDLER - FUNCTION TO MOVE WINDOW ON MOUSE DRAG EVENT ON THE TITLE BAR
-        def moveWindow(event):
-            # DETECT IF THE WINDOW IS NORMAL SIZE 
-            if self.isMaximized() == False: # (NOT MAXIMIZED - NORMAL SIZE) /// MOVE WINDOW ONLY WHEN WINDOW IS NORMAL SIZE
-                ## ONLY ACCEPT LEFT MOUSE BUTTON CLICKS
-                if event.buttons() == Qt.LeftButton:
-                    self.move(self.pos() + event.globalPos() - self.clickPosition)
-                    self.clickPosition = event.globalPos()
-                    event.accept()
-                    # if self.isMaximized() == True:
-                    #     self.showNormal()
-
-
         ## ADD CLICK EVENT/MOUSE MOVE EVENT/DRAG EVENT TO THE TOP HEADER TO MOVE THE WINDOW
-        self.ui.leftBox.mouseMoveEvent = moveWindow
+        # self.ui.leftBox.mouseMoveEvent = UIFunctions.moveWindow(self)
 
 
         ## LEFT MENU TOGGLE BUTTON
@@ -164,11 +131,17 @@ class MainWindow(QMainWindow):
         # QtCore.QTimer.singleShot(1500, lambda: self.setStyleSheet("background-color: #222; color: #FFF"))
 
 
+
     ## ADD MOUSE EVENTS TO THE WINDOW
     def mousePressEvent(self, event):
         ## GET THE CURRENT POSTITION OF THE MOUSE
         self.clickPosition = event.globalPos() 
         ## WE USE THIS VALUT TO MOVE THE WINDOW   
+
+
+
+
+
 
 
 # SPLASH SCREEN
