@@ -6,6 +6,7 @@ from PySide2.QtWidgets import *
 
 from statistics import Canvas
 from ui_functions import *
+from infographics import Seriousness_of_Symptoms, Agewise_Risk_Analysis
 
 # SET AS GLOBAL WIDGETS
 # ///////////////////////////////////////////////////////////////
@@ -106,6 +107,20 @@ class MainWindow(QMainWindow):
         self.ui.graph2.addWidget(self.graph2)
         self.ui.graph3.addWidget(self.graph3)
         self.ui.graph4.addWidget(self.graph4)
+
+
+
+        ######################################
+        ############### GRAPH  ###############
+        ##### IMPORTED FROM infographics.py ####
+        ######################################
+        self.graph5 = Seriousness_of_Symptoms(self)
+        self.ui.graph5.addWidget(self.graph5)
+
+
+        self.graph6 = Agewise_Risk_Analysis(self)
+        self.ui.graph6.addWidget(self.graph6)
+
 
 
         ##DATE SELECTED

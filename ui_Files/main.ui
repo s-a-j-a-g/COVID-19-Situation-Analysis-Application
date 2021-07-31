@@ -1874,7 +1874,7 @@ p, li { white-space: pre-wrap; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>0</number>
+                      <number>3</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="styleSheet">
@@ -3857,7 +3857,7 @@ QTableWidget QTableCornerButton::section
 }</string>
                          </property>
                          <property name="currentIndex">
-                          <number>1</number>
+                          <number>0</number>
                          </property>
                          <widget class="QWidget" name="tab_Symptoms">
                           <attribute name="title">
@@ -3876,40 +3876,15 @@ QTableWidget QTableCornerButton::section
                               <property name="geometry">
                                <rect>
                                 <x>0</x>
-                                <y>0</y>
-                                <width>777</width>
-                                <height>953</height>
+                                <y>-500</y>
+                                <width>1184</width>
+                                <height>1053</height>
                                </rect>
                               </property>
                               <layout class="QVBoxLayout" name="verticalLayout_22">
                                <property name="leftMargin">
                                 <number>27</number>
                                </property>
-                               <item>
-                                <widget class="QFrame" name="frame_6">
-                                 <property name="minimumSize">
-                                  <size>
-                                   <width>0</width>
-                                   <height>400</height>
-                                  </size>
-                                 </property>
-                                 <property name="maximumSize">
-                                  <size>
-                                   <width>100000</width>
-                                   <height>100000</height>
-                                  </size>
-                                 </property>
-                                 <property name="styleSheet">
-                                  <string notr="true">image: url(:/images/images/images/symptoms.png);</string>
-                                 </property>
-                                 <property name="frameShape">
-                                  <enum>QFrame::StyledPanel</enum>
-                                 </property>
-                                 <property name="frameShadow">
-                                  <enum>QFrame::Raised</enum>
-                                 </property>
-                                </widget>
-                               </item>
                                <item>
                                 <widget class="QFrame" name="frame_8">
                                  <property name="frameShape">
@@ -3929,7 +3904,7 @@ QTableWidget QTableCornerButton::section
                                     </property>
                                     <property name="maximumSize">
                                      <size>
-                                      <width>700</width>
+                                      <width>16777215</width>
                                       <height>16777215</height>
                                      </size>
                                     </property>
@@ -3963,6 +3938,49 @@ QTableWidget QTableCornerButton::section
                                     </column>
                                    </widget>
                                   </item>
+                                  <item>
+                                   <widget class="QFrame" name="frame_48">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>400</width>
+                                      <height>0</height>
+                                     </size>
+                                    </property>
+                                    <property name="styleSheet">
+                                     <string notr="true">border-image: url(:/images/images/images/symptoms.png);</string>
+                                    </property>
+                                    <property name="frameShape">
+                                     <enum>QFrame::StyledPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                     <enum>QFrame::Raised</enum>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QFrame" name="frame_6">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>0</width>
+                                   <height>500</height>
+                                  </size>
+                                 </property>
+                                 <property name="frameShape">
+                                  <enum>QFrame::StyledPanel</enum>
+                                 </property>
+                                 <property name="frameShadow">
+                                  <enum>QFrame::Raised</enum>
+                                 </property>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_20">
+                                  <item>
+                                   <layout class="QHBoxLayout" name="graph5"/>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="graph6"/>
+                                  </item>
                                  </layout>
                                 </widget>
                                </item>
@@ -3987,7 +4005,7 @@ QTableWidget QTableCornerButton::section
                                <rect>
                                 <x>0</x>
                                 <y>0</y>
-                                <width>731</width>
+                                <width>1122</width>
                                 <height>1002</height>
                                </rect>
                               </property>

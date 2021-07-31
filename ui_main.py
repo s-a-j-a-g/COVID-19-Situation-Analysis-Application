@@ -1969,20 +1969,10 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 777, 953))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, -500, 1184, 1053))
         self.verticalLayout_22 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.verticalLayout_22.setContentsMargins(27, -1, -1, -1)
-        self.frame_6 = QFrame(self.scrollAreaWidgetContents_2)
-        self.frame_6.setObjectName(u"frame_6")
-        self.frame_6.setMinimumSize(QSize(0, 400))
-        self.frame_6.setMaximumSize(QSize(100000, 100000))
-        self.frame_6.setStyleSheet(u"image: url(:/images/images/images/symptoms.png);")
-        self.frame_6.setFrameShape(QFrame.StyledPanel)
-        self.frame_6.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_22.addWidget(self.frame_6)
-
         self.frame_8 = QFrame(self.scrollAreaWidgetContents_2)
         self.frame_8.setObjectName(u"frame_8")
         self.frame_8.setFrameShape(QFrame.StyledPanel)
@@ -2004,13 +1994,42 @@ class Ui_MainWindow(object):
         self.tableWidget_symptoms.setHorizontalHeaderItem(4, __qtablewidgetitem4)
         self.tableWidget_symptoms.setObjectName(u"tableWidget_symptoms")
         self.tableWidget_symptoms.setMinimumSize(QSize(715, 500))
-        self.tableWidget_symptoms.setMaximumSize(QSize(700, 16777215))
+        self.tableWidget_symptoms.setMaximumSize(QSize(16777215, 16777215))
         self.tableWidget_symptoms.setLayoutDirection(Qt.LeftToRight)
 
         self.horizontalLayout_10.addWidget(self.tableWidget_symptoms)
 
+        self.frame_48 = QFrame(self.frame_8)
+        self.frame_48.setObjectName(u"frame_48")
+        self.frame_48.setMinimumSize(QSize(400, 0))
+        self.frame_48.setStyleSheet(u"border-image: url(:/images/images/images/symptoms.png);")
+        self.frame_48.setFrameShape(QFrame.StyledPanel)
+        self.frame_48.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout_10.addWidget(self.frame_48)
+
 
         self.verticalLayout_22.addWidget(self.frame_8)
+
+        self.frame_6 = QFrame(self.scrollAreaWidgetContents_2)
+        self.frame_6.setObjectName(u"frame_6")
+        self.frame_6.setMinimumSize(QSize(0, 500))
+        self.frame_6.setFrameShape(QFrame.StyledPanel)
+        self.frame_6.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_20 = QHBoxLayout(self.frame_6)
+        self.horizontalLayout_20.setObjectName(u"horizontalLayout_20")
+        self.graph5 = QHBoxLayout()
+        self.graph5.setObjectName(u"graph5")
+
+        self.horizontalLayout_20.addLayout(self.graph5)
+
+        self.graph6 = QHBoxLayout()
+        self.graph6.setObjectName(u"graph6")
+
+        self.horizontalLayout_20.addLayout(self.graph6)
+
+
+        self.verticalLayout_22.addWidget(self.frame_6)
 
         self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
 
@@ -2026,7 +2045,7 @@ class Ui_MainWindow(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollAreaWidgetContents_3 = QWidget()
         self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 731, 1002))
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 1122, 1002))
         self.verticalLayout_21 = QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_21.setObjectName(u"verticalLayout_21")
         self.verticalLayout_21.setContentsMargins(-1, 0, -1, -1)
@@ -2326,8 +2345,8 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
-        self.tabWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(3)
+        self.tabWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
