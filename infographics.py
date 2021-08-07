@@ -101,9 +101,6 @@ class Best_Household_Materials_For_a_Mask(FigureCanvasQTAgg):
         household_materials = data['Household Materials'].tolist()
         percent_microns_captured = data['Percent of 0.02-microns captured'].tolist()
 
-        print(household_materials)
-        print(percent_microns_captured)
-
         plt.barh(household_materials, percent_microns_captured)
 
 

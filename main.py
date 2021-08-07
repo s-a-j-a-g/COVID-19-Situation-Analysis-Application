@@ -52,25 +52,19 @@ class MainWindow(QMainWindow):
         ## DEFAULT PAGE
         self.ui.stackedWidget.setCurrentWidget(self.ui.home)
 
-        ## NAVIGATE TO HOME PAGE
-        self.ui.btn_home.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.home))
-
-        ## NAVIGATE TO STATISTICS PAGE
-        self.ui.btn_statistics.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.statistics))
-
-         ## NAVIGATE TO STATISTICS PAGE
-        self.ui.btn_hospital.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.hospitals))
-        
-        ## NAVIGATE TO INFOGRAPHICS PAGE
-        self.ui.btn_infographics.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.infographics))
+        self.ui.btn_home.clicked.connect(self.buttonClick)
+        self.ui.btn_statistics.clicked.connect(self.buttonClick)
+        self.ui.btn_hospitals.clicked.connect(self.buttonClick)
+        self.ui.btn_infographics.clicked.connect(self.buttonClick)
+        ## EXIT WINDOW PRESSED
+        self.ui.btn_exit.clicked.connect(lambda: UIFunctions.warningMessage(self))
 
         
         ## SET DEFAULT TAB
         # self.ui.tabWidget.setCurrentWidget(tabwidget.findChild(QWidget, self.ui.tableWidget_symptoms))
 
 
-        ## EXIT WINDOW PRESSED
-        self.ui.btn_exit.clicked.connect(lambda: UIFunctions.warningMessage(self))
+
 
 
         ## ADD CLICK EVENT/MOUSE MOVE EVENT/DRAG EVENT TO THE TOP HEADER TO MOVE THE WINDOW
@@ -145,6 +139,36 @@ class MainWindow(QMainWindow):
         # MAIN WINDOW LABEL
         # QtCore.QTimer.singleShot(1500, lambda: self.ui.label.setText("<strong>THANKS</strong> FOR WATCHING"))
         # QtCore.QTimer.singleShot(1500, lambda: self.setStyleSheet("background-color: #222; color: #FFF"))
+
+
+    def buttonClick(self):
+        # GET BUTTON CLICKED
+        btn = self.sender()
+        btnName = btn.objectName()
+
+        ## NAVIGATE TO HOME PAGE
+        if btnName == "btn_home":
+            self.ui.stackedWidget.setCurrentWidget(self.ui.home)
+            # UIFunctions.resetStyle(self, btnName)
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+
+        ## NAVIGATE TO STATISTICS PAGE
+        if btnName == "btn_statistics":
+            self.ui.stackedWidget.setCurrentWidget(self.ui.statistics)
+            # UIFunctions.resetStyle(self, btnName)
+            # btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+
+        ## NAVIGATE TO HOSPITALS PAGE
+        if btnName == "btn_hospitals":
+            self.ui.stackedWidget.setCurrentWidget(self.ui.hospitals)
+            # UIFunctions.resetStyle(self, btnName)
+            # btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+
+        ## NAVIGATE TO INFOGRAPHICS PAGE
+        if btnName == "btn_infographics":
+            self.ui.stackedWidget.setCurrentWidget(self.ui.infographics)
+            # UIFunctions.resetStyle(self, btnName)
+            # btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
 
 

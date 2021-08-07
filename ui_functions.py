@@ -43,10 +43,9 @@ class UIFunctions(MainWindow):
 
 
     ##SELECT/ DESELECT
-
-
-
-
+    def selectMenu(getStyle):
+        select = getStyle + Settings.MENU_SELECTED_STYLESHEET
+        return select
 
 
 
