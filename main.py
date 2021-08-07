@@ -149,26 +149,26 @@ class MainWindow(QMainWindow):
         ## NAVIGATE TO HOME PAGE
         if btnName == "btn_home":
             self.ui.stackedWidget.setCurrentWidget(self.ui.home)
-            # UIFunctions.resetStyle(self, btnName)
+            UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
         ## NAVIGATE TO STATISTICS PAGE
         if btnName == "btn_statistics":
             self.ui.stackedWidget.setCurrentWidget(self.ui.statistics)
-            # UIFunctions.resetStyle(self, btnName)
-            # btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+            UIFunctions.resetStyle(self, btnName)
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
         ## NAVIGATE TO HOSPITALS PAGE
         if btnName == "btn_hospitals":
             self.ui.stackedWidget.setCurrentWidget(self.ui.hospitals)
-            # UIFunctions.resetStyle(self, btnName)
-            # btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+            UIFunctions.resetStyle(self, btnName)
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
         ## NAVIGATE TO INFOGRAPHICS PAGE
         if btnName == "btn_infographics":
             self.ui.stackedWidget.setCurrentWidget(self.ui.infographics)
-            # UIFunctions.resetStyle(self, btnName)
-            # btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+            UIFunctions.resetStyle(self, btnName)
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
 
 
