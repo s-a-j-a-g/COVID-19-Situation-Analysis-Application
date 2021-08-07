@@ -23,11 +23,10 @@ class Canvas(FigureCanvasQTAgg):
         recovered = []
 
         data = pd.read_csv('Resources/ScrapedData/Agewise_Data.csv')
-        ids = data['Age']
-
+        
         age = data['Age'].tolist()
         infected = data['Infected'].tolist()
-        plt.barh(age, infected, label = 'Infected')
+        plt.bar(age, infected, label = 'Infected')
 
         # print(age)
         # print(infected)

@@ -1,6 +1,14 @@
 from main import *
 import pandas as pd
 
+
+symptoms = []
+covid_19 = []
+common_cold = []
+flu = []
+allergies = []
+
+
 class UIFunctions(MainWindow):
     ## UPDATE RESTORE BUTTON ICON ON MAXIMIZINGOR MINIMIZING WINDOW
     def restore_or_maximize_window(self):
@@ -64,7 +72,7 @@ class UIFunctions(MainWindow):
 
         ## DROP SHADOW EFFECT
         self.shadow = QGraphicsDropShadowEffect(self)
-        self.shadow.setBlurRadius(50)
+        self.shadow.setBlurRadius(100)
         self.shadow.setXOffset(0)
         self.shadow.setYOffset(0)
         self.shadow.setColor(QColor(0, 0, 0, 60))
@@ -94,7 +102,7 @@ class UIFunctions(MainWindow):
 
     ##  LOAD SYMPTOMS FROM CSV TO THE TABLE IN INFROGRAPHICS
     def loadSymptoms(self):
-        data = pd.read_csv('Symptoms.csv')
+        data = pd.read_csv('Resources/Symptoms.csv')
 
         symptoms = data['Symptoms'].tolist()
         covid_19 = data['COVID-19'].tolist()

@@ -4,13 +4,14 @@ from PySide2.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTi
 from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide2.QtWidgets import *
 
+# from splashScreen import SplashScreen
 from statistics import Canvas
 from ui_functions import *
-from infographics import Seriousness_of_Symptoms, Agewise_Risk_Analysis
+from infographics import Seriousness_of_Symptoms, Agewise_Risk_Analysis, Best_Household_Materials_For_a_Mask
 
-# SET AS GLOBAL WIDGETS
-# ///////////////////////////////////////////////////////////////
-widgets = None
+# # SET AS GLOBAL WIDGETS
+# # ///////////////////////////////////////////////////////////////
+# widgets = None
 
 ## ==> SPLASH SCREEN
 from ui_SplashScreen import Ui_SplashScreen
@@ -23,11 +24,6 @@ from qt_material import *
 ## ==> GLOBALS
 counter = 0
 
-symptoms = []
-covid_19 = []
-common_cold = []
-flu = []
-allergies = []
 
 # MAIN APPLICATION
 class MainWindow(QMainWindow):
@@ -122,6 +118,11 @@ class MainWindow(QMainWindow):
         self.ui.graph6.addWidget(self.graph6)
 
 
+        self.graph7 = Best_Household_Materials_For_a_Mask(self)
+        self.ui.graph7.addWidget(self.graph7)
+
+
+
 
         ##DATE SELECTED
         self.ui.btn_select.clicked.connect(lambda: UIFunctions.getDate(self))
@@ -168,8 +169,8 @@ class SplashScreen(QMainWindow):
         # ///////////////////////////////////////////////////////////////
         self.ui = Ui_SplashScreen()
         self.ui.setupUi(self)
-        global widgets
-        widgets = self.ui
+        # global widgets
+        # widgets = self.ui
         
 
         ## UI ==> INTERFACE CODES
@@ -191,7 +192,7 @@ class SplashScreen(QMainWindow):
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.progress)
         # TIMER IN MILLISECONDS
-        self.timer.start(35)
+        self.timer.start(20)
 
         # CHANGE DESCRIPTION
 

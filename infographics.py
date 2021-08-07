@@ -52,23 +52,64 @@ class Agewise_Risk_Analysis(FigureCanvasQTAgg):
         plt.style.use('fivethirtyeight')
 
         age = []
-        infected = []
-        recovered = []
+        italy = []
+        uk = []
+
+        bar_width = 0.33
 
         data = pd.read_csv('Resources/Agewise_Risk_Analysis.csv')
-        ids = data['Age']
 
         age = data['Age'].tolist()
         italy = data['Italy'].tolist()
         uk = data['UK'].tolist()
-        plt.bar(age, italy, label = 'Italy')
 
-        print(age)
-        print(italy)
+        x_indexes = np.arange(len(age))
+
+        plt.bar(x_indexes - bar_width, italy, width = bar_width, label = 'Italy')
+        plt.bar(x_indexes + bar_width, uk, width = bar_width, label = 'UK')
+
+        plt.xticks(ticks = x_indexes, labels = age) #fixes x-axis label issue
 
         plt.title('% of deceased')
         plt.xlabel('Age')
         plt.ylabel('')
+
+        plt.legend()
+        plt.grid(True)
+
+        plt.tight_layout() # works for small screen; solves padding issues
+
+
+
+
+class Best_Household_Materials_For_a_Mask(FigureCanvasQTAgg):
+    def __init__(self, parent):
+        fig, self.ax = plt.subplots(figsize = (5, 4), dpi = 100)
+        super().__init__(fig)
+        self.setParent(parent)
+
+        """ 
+        Matplotlib Script
+        """
+        plt.style.use('fivethirtyeight')
+
+        household_materials = []
+        percent_microns_captured = []
+        
+        data = pd.read_csv('Resources/Best_Household_Materials_for_a_Mask.csv')
+
+        household_materials = data['Household Materials'].tolist()
+        percent_microns_captured = data['Percent of 0.02-microns captured'].tolist()
+
+        print(household_materials)
+        print(percent_microns_captured)
+
+        plt.barh(household_materials, percent_microns_captured)
+
+
+        plt.title('Best Household Materials for a Mask')
+        plt.xlabel('Household Materials')
+        plt.ylabel('Percent of 0.02-microns captured when coughing')
 
         plt.legend()
         plt.grid(True)

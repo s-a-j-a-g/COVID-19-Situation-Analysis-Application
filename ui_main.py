@@ -946,26 +946,14 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setSpacing(5)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.settingsTopBtn = QPushButton(self.rightButtons)
-        self.settingsTopBtn.setObjectName(u"settingsTopBtn")
-        self.settingsTopBtn.setMinimumSize(QSize(28, 28))
-        self.settingsTopBtn.setMaximumSize(QSize(28, 28))
-        self.settingsTopBtn.setCursor(QCursor(Qt.PointingHandCursor))
-        icon1 = QIcon()
-        icon1.addFile(u":/icons/images/icons/icon_settings.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.settingsTopBtn.setIcon(icon1)
-        self.settingsTopBtn.setIconSize(QSize(20, 20))
-
-        self.horizontalLayout_2.addWidget(self.settingsTopBtn)
-
         self.minimizeAppBtn = QPushButton(self.rightButtons)
         self.minimizeAppBtn.setObjectName(u"minimizeAppBtn")
         self.minimizeAppBtn.setMinimumSize(QSize(28, 28))
         self.minimizeAppBtn.setMaximumSize(QSize(28, 28))
         self.minimizeAppBtn.setCursor(QCursor(Qt.PointingHandCursor))
-        icon2 = QIcon()
-        icon2.addFile(u":/icons/images/icons/icon_minimize.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.minimizeAppBtn.setIcon(icon2)
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/images/icons/icon_minimize.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.minimizeAppBtn.setIcon(icon1)
         self.minimizeAppBtn.setIconSize(QSize(20, 20))
 
         self.horizontalLayout_2.addWidget(self.minimizeAppBtn)
@@ -983,9 +971,9 @@ class Ui_MainWindow(object):
         font3.setStyleStrategy(QFont.PreferDefault)
         self.maximizeRestoreAppBtn.setFont(font3)
         self.maximizeRestoreAppBtn.setCursor(QCursor(Qt.PointingHandCursor))
-        icon3 = QIcon()
-        icon3.addFile(u":/icons/images/icons/icon_maximize.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.maximizeRestoreAppBtn.setIcon(icon3)
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/images/icons/icon_maximize.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.maximizeRestoreAppBtn.setIcon(icon2)
         self.maximizeRestoreAppBtn.setIconSize(QSize(20, 20))
 
         self.horizontalLayout_2.addWidget(self.maximizeRestoreAppBtn)
@@ -1039,18 +1027,18 @@ class Ui_MainWindow(object):
         self.home.setStyleSheet(u"")
         self.horizontalLayout_14 = QHBoxLayout(self.home)
         self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
-        self.frame_7 = QFrame(self.home)
-        self.frame_7.setObjectName(u"frame_7")
-        self.frame_7.setStyleSheet(u"aQFrame{\n"
+        self.home_frame = QFrame(self.home)
+        self.home_frame.setObjectName(u"home_frame")
+        self.home_frame.setStyleSheet(u"aQFrame{\n"
 "background-image: url(:/images/images/images/logo.png);\n"
 "background-position: center;\n"
 "background-repeat: no-repeat;\n"
 "}")
-        self.frame_7.setFrameShape(QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_26 = QVBoxLayout(self.frame_7)
+        self.home_frame.setFrameShape(QFrame.StyledPanel)
+        self.home_frame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_26 = QVBoxLayout(self.home_frame)
         self.verticalLayout_26.setObjectName(u"verticalLayout_26")
-        self.frame_5 = QFrame(self.frame_7)
+        self.frame_5 = QFrame(self.home_frame)
         self.frame_5.setObjectName(u"frame_5")
         self.frame_5.setFrameShape(QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QFrame.Raised)
@@ -1322,7 +1310,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_26.addWidget(self.frame_5)
 
-        self.frame_18 = QFrame(self.frame_7)
+        self.frame_18 = QFrame(self.home_frame)
         self.frame_18.setObjectName(u"frame_18")
         self.frame_18.setMinimumSize(QSize(0, 300))
         self.frame_18.setMaximumSize(QSize(16777215, 16777215))
@@ -1598,7 +1586,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_26.addWidget(self.frame_18)
 
 
-        self.horizontalLayout_14.addWidget(self.frame_7)
+        self.horizontalLayout_14.addWidget(self.home_frame)
 
         self.stackedWidget.addWidget(self.home)
         self.statistics = QWidget()
@@ -1894,10 +1882,40 @@ class Ui_MainWindow(object):
         self.frame_11.setObjectName(u"frame_11")
         self.frame_11.setFrameShape(QFrame.StyledPanel)
         self.frame_11.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_33 = QVBoxLayout(self.frame_11)
+        self.verticalLayout_33.setObjectName(u"verticalLayout_33")
         self.label_4 = QLabel(self.frame_11)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(40, 10, 271, 61))
-        self.label_4.setFont(font)
+        font4 = QFont()
+        font4.setFamily(u"Lato Black")
+        font4.setPointSize(20)
+        font4.setBold(False)
+        font4.setItalic(False)
+        font4.setWeight(10)
+        self.label_4.setFont(font4)
+        self.label_4.setStyleSheet(u"font: 87 20pt \"Lato Black\";")
+
+        self.verticalLayout_33.addWidget(self.label_4)
+
+        self.tableWidget = QTableWidget(self.frame_11)
+        if (self.tableWidget.columnCount() < 6):
+            self.tableWidget.setColumnCount(6)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        __qtablewidgetitem2 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        __qtablewidgetitem3 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, __qtablewidgetitem3)
+        __qtablewidgetitem4 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        __qtablewidgetitem5 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(5, __qtablewidgetitem5)
+        self.tableWidget.setObjectName(u"tableWidget")
+
+        self.verticalLayout_33.addWidget(self.tableWidget)
+
 
         self.horizontalLayout_18.addWidget(self.frame_11)
 
@@ -1969,7 +1987,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, -500, 1184, 1053))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(-62, 0, 1184, 1053))
         self.verticalLayout_22 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.verticalLayout_22.setContentsMargins(27, -1, -1, -1)
@@ -1982,16 +2000,16 @@ class Ui_MainWindow(object):
         self.tableWidget_symptoms = QTableWidget(self.frame_8)
         if (self.tableWidget_symptoms.columnCount() < 5):
             self.tableWidget_symptoms.setColumnCount(5)
-        __qtablewidgetitem = QTableWidgetItem()
-        self.tableWidget_symptoms.setHorizontalHeaderItem(0, __qtablewidgetitem)
-        __qtablewidgetitem1 = QTableWidgetItem()
-        self.tableWidget_symptoms.setHorizontalHeaderItem(1, __qtablewidgetitem1)
-        __qtablewidgetitem2 = QTableWidgetItem()
-        self.tableWidget_symptoms.setHorizontalHeaderItem(2, __qtablewidgetitem2)
-        __qtablewidgetitem3 = QTableWidgetItem()
-        self.tableWidget_symptoms.setHorizontalHeaderItem(3, __qtablewidgetitem3)
-        __qtablewidgetitem4 = QTableWidgetItem()
-        self.tableWidget_symptoms.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        __qtablewidgetitem6 = QTableWidgetItem()
+        self.tableWidget_symptoms.setHorizontalHeaderItem(0, __qtablewidgetitem6)
+        __qtablewidgetitem7 = QTableWidgetItem()
+        self.tableWidget_symptoms.setHorizontalHeaderItem(1, __qtablewidgetitem7)
+        __qtablewidgetitem8 = QTableWidgetItem()
+        self.tableWidget_symptoms.setHorizontalHeaderItem(2, __qtablewidgetitem8)
+        __qtablewidgetitem9 = QTableWidgetItem()
+        self.tableWidget_symptoms.setHorizontalHeaderItem(3, __qtablewidgetitem9)
+        __qtablewidgetitem10 = QTableWidgetItem()
+        self.tableWidget_symptoms.setHorizontalHeaderItem(4, __qtablewidgetitem10)
         self.tableWidget_symptoms.setObjectName(u"tableWidget_symptoms")
         self.tableWidget_symptoms.setMinimumSize(QSize(715, 500))
         self.tableWidget_symptoms.setMaximumSize(QSize(16777215, 16777215))
@@ -2045,7 +2063,7 @@ class Ui_MainWindow(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollAreaWidgetContents_3 = QWidget()
         self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 1122, 1002))
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 1122, 1409))
         self.verticalLayout_21 = QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_21.setObjectName(u"verticalLayout_21")
         self.verticalLayout_21.setContentsMargins(-1, 0, -1, -1)
@@ -2184,16 +2202,32 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_21.addWidget(self.frame_2)
 
+        self.frame_60 = QFrame(self.scrollAreaWidgetContents_3)
+        self.frame_60.setObjectName(u"frame_60")
+        self.frame_60.setMinimumSize(QSize(0, 400))
+        self.frame_60.setSizeIncrement(QSize(0, 0))
+        self.frame_60.setFrameShape(QFrame.StyledPanel)
+        self.frame_60.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_19 = QHBoxLayout(self.frame_60)
+        self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
+        self.graph7 = QHBoxLayout()
+        self.graph7.setObjectName(u"graph7")
+
+        self.horizontalLayout_19.addLayout(self.graph7)
+
+
+        self.verticalLayout_21.addWidget(self.frame_60)
+
         self.label_2 = QLabel(self.scrollAreaWidgetContents_3)
         self.label_2.setObjectName(u"label_2")
         self.label_2.setMinimumSize(QSize(0, 30))
         self.label_2.setMaximumSize(QSize(16777215, 20))
-        font4 = QFont()
-        font4.setFamily(u"Segoe UI")
-        font4.setBold(False)
-        font4.setItalic(False)
-        font4.setWeight(50)
-        self.label_2.setFont(font4)
+        font5 = QFont()
+        font5.setFamily(u"Segoe UI")
+        font5.setBold(False)
+        font5.setItalic(False)
+        font5.setWeight(50)
+        self.label_2.setFont(font5)
         self.label_2.setStyleSheet(u"font: 25px;\n"
 "text: bold;")
 
@@ -2309,7 +2343,7 @@ class Ui_MainWindow(object):
         self.creditsLabel = QLabel(self.bottomBar)
         self.creditsLabel.setObjectName(u"creditsLabel")
         self.creditsLabel.setMaximumSize(QSize(16777215, 16))
-        self.creditsLabel.setFont(font4)
+        self.creditsLabel.setFont(font5)
         self.creditsLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
         self.horizontalLayout_5.addWidget(self.creditsLabel)
@@ -2345,8 +2379,8 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(3)
-        self.tabWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2386,10 +2420,6 @@ class Ui_MainWindow(object):
 "<p align=\"center\" style=\" margin-top:12px; ma"
                         "rgin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; color:#ffffff;\">pyside6-rcc resources.qrc -o resources_rc.py</span></p></body></html>", None))
         self.titleRightInfo.setText(QCoreApplication.translate("MainWindow", u"COVID-19 Situation Analysis Application", None))
-#if QT_CONFIG(tooltip)
-        self.settingsTopBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Settings", None))
-#endif // QT_CONFIG(tooltip)
-        self.settingsTopBtn.setText("")
 #if QT_CONFIG(tooltip)
         self.minimizeAppBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Minimize", None))
 #endif // QT_CONFIG(tooltip)
@@ -2532,16 +2562,28 @@ class Ui_MainWindow(object):
 
         self.btn_select.setText(QCoreApplication.translate("MainWindow", u"Select", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Hospitals", None))
-        ___qtablewidgetitem = self.tableWidget_symptoms.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Symptoms", None));
-        ___qtablewidgetitem1 = self.tableWidget_symptoms.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"COVID-19", None));
-        ___qtablewidgetitem2 = self.tableWidget_symptoms.horizontalHeaderItem(2)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Common Cold", None));
-        ___qtablewidgetitem3 = self.tableWidget_symptoms.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Flu", None));
-        ___qtablewidgetitem4 = self.tableWidget_symptoms.horizontalHeaderItem(4)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Allergies", None));
+        ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Hospital Name", None));
+        ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Contact", None));
+        ___qtablewidgetitem2 = self.tableWidget.horizontalHeaderItem(2)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Total Beds", None));
+        ___qtablewidgetitem3 = self.tableWidget.horizontalHeaderItem(3)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"ICU Beds", None));
+        ___qtablewidgetitem4 = self.tableWidget.horizontalHeaderItem(4)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Ventilators", None));
+        ___qtablewidgetitem5 = self.tableWidget.horizontalHeaderItem(5)
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Isolation Beds", None));
+        ___qtablewidgetitem6 = self.tableWidget_symptoms.horizontalHeaderItem(0)
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Symptoms", None));
+        ___qtablewidgetitem7 = self.tableWidget_symptoms.horizontalHeaderItem(1)
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"COVID-19", None));
+        ___qtablewidgetitem8 = self.tableWidget_symptoms.horizontalHeaderItem(2)
+        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Common Cold", None));
+        ___qtablewidgetitem9 = self.tableWidget_symptoms.horizontalHeaderItem(3)
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Flu", None));
+        ___qtablewidgetitem10 = self.tableWidget_symptoms.horizontalHeaderItem(4)
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Allergies", None));
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_Symptoms), QCoreApplication.translate("MainWindow", u"Symptoms", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Preventions:", None))
         self.label_18.setText(QCoreApplication.translate("MainWindow", u"\u2022 Wear your mask", None))
