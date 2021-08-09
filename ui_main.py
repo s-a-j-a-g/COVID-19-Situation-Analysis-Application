@@ -1059,6 +1059,7 @@ class Ui_MainWindow(object):
         self.frame_16.setObjectName(u"frame_16")
         self.frame_16.setMinimumSize(QSize(0, 50))
         self.frame_16.setMaximumSize(QSize(16777215, 50))
+        self.frame_16.setStyleSheet(u"border-radius: 15px;")
         self.frame_16.setFrameShape(QFrame.StyledPanel)
         self.frame_16.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_15 = QHBoxLayout(self.frame_16)
@@ -1066,6 +1067,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_15.setContentsMargins(0, 0, 0, 0)
         self.frame_12 = QFrame(self.frame_16)
         self.frame_12.setObjectName(u"frame_12")
+        self.frame_12.setStyleSheet(u"")
         self.frame_12.setFrameShape(QFrame.StyledPanel)
         self.frame_12.setFrameShadow(QFrame.Raised)
 
@@ -1333,6 +1335,7 @@ class Ui_MainWindow(object):
         self.frame_45.setObjectName(u"frame_45")
         self.frame_45.setMinimumSize(QSize(0, 50))
         self.frame_45.setMaximumSize(QSize(16777215, 50))
+        self.frame_45.setStyleSheet(u"border-radius: 15px;")
         self.frame_45.setFrameShape(QFrame.StyledPanel)
         self.frame_45.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_16 = QHBoxLayout(self.frame_45)
@@ -1897,24 +1900,150 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_33.addWidget(self.label_4)
 
-        self.tableWidget = QTableWidget(self.frame_11)
-        if (self.tableWidget.columnCount() < 6):
-            self.tableWidget.setColumnCount(6)
+        self.frame_61 = QFrame(self.frame_11)
+        self.frame_61.setObjectName(u"frame_61")
+        self.frame_61.setFrameShape(QFrame.StyledPanel)
+        self.frame_61.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_24 = QHBoxLayout(self.frame_61)
+        self.horizontalLayout_24.setObjectName(u"horizontalLayout_24")
+        self.tableWidget_hospitals = QTableWidget(self.frame_61)
+        if (self.tableWidget_hospitals.columnCount() < 6):
+            self.tableWidget_hospitals.setColumnCount(6)
         __qtablewidgetitem = QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem.setBackground(QColor(17, 63, 67));
+        self.tableWidget_hospitals.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        self.tableWidget_hospitals.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         __qtablewidgetitem2 = QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        self.tableWidget_hospitals.setHorizontalHeaderItem(2, __qtablewidgetitem2)
         __qtablewidgetitem3 = QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(3, __qtablewidgetitem3)
+        self.tableWidget_hospitals.setHorizontalHeaderItem(3, __qtablewidgetitem3)
         __qtablewidgetitem4 = QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        __qtablewidgetitem4.setBackground(QColor(17, 67, 70));
+        self.tableWidget_hospitals.setHorizontalHeaderItem(4, __qtablewidgetitem4)
         __qtablewidgetitem5 = QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(5, __qtablewidgetitem5)
-        self.tableWidget.setObjectName(u"tableWidget")
+        self.tableWidget_hospitals.setHorizontalHeaderItem(5, __qtablewidgetitem5)
+        if (self.tableWidget_hospitals.rowCount() < 16):
+            self.tableWidget_hospitals.setRowCount(16)
+        font5 = QFont()
+        font5.setFamily(u"Segoe UI")
+        __qtablewidgetitem6 = QTableWidgetItem()
+        __qtablewidgetitem6.setFont(font5);
+        self.tableWidget_hospitals.setVerticalHeaderItem(0, __qtablewidgetitem6)
+        __qtablewidgetitem7 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(1, __qtablewidgetitem7)
+        __qtablewidgetitem8 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(2, __qtablewidgetitem8)
+        __qtablewidgetitem9 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(3, __qtablewidgetitem9)
+        __qtablewidgetitem10 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(4, __qtablewidgetitem10)
+        __qtablewidgetitem11 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(5, __qtablewidgetitem11)
+        __qtablewidgetitem12 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(6, __qtablewidgetitem12)
+        __qtablewidgetitem13 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(7, __qtablewidgetitem13)
+        __qtablewidgetitem14 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(8, __qtablewidgetitem14)
+        __qtablewidgetitem15 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(9, __qtablewidgetitem15)
+        __qtablewidgetitem16 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(10, __qtablewidgetitem16)
+        __qtablewidgetitem17 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(11, __qtablewidgetitem17)
+        __qtablewidgetitem18 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(12, __qtablewidgetitem18)
+        __qtablewidgetitem19 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(13, __qtablewidgetitem19)
+        __qtablewidgetitem20 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(14, __qtablewidgetitem20)
+        __qtablewidgetitem21 = QTableWidgetItem()
+        self.tableWidget_hospitals.setVerticalHeaderItem(15, __qtablewidgetitem21)
+        __qtablewidgetitem22 = QTableWidgetItem()
+        self.tableWidget_hospitals.setItem(0, 0, __qtablewidgetitem22)
+        __qtablewidgetitem23 = QTableWidgetItem()
+        self.tableWidget_hospitals.setItem(0, 1, __qtablewidgetitem23)
+        __qtablewidgetitem24 = QTableWidgetItem()
+        self.tableWidget_hospitals.setItem(0, 2, __qtablewidgetitem24)
+        __qtablewidgetitem25 = QTableWidgetItem()
+        self.tableWidget_hospitals.setItem(0, 3, __qtablewidgetitem25)
+        self.tableWidget_hospitals.setObjectName(u"tableWidget_hospitals")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.tableWidget_hospitals.sizePolicy().hasHeightForWidth())
+        self.tableWidget_hospitals.setSizePolicy(sizePolicy3)
+        palette = QPalette()
+        brush = QBrush(QColor(221, 221, 221, 255))
+        brush.setStyle(Qt.SolidPattern)
+        palette.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        brush1 = QBrush(QColor(0, 0, 0, 0))
+        brush1.setStyle(Qt.SolidPattern)
+        palette.setBrush(QPalette.Active, QPalette.Button, brush1)
+        palette.setBrush(QPalette.Active, QPalette.Text, brush)
+        palette.setBrush(QPalette.Active, QPalette.ButtonText, brush)
+        brush2 = QBrush(QColor(0, 0, 0, 255))
+        brush2.setStyle(Qt.NoBrush)
+        palette.setBrush(QPalette.Active, QPalette.Base, brush2)
+        palette.setBrush(QPalette.Active, QPalette.Window, brush1)
+        brush3 = QBrush(QColor(88, 88, 88, 255))
+        brush3.setStyle(Qt.SolidPattern)
+        palette.setBrush(QPalette.Active, QPalette.AlternateBase, brush3)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette.Active, QPalette.PlaceholderText, brush)
+#endif
+        palette.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
+        palette.setBrush(QPalette.Inactive, QPalette.Button, brush1)
+        palette.setBrush(QPalette.Inactive, QPalette.Text, brush)
+        palette.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
+        brush4 = QBrush(QColor(0, 0, 0, 255))
+        brush4.setStyle(Qt.NoBrush)
+        palette.setBrush(QPalette.Inactive, QPalette.Base, brush4)
+        palette.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+        palette.setBrush(QPalette.Inactive, QPalette.AlternateBase, brush3)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush)
+#endif
+        palette.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
+        palette.setBrush(QPalette.Disabled, QPalette.Button, brush1)
+        palette.setBrush(QPalette.Disabled, QPalette.Text, brush)
+        palette.setBrush(QPalette.Disabled, QPalette.ButtonText, brush)
+        brush5 = QBrush(QColor(0, 0, 0, 255))
+        brush5.setStyle(Qt.NoBrush)
+        palette.setBrush(QPalette.Disabled, QPalette.Base, brush5)
+        palette.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+        palette.setBrush(QPalette.Disabled, QPalette.AlternateBase, brush3)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush)
+#endif
+        self.tableWidget_hospitals.setPalette(palette)
+        self.tableWidget_hospitals.setStyleSheet(u"QHeaderView::section { \n"
+"	color:white;\n"
+"	background-color: rgb(18, 81, 79);\n"
+"}")
+        self.tableWidget_hospitals.setFrameShape(QFrame.NoFrame)
+        self.tableWidget_hospitals.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.tableWidget_hospitals.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
+        self.tableWidget_hospitals.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.tableWidget_hospitals.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.tableWidget_hospitals.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.tableWidget_hospitals.setShowGrid(True)
+        self.tableWidget_hospitals.setGridStyle(Qt.SolidLine)
+        self.tableWidget_hospitals.setSortingEnabled(False)
+        self.tableWidget_hospitals.horizontalHeader().setVisible(True)
+        self.tableWidget_hospitals.horizontalHeader().setCascadingSectionResizes(True)
+        self.tableWidget_hospitals.horizontalHeader().setDefaultSectionSize(200)
+        self.tableWidget_hospitals.horizontalHeader().setStretchLastSection(True)
+        self.tableWidget_hospitals.verticalHeader().setVisible(False)
+        self.tableWidget_hospitals.verticalHeader().setCascadingSectionResizes(False)
+        self.tableWidget_hospitals.verticalHeader().setHighlightSections(False)
+        self.tableWidget_hospitals.verticalHeader().setStretchLastSection(True)
 
-        self.verticalLayout_33.addWidget(self.tableWidget)
+        self.horizontalLayout_24.addWidget(self.tableWidget_hospitals)
+
+
+        self.verticalLayout_33.addWidget(self.frame_61)
 
 
         self.horizontalLayout_18.addWidget(self.frame_11)
@@ -1987,44 +2116,157 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(-62, 0, 1184, 1053))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1122, 979))
         self.verticalLayout_22 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.verticalLayout_22.setContentsMargins(27, -1, -1, -1)
         self.frame_8 = QFrame(self.scrollAreaWidgetContents_2)
         self.frame_8.setObjectName(u"frame_8")
+        self.frame_8.setMinimumSize(QSize(0, 450))
         self.frame_8.setFrameShape(QFrame.StyledPanel)
         self.frame_8.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_10 = QHBoxLayout(self.frame_8)
+        self.horizontalLayout_17 = QHBoxLayout(self.frame_8)
+        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.horizontalLayout_17.setContentsMargins(0, 0, 0, 0)
+        self.frame_7 = QFrame(self.frame_8)
+        self.frame_7.setObjectName(u"frame_7")
+        self.frame_7.setFrameShape(QFrame.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_10 = QHBoxLayout(self.frame_7)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
-        self.tableWidget_symptoms = QTableWidget(self.frame_8)
+        self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.tableWidget_symptoms = QTableWidget(self.frame_7)
         if (self.tableWidget_symptoms.columnCount() < 5):
             self.tableWidget_symptoms.setColumnCount(5)
-        __qtablewidgetitem6 = QTableWidgetItem()
-        self.tableWidget_symptoms.setHorizontalHeaderItem(0, __qtablewidgetitem6)
-        __qtablewidgetitem7 = QTableWidgetItem()
-        self.tableWidget_symptoms.setHorizontalHeaderItem(1, __qtablewidgetitem7)
-        __qtablewidgetitem8 = QTableWidgetItem()
-        self.tableWidget_symptoms.setHorizontalHeaderItem(2, __qtablewidgetitem8)
-        __qtablewidgetitem9 = QTableWidgetItem()
-        self.tableWidget_symptoms.setHorizontalHeaderItem(3, __qtablewidgetitem9)
-        __qtablewidgetitem10 = QTableWidgetItem()
-        self.tableWidget_symptoms.setHorizontalHeaderItem(4, __qtablewidgetitem10)
+        __qtablewidgetitem26 = QTableWidgetItem()
+        __qtablewidgetitem26.setBackground(QColor(17, 63, 67));
+        self.tableWidget_symptoms.setHorizontalHeaderItem(0, __qtablewidgetitem26)
+        __qtablewidgetitem27 = QTableWidgetItem()
+        self.tableWidget_symptoms.setHorizontalHeaderItem(1, __qtablewidgetitem27)
+        __qtablewidgetitem28 = QTableWidgetItem()
+        self.tableWidget_symptoms.setHorizontalHeaderItem(2, __qtablewidgetitem28)
+        __qtablewidgetitem29 = QTableWidgetItem()
+        self.tableWidget_symptoms.setHorizontalHeaderItem(3, __qtablewidgetitem29)
+        __qtablewidgetitem30 = QTableWidgetItem()
+        __qtablewidgetitem30.setBackground(QColor(17, 67, 70));
+        self.tableWidget_symptoms.setHorizontalHeaderItem(4, __qtablewidgetitem30)
+        if (self.tableWidget_symptoms.rowCount() < 16):
+            self.tableWidget_symptoms.setRowCount(16)
+        __qtablewidgetitem31 = QTableWidgetItem()
+        __qtablewidgetitem31.setFont(font5);
+        self.tableWidget_symptoms.setVerticalHeaderItem(0, __qtablewidgetitem31)
+        __qtablewidgetitem32 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(1, __qtablewidgetitem32)
+        __qtablewidgetitem33 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(2, __qtablewidgetitem33)
+        __qtablewidgetitem34 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(3, __qtablewidgetitem34)
+        __qtablewidgetitem35 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(4, __qtablewidgetitem35)
+        __qtablewidgetitem36 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(5, __qtablewidgetitem36)
+        __qtablewidgetitem37 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(6, __qtablewidgetitem37)
+        __qtablewidgetitem38 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(7, __qtablewidgetitem38)
+        __qtablewidgetitem39 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(8, __qtablewidgetitem39)
+        __qtablewidgetitem40 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(9, __qtablewidgetitem40)
+        __qtablewidgetitem41 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(10, __qtablewidgetitem41)
+        __qtablewidgetitem42 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(11, __qtablewidgetitem42)
+        __qtablewidgetitem43 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(12, __qtablewidgetitem43)
+        __qtablewidgetitem44 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(13, __qtablewidgetitem44)
+        __qtablewidgetitem45 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(14, __qtablewidgetitem45)
+        __qtablewidgetitem46 = QTableWidgetItem()
+        self.tableWidget_symptoms.setVerticalHeaderItem(15, __qtablewidgetitem46)
+        __qtablewidgetitem47 = QTableWidgetItem()
+        self.tableWidget_symptoms.setItem(0, 0, __qtablewidgetitem47)
+        __qtablewidgetitem48 = QTableWidgetItem()
+        self.tableWidget_symptoms.setItem(0, 1, __qtablewidgetitem48)
+        __qtablewidgetitem49 = QTableWidgetItem()
+        self.tableWidget_symptoms.setItem(0, 2, __qtablewidgetitem49)
+        __qtablewidgetitem50 = QTableWidgetItem()
+        self.tableWidget_symptoms.setItem(0, 3, __qtablewidgetitem50)
         self.tableWidget_symptoms.setObjectName(u"tableWidget_symptoms")
-        self.tableWidget_symptoms.setMinimumSize(QSize(715, 500))
-        self.tableWidget_symptoms.setMaximumSize(QSize(16777215, 16777215))
-        self.tableWidget_symptoms.setLayoutDirection(Qt.LeftToRight)
+        sizePolicy3.setHeightForWidth(self.tableWidget_symptoms.sizePolicy().hasHeightForWidth())
+        self.tableWidget_symptoms.setSizePolicy(sizePolicy3)
+        palette1 = QPalette()
+        brush6 = QBrush(QColor(255, 255, 255, 255))
+        brush6.setStyle(Qt.SolidPattern)
+        palette1.setBrush(QPalette.Active, QPalette.WindowText, brush6)
+        brush7 = QBrush(QColor(13, 34, 42, 255))
+        brush7.setStyle(Qt.SolidPattern)
+        palette1.setBrush(QPalette.Active, QPalette.Button, brush7)
+        palette1.setBrush(QPalette.Active, QPalette.Text, brush6)
+        palette1.setBrush(QPalette.Active, QPalette.ButtonText, brush6)
+        palette1.setBrush(QPalette.Active, QPalette.Base, brush7)
+        palette1.setBrush(QPalette.Active, QPalette.Window, brush7)
+        palette1.setBrush(QPalette.Active, QPalette.AlternateBase, brush3)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette.Active, QPalette.PlaceholderText, brush)
+#endif
+        palette1.setBrush(QPalette.Inactive, QPalette.WindowText, brush6)
+        palette1.setBrush(QPalette.Inactive, QPalette.Button, brush7)
+        palette1.setBrush(QPalette.Inactive, QPalette.Text, brush6)
+        palette1.setBrush(QPalette.Inactive, QPalette.ButtonText, brush6)
+        palette1.setBrush(QPalette.Inactive, QPalette.Base, brush7)
+        palette1.setBrush(QPalette.Inactive, QPalette.Window, brush7)
+        palette1.setBrush(QPalette.Inactive, QPalette.AlternateBase, brush3)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush)
+#endif
+        palette1.setBrush(QPalette.Disabled, QPalette.WindowText, brush6)
+        palette1.setBrush(QPalette.Disabled, QPalette.Button, brush7)
+        palette1.setBrush(QPalette.Disabled, QPalette.Text, brush6)
+        palette1.setBrush(QPalette.Disabled, QPalette.ButtonText, brush6)
+        palette1.setBrush(QPalette.Disabled, QPalette.Base, brush7)
+        palette1.setBrush(QPalette.Disabled, QPalette.Window, brush7)
+        palette1.setBrush(QPalette.Disabled, QPalette.AlternateBase, brush3)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush)
+#endif
+        self.tableWidget_symptoms.setPalette(palette1)
+        self.tableWidget_symptoms.setStyleSheet(u"QHeaderView::section { \n"
+"	color:white;\n"
+"	background-color: rgb(18, 81, 79);\n"
+"}")
+        self.tableWidget_symptoms.setFrameShape(QFrame.NoFrame)
+        self.tableWidget_symptoms.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.tableWidget_symptoms.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
+        self.tableWidget_symptoms.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.tableWidget_symptoms.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.tableWidget_symptoms.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.tableWidget_symptoms.setShowGrid(True)
+        self.tableWidget_symptoms.setGridStyle(Qt.SolidLine)
+        self.tableWidget_symptoms.setSortingEnabled(False)
+        self.tableWidget_symptoms.horizontalHeader().setVisible(False)
+        self.tableWidget_symptoms.horizontalHeader().setCascadingSectionResizes(True)
+        self.tableWidget_symptoms.horizontalHeader().setDefaultSectionSize(200)
+        self.tableWidget_symptoms.horizontalHeader().setStretchLastSection(True)
+        self.tableWidget_symptoms.verticalHeader().setVisible(False)
+        self.tableWidget_symptoms.verticalHeader().setCascadingSectionResizes(False)
+        self.tableWidget_symptoms.verticalHeader().setHighlightSections(False)
+        self.tableWidget_symptoms.verticalHeader().setStretchLastSection(True)
 
         self.horizontalLayout_10.addWidget(self.tableWidget_symptoms)
 
+
+        self.horizontalLayout_17.addWidget(self.frame_7)
+
         self.frame_48 = QFrame(self.frame_8)
         self.frame_48.setObjectName(u"frame_48")
-        self.frame_48.setMinimumSize(QSize(400, 0))
+        self.frame_48.setMinimumSize(QSize(450, 0))
         self.frame_48.setStyleSheet(u"border-image: url(:/images/images/images/symptoms.png);")
         self.frame_48.setFrameShape(QFrame.StyledPanel)
         self.frame_48.setFrameShadow(QFrame.Raised)
 
-        self.horizontalLayout_10.addWidget(self.frame_48)
+        self.horizontalLayout_17.addWidget(self.frame_48)
 
 
         self.verticalLayout_22.addWidget(self.frame_8)
@@ -2063,7 +2305,7 @@ class Ui_MainWindow(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollAreaWidgetContents_3 = QWidget()
         self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 1122, 1409))
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, -454, 1122, 1409))
         self.verticalLayout_21 = QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_21.setObjectName(u"verticalLayout_21")
         self.verticalLayout_21.setContentsMargins(-1, 0, -1, -1)
@@ -2083,7 +2325,9 @@ class Ui_MainWindow(object):
         self.frame_4.setFrameShape(QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_6 = QHBoxLayout(self.frame_4)
+        self.horizontalLayout_6.setSpacing(0)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.horizontalLayout_6.setContentsMargins(0, -1, 0, -1)
         self.frame_3 = QFrame(self.frame_4)
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setMinimumSize(QSize(200, 300))
@@ -2166,33 +2410,43 @@ class Ui_MainWindow(object):
         self.frame_2.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_13 = QHBoxLayout(self.frame_2)
         self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
+        self.horizontalLayout_13.setContentsMargins(0, 0, 0, 0)
         self.frame_9 = QFrame(self.frame_2)
         self.frame_9.setObjectName(u"frame_9")
         self.frame_9.setFrameShape(QFrame.StyledPanel)
         self.frame_9.setFrameShadow(QFrame.Raised)
         self.verticalLayout_27 = QVBoxLayout(self.frame_9)
         self.verticalLayout_27.setObjectName(u"verticalLayout_27")
-        self.label_29 = QLabel(self.frame_9)
-        self.label_29.setObjectName(u"label_29")
+        self.label_7 = QLabel(self.frame_9)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setMinimumSize(QSize(0, 40))
+        self.label_7.setMaximumSize(QSize(16777215, 40))
+        self.label_7.setStyleSheet(u"font-size: 25px;\n"
+"font: bold;")
+        self.label_7.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
 
-        self.verticalLayout_27.addWidget(self.label_29)
+        self.verticalLayout_27.addWidget(self.label_7)
 
-        self.label_31 = QLabel(self.frame_9)
-        self.label_31.setObjectName(u"label_31")
+        self.plainTextEdit = QPlainTextEdit(self.frame_9)
+        self.plainTextEdit.setObjectName(u"plainTextEdit")
+        font6 = QFont()
+        font6.setFamily(u"Lato")
+        font6.setPointSize(14)
+        font6.setBold(False)
+        font6.setItalic(False)
+        font6.setWeight(50)
+        self.plainTextEdit.setFont(font6)
+        self.plainTextEdit.setStyleSheet(u"font: 14pt \"Lato\";")
 
-        self.verticalLayout_27.addWidget(self.label_31)
-
-        self.label_32 = QLabel(self.frame_9)
-        self.label_32.setObjectName(u"label_32")
-
-        self.verticalLayout_27.addWidget(self.label_32)
+        self.verticalLayout_27.addWidget(self.plainTextEdit)
 
 
         self.horizontalLayout_13.addWidget(self.frame_9)
 
         self.frame_10 = QFrame(self.frame_2)
         self.frame_10.setObjectName(u"frame_10")
-        self.frame_10.setMaximumSize(QSize(400, 600))
+        self.frame_10.setMinimumSize(QSize(400, 0))
+        self.frame_10.setMaximumSize(QSize(1515156, 151556))
         self.frame_10.setStyleSheet(u"border-image: url(:/images/images/images/get_vaccinated.png);")
         self.frame_10.setFrameShape(QFrame.StyledPanel)
         self.frame_10.setFrameShadow(QFrame.Raised)
@@ -2222,12 +2476,12 @@ class Ui_MainWindow(object):
         self.label_2.setObjectName(u"label_2")
         self.label_2.setMinimumSize(QSize(0, 30))
         self.label_2.setMaximumSize(QSize(16777215, 20))
-        font5 = QFont()
-        font5.setFamily(u"Segoe UI")
-        font5.setBold(False)
-        font5.setItalic(False)
-        font5.setWeight(50)
-        self.label_2.setFont(font5)
+        font7 = QFont()
+        font7.setFamily(u"Segoe UI")
+        font7.setBold(False)
+        font7.setItalic(False)
+        font7.setWeight(50)
+        self.label_2.setFont(font7)
         self.label_2.setStyleSheet(u"font: 25px;\n"
 "text: bold;")
 
@@ -2238,6 +2492,18 @@ class Ui_MainWindow(object):
         self.horizontalLayout_8.addWidget(self.scrollArea_3)
 
         self.tabWidget.addTab(self.tab_prevention, "")
+        self.tab = QWidget()
+        self.tab.setObjectName(u"tab")
+        self.label_3 = QLabel(self.tab)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(30, 50, 171, 71))
+        self.label_5 = QLabel(self.tab)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(170, 40, 301, 91))
+        self.label_6 = QLabel(self.tab)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(250, 410, 55, 16))
+        self.tabWidget.addTab(self.tab, "")
 
         self.verticalLayout_20.addWidget(self.tabWidget)
 
@@ -2343,7 +2609,7 @@ class Ui_MainWindow(object):
         self.creditsLabel = QLabel(self.bottomBar)
         self.creditsLabel.setObjectName(u"creditsLabel")
         self.creditsLabel.setMaximumSize(QSize(16777215, 16))
-        self.creditsLabel.setFont(font5)
+        self.creditsLabel.setFont(font7)
         self.creditsLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
         self.horizontalLayout_5.addWidget(self.creditsLabel)
@@ -2379,8 +2645,8 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
-        self.tabWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2562,28 +2828,110 @@ class Ui_MainWindow(object):
 
         self.btn_select.setText(QCoreApplication.translate("MainWindow", u"Select", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Hospitals", None))
-        ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
+        ___qtablewidgetitem = self.tableWidget_hospitals.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Hospital Name", None));
-        ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
+        ___qtablewidgetitem1 = self.tableWidget_hospitals.horizontalHeaderItem(1)
         ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Contact", None));
-        ___qtablewidgetitem2 = self.tableWidget.horizontalHeaderItem(2)
+        ___qtablewidgetitem2 = self.tableWidget_hospitals.horizontalHeaderItem(2)
         ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Total Beds", None));
-        ___qtablewidgetitem3 = self.tableWidget.horizontalHeaderItem(3)
+        ___qtablewidgetitem3 = self.tableWidget_hospitals.horizontalHeaderItem(3)
         ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"ICU Beds", None));
-        ___qtablewidgetitem4 = self.tableWidget.horizontalHeaderItem(4)
+        ___qtablewidgetitem4 = self.tableWidget_hospitals.horizontalHeaderItem(4)
         ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Ventilators", None));
-        ___qtablewidgetitem5 = self.tableWidget.horizontalHeaderItem(5)
+        ___qtablewidgetitem5 = self.tableWidget_hospitals.horizontalHeaderItem(5)
         ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Isolation Beds", None));
-        ___qtablewidgetitem6 = self.tableWidget_symptoms.horizontalHeaderItem(0)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Symptoms", None));
-        ___qtablewidgetitem7 = self.tableWidget_symptoms.horizontalHeaderItem(1)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"COVID-19", None));
-        ___qtablewidgetitem8 = self.tableWidget_symptoms.horizontalHeaderItem(2)
-        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Common Cold", None));
-        ___qtablewidgetitem9 = self.tableWidget_symptoms.horizontalHeaderItem(3)
-        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Flu", None));
-        ___qtablewidgetitem10 = self.tableWidget_symptoms.horizontalHeaderItem(4)
-        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Allergies", None));
+        ___qtablewidgetitem6 = self.tableWidget_hospitals.verticalHeaderItem(0)
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem7 = self.tableWidget_hospitals.verticalHeaderItem(1)
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem8 = self.tableWidget_hospitals.verticalHeaderItem(2)
+        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem9 = self.tableWidget_hospitals.verticalHeaderItem(3)
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem10 = self.tableWidget_hospitals.verticalHeaderItem(4)
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem11 = self.tableWidget_hospitals.verticalHeaderItem(5)
+        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem12 = self.tableWidget_hospitals.verticalHeaderItem(6)
+        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem13 = self.tableWidget_hospitals.verticalHeaderItem(7)
+        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem14 = self.tableWidget_hospitals.verticalHeaderItem(8)
+        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem15 = self.tableWidget_hospitals.verticalHeaderItem(9)
+        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem16 = self.tableWidget_hospitals.verticalHeaderItem(10)
+        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem17 = self.tableWidget_hospitals.verticalHeaderItem(11)
+        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem18 = self.tableWidget_hospitals.verticalHeaderItem(12)
+        ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem19 = self.tableWidget_hospitals.verticalHeaderItem(13)
+        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem20 = self.tableWidget_hospitals.verticalHeaderItem(14)
+        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem21 = self.tableWidget_hospitals.verticalHeaderItem(15)
+        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+
+        __sortingEnabled = self.tableWidget_hospitals.isSortingEnabled()
+        self.tableWidget_hospitals.setSortingEnabled(False)
+        self.tableWidget_hospitals.setSortingEnabled(__sortingEnabled)
+
+        ___qtablewidgetitem22 = self.tableWidget_symptoms.horizontalHeaderItem(0)
+        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Symptoms", None));
+        ___qtablewidgetitem23 = self.tableWidget_symptoms.horizontalHeaderItem(1)
+        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"COVID-19", None));
+        ___qtablewidgetitem24 = self.tableWidget_symptoms.horizontalHeaderItem(2)
+        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"Common Cold", None));
+        ___qtablewidgetitem25 = self.tableWidget_symptoms.horizontalHeaderItem(3)
+        ___qtablewidgetitem25.setText(QCoreApplication.translate("MainWindow", u"Flu", None));
+        ___qtablewidgetitem26 = self.tableWidget_symptoms.horizontalHeaderItem(4)
+        ___qtablewidgetitem26.setText(QCoreApplication.translate("MainWindow", u"Allergies", None));
+        ___qtablewidgetitem27 = self.tableWidget_symptoms.verticalHeaderItem(0)
+        ___qtablewidgetitem27.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem28 = self.tableWidget_symptoms.verticalHeaderItem(1)
+        ___qtablewidgetitem28.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem29 = self.tableWidget_symptoms.verticalHeaderItem(2)
+        ___qtablewidgetitem29.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem30 = self.tableWidget_symptoms.verticalHeaderItem(3)
+        ___qtablewidgetitem30.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem31 = self.tableWidget_symptoms.verticalHeaderItem(4)
+        ___qtablewidgetitem31.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem32 = self.tableWidget_symptoms.verticalHeaderItem(5)
+        ___qtablewidgetitem32.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem33 = self.tableWidget_symptoms.verticalHeaderItem(6)
+        ___qtablewidgetitem33.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem34 = self.tableWidget_symptoms.verticalHeaderItem(7)
+        ___qtablewidgetitem34.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem35 = self.tableWidget_symptoms.verticalHeaderItem(8)
+        ___qtablewidgetitem35.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem36 = self.tableWidget_symptoms.verticalHeaderItem(9)
+        ___qtablewidgetitem36.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem37 = self.tableWidget_symptoms.verticalHeaderItem(10)
+        ___qtablewidgetitem37.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem38 = self.tableWidget_symptoms.verticalHeaderItem(11)
+        ___qtablewidgetitem38.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem39 = self.tableWidget_symptoms.verticalHeaderItem(12)
+        ___qtablewidgetitem39.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem40 = self.tableWidget_symptoms.verticalHeaderItem(13)
+        ___qtablewidgetitem40.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem41 = self.tableWidget_symptoms.verticalHeaderItem(14)
+        ___qtablewidgetitem41.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem42 = self.tableWidget_symptoms.verticalHeaderItem(15)
+        ___qtablewidgetitem42.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+
+        __sortingEnabled1 = self.tableWidget_symptoms.isSortingEnabled()
+        self.tableWidget_symptoms.setSortingEnabled(False)
+        ___qtablewidgetitem43 = self.tableWidget_symptoms.item(0, 0)
+        ___qtablewidgetitem43.setText(QCoreApplication.translate("MainWindow", u"Test", None));
+        ___qtablewidgetitem44 = self.tableWidget_symptoms.item(0, 1)
+        ___qtablewidgetitem44.setText(QCoreApplication.translate("MainWindow", u"Text", None));
+        ___qtablewidgetitem45 = self.tableWidget_symptoms.item(0, 2)
+        ___qtablewidgetitem45.setText(QCoreApplication.translate("MainWindow", u"Cell", None));
+        ___qtablewidgetitem46 = self.tableWidget_symptoms.item(0, 3)
+        ___qtablewidgetitem46.setText(QCoreApplication.translate("MainWindow", u"Line", None));
+        self.tableWidget_symptoms.setSortingEnabled(__sortingEnabled1)
+
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_Symptoms), QCoreApplication.translate("MainWindow", u"Symptoms", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Preventions:", None))
         self.label_18.setText(QCoreApplication.translate("MainWindow", u"\u2022 Wear your mask", None))
@@ -2596,11 +2944,17 @@ class Ui_MainWindow(object):
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"\u2022 Be mindful of your mental health", None))
         self.label_26.setText(QCoreApplication.translate("MainWindow", u"\u2022 Watch your weight", None))
         self.label_27.setText(QCoreApplication.translate("MainWindow", u"\u2022 Keep up the good (safety) work", None))
-        self.label_29.setText(QCoreApplication.translate("MainWindow", u"COVICILL 24 LAKHS 48 THOUSAND DOSES", None))
-        self.label_31.setText(QCoreApplication.translate("MainWindow", u"VEROCELL 34 LAKHS DOSES", None))
-        self.label_32.setText(QCoreApplication.translate("MainWindow", u"JHONSON AND JOHNSON 15 LAKHS 34 THOUSAND 850 DOSES", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Vaccines in Nepal:", None))
+        self.plainTextEdit.setPlainText(QCoreApplication.translate("MainWindow", u"\u2022 Covishield\n"
+"\u2022 Verocell (Sinopharm)\n"
+"\u2022 Johnson & Johnson\n"
+"\u2022 AstraZeneca", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Prevention is Better than Cure", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_prevention), QCoreApplication.translate("MainWindow", u"Prevention", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Contact Number:", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"XXXXXXXXXX", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Helpline", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"Print", None))
         self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"Logout", None))

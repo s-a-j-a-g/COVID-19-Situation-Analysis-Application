@@ -51,12 +51,15 @@ class MainWindow(QMainWindow):
 
         ## DEFAULT PAGE
         self.ui.stackedWidget.setCurrentWidget(self.ui.home)
+        self.ui.btn_home.setStyleSheet(UIFunctions.selectMenu(self.ui.btn_home.styleSheet()))
 
+
+        ## LEFT MENU BUTTON CLICKED
         self.ui.btn_home.clicked.connect(self.buttonClick)
         self.ui.btn_statistics.clicked.connect(self.buttonClick)
         self.ui.btn_hospitals.clicked.connect(self.buttonClick)
         self.ui.btn_infographics.clicked.connect(self.buttonClick)
-        ## EXIT WINDOW PRESSED
+        ## EXIT WINDOW CLICKED
         self.ui.btn_exit.clicked.connect(lambda: UIFunctions.warningMessage(self))
 
         
@@ -76,11 +79,11 @@ class MainWindow(QMainWindow):
 
 
         ##TABLE WIDGET CUSTOM SETTINGS
-        self.ui.tableWidget_symptoms.setColumnWidth(0, 175)
-        self.ui.tableWidget_symptoms.setColumnWidth(1, 120)
-        self.ui.tableWidget_symptoms.setColumnWidth(2, 120)
-        self.ui.tableWidget_symptoms.setColumnWidth(3, 120)
-        self.ui.tableWidget_symptoms.setColumnWidth(4, 120)
+        # self.ui.tableWidget_symptoms.setColumnWidth(0, 175)
+        # self.ui.tableWidget_symptoms.setColumnWidth(1, 120)
+        # self.ui.tableWidget_symptoms.setColumnWidth(2, 120)
+        # self.ui.tableWidget_symptoms.setColumnWidth(3, 120)
+        # self.ui.tableWidget_symptoms.setColumnWidth(4, 120)
         UIFunctions.loadSymptoms(self)
 
 
@@ -117,19 +120,10 @@ class MainWindow(QMainWindow):
 
 
 
-
         ##DATE SELECTED
         self.ui.btn_select.clicked.connect(lambda: UIFunctions.getDate(self))
 
 
-        # # BUTTONS CLICK
-        # # ///////////////////////////////////////////////////////////////
-
-        # # LEFT MENUS
-        # widgets.btn_home.clicked.connect(self.buttonClick)
-        # widgets.btn_widgets.clicked.connect(self.buttonClick)
-        # widgets.btn_new.clicked.connect(self.buttonClick)
-        # widgets.btn_save.clicked.connect(self.buttonClick)
 
         # SHOW APP
         # ///////////////////////////////////////////////////////////////
