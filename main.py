@@ -77,6 +77,13 @@ class MainWindow(QMainWindow):
         ## LEFT MENU TOGGLE BUTTON
         self.ui.toggleButton.clicked.connect(lambda: UIFunctions.slideLeftMenu(self))
 
+        ## SETTINGS BUTTON CLICKED
+        self.ui.btn_Settings.clicked.connect(lambda: UIFunctions.slideExtraLeftBox(self))
+        self.ui.extraCloseColumnBtn.clicked.connect(lambda: UIFunctions.slideExtraLeftBox(self))
+
+
+        
+
 
         ##TABLE WIDGET CUSTOM SETTINGS
         # self.ui.tableWidget_symptoms.setColumnWidth(0, 175)
@@ -255,5 +262,5 @@ class SplashScreen(QMainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon("icon.ico"))
-    window = SplashScreen()
+    window = MainWindow()
     sys.exit(app.exec_())
