@@ -108,7 +108,7 @@ class Best_Household_Materials_For_a_Mask(FigureCanvasQTAgg):
         plt.xlabel('Household Materials')
         plt.ylabel('Percent of 0.02-microns captured when coughing')
 
-        plt.legend()
+        # plt.legend()
         plt.grid(True)
 
         plt.tight_layout() # works for small screen; solves padding issues

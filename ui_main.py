@@ -686,7 +686,7 @@ class Ui_MainWindow(object):
         self.btn_hospitals.setFont(font)
         self.btn_hospitals.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_hospitals.setLayoutDirection(Qt.LeftToRight)
-        self.btn_hospitals.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-medical-cross.png)")
+        self.btn_hospitals.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-medical-cross.png);")
 
         self.verticalLayout_8.addWidget(self.btn_hospitals)
 
@@ -1581,7 +1581,9 @@ class Ui_MainWindow(object):
         self.frame_19.setFrameShape(QFrame.StyledPanel)
         self.frame_19.setFrameShadow(QFrame.Raised)
         self.verticalLayout_19 = QVBoxLayout(self.frame_19)
+        self.verticalLayout_19.setSpacing(20)
         self.verticalLayout_19.setObjectName(u"verticalLayout_19")
+        self.verticalLayout_19.setContentsMargins(-1, 0, -1, -1)
         self.frame_25 = QFrame(self.frame_19)
         self.frame_25.setObjectName(u"frame_25")
         self.frame_25.setMaximumSize(QSize(16777215, 50))
@@ -1785,18 +1787,77 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_19.addWidget(self.frame_25)
 
-        self.frame_20 = QFrame(self.frame_19)
+        self.tabWidget_2 = QTabWidget(self.frame_19)
+        self.tabWidget_2.setObjectName(u"tabWidget_2")
+        self.tabWidget_2.setStyleSheet(u"QTabWidget::pane\n"
+"{\n"
+"    border: 1px solid gray;\n"
+"    color: #ffffff;\n"
+"	background-color: rgba(33, 37, 43, 180);\n"
+"}\n"
+"QTabBar::tab\n"
+"{\n"
+"	background-color: rgba(33, 37, 43, 180);\n"
+"    color: rgb(191, 191, 191);\n"
+"	font-size: 18px;\n"
+"	width: 250px;\n"
+"	height: 40px;\n"
+"	border: 2px solid gray;\n"
+"	border-top-left-radius: 5px;\n"
+"	border-top-right-radius: 5px;\n"
+"	border-bottom-left-radius: -9px;\n"
+"}\n"
+"QTabBar::tab:hover\n"
+"{\n"
+"	background-color: rgb(41, 44, 94);\n"
+"}\n"
+"QTabBar::tab:selected\n"
+"{\n"
+"    color: rgb(255, 255, 255);\n"
+"    background: rgb(13, 34, 42);\n"
+"}\n"
+"QTableWidget\n"
+"{\n"
+"	border: 1px solid gray;\n"
+"	background-color: rgb(13, 34, 42);;\n"
+"	alternate-background-color: rgb(88, 88, 88);\n"
+"	color: rgb(255, 255, 255);\n"
+"	font: 17px;\n"
+"	gridline-color: gray;\n"
+"}\n"
+"QHeaderView\n"
+"{\n"
+"	background-color: rgb(13, 34, 42);\n"
+"}\n"
+"QHeaderView::section\n"
+"{\n"
+"	background-color: rgb(52, 52, 52);	\n"
+"	color: rgb(255, 255, 255);\n"
+"	f"
+                        "ont: bold;\n"
+"}\n"
+"QTableWidget QTableCornerButton::section \n"
+"{\n"
+"	background-color: rgb(52, 52, 52);	\n"
+"}")
+        self.tab_Age = QWidget()
+        self.tab_Age.setObjectName(u"tab_Age")
+        self.horizontalLayout_43 = QHBoxLayout(self.tab_Age)
+        self.horizontalLayout_43.setObjectName(u"horizontalLayout_43")
+        self.frame_20 = QFrame(self.tab_Age)
         self.frame_20.setObjectName(u"frame_20")
         self.frame_20.setFrameShape(QFrame.StyledPanel)
         self.frame_20.setFrameShadow(QFrame.Raised)
         self.gridLayout = QGridLayout(self.frame_20)
         self.gridLayout.setObjectName(u"gridLayout")
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.frame_21 = QFrame(self.frame_20)
         self.frame_21.setObjectName(u"frame_21")
         self.frame_21.setFrameShape(QFrame.StyledPanel)
         self.frame_21.setFrameShadow(QFrame.Raised)
         self.verticalLayout_17 = QVBoxLayout(self.frame_21)
         self.verticalLayout_17.setObjectName(u"verticalLayout_17")
+        self.verticalLayout_17.setContentsMargins(0, 0, 0, 0)
         self.graph1 = QVBoxLayout()
         self.graph1.setObjectName(u"graph1")
 
@@ -1811,6 +1872,7 @@ class Ui_MainWindow(object):
         self.frame_23.setFrameShadow(QFrame.Raised)
         self.verticalLayout_18 = QVBoxLayout(self.frame_23)
         self.verticalLayout_18.setObjectName(u"verticalLayout_18")
+        self.verticalLayout_18.setContentsMargins(0, 0, 0, 0)
         self.graph4 = QVBoxLayout()
         self.graph4.setObjectName(u"graph4")
 
@@ -1825,6 +1887,7 @@ class Ui_MainWindow(object):
         self.frame_22.setFrameShadow(QFrame.Raised)
         self.verticalLayout_16 = QVBoxLayout(self.frame_22)
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
+        self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
         self.graph2 = QVBoxLayout()
         self.graph2.setObjectName(u"graph2")
 
@@ -1839,6 +1902,7 @@ class Ui_MainWindow(object):
         self.frame_24.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_9 = QHBoxLayout(self.frame_24)
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.horizontalLayout_9.setContentsMargins(0, 0, 0, 0)
         self.graph3 = QVBoxLayout()
         self.graph3.setObjectName(u"graph3")
 
@@ -1848,7 +1912,161 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.frame_24, 1, 0, 1, 1)
 
 
-        self.verticalLayout_19.addWidget(self.frame_20)
+        self.horizontalLayout_43.addWidget(self.frame_20)
+
+        self.tabWidget_2.addTab(self.tab_Age, "")
+        self.tab_Gender = QWidget()
+        self.tab_Gender.setObjectName(u"tab_Gender")
+        self.horizontalLayout_45 = QHBoxLayout(self.tab_Gender)
+        self.horizontalLayout_45.setObjectName(u"horizontalLayout_45")
+        self.frame_64 = QFrame(self.tab_Gender)
+        self.frame_64.setObjectName(u"frame_64")
+        self.frame_64.setFrameShape(QFrame.StyledPanel)
+        self.frame_64.setFrameShadow(QFrame.Raised)
+        self.gridLayout_2 = QGridLayout(self.frame_64)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_65 = QFrame(self.frame_64)
+        self.frame_65.setObjectName(u"frame_65")
+        self.frame_65.setFrameShape(QFrame.StyledPanel)
+        self.frame_65.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_34 = QVBoxLayout(self.frame_65)
+        self.verticalLayout_34.setObjectName(u"verticalLayout_34")
+        self.verticalLayout_34.setContentsMargins(0, 0, 0, 0)
+        self.graph1_2 = QVBoxLayout()
+        self.graph1_2.setObjectName(u"graph1_2")
+
+        self.verticalLayout_34.addLayout(self.graph1_2)
+
+
+        self.gridLayout_2.addWidget(self.frame_65, 0, 0, 1, 1)
+
+        self.frame_66 = QFrame(self.frame_64)
+        self.frame_66.setObjectName(u"frame_66")
+        self.frame_66.setFrameShape(QFrame.StyledPanel)
+        self.frame_66.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_35 = QVBoxLayout(self.frame_66)
+        self.verticalLayout_35.setObjectName(u"verticalLayout_35")
+        self.verticalLayout_35.setContentsMargins(0, 0, 0, 0)
+        self.graph4_2 = QVBoxLayout()
+        self.graph4_2.setObjectName(u"graph4_2")
+
+        self.verticalLayout_35.addLayout(self.graph4_2)
+
+
+        self.gridLayout_2.addWidget(self.frame_66, 1, 1, 1, 1)
+
+        self.frame_67 = QFrame(self.frame_64)
+        self.frame_67.setObjectName(u"frame_67")
+        self.frame_67.setFrameShape(QFrame.StyledPanel)
+        self.frame_67.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_36 = QVBoxLayout(self.frame_67)
+        self.verticalLayout_36.setObjectName(u"verticalLayout_36")
+        self.verticalLayout_36.setContentsMargins(0, 0, 0, 0)
+        self.graph2_2 = QVBoxLayout()
+        self.graph2_2.setObjectName(u"graph2_2")
+
+        self.verticalLayout_36.addLayout(self.graph2_2)
+
+
+        self.gridLayout_2.addWidget(self.frame_67, 0, 1, 1, 1)
+
+        self.frame_68 = QFrame(self.frame_64)
+        self.frame_68.setObjectName(u"frame_68")
+        self.frame_68.setFrameShape(QFrame.StyledPanel)
+        self.frame_68.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_44 = QHBoxLayout(self.frame_68)
+        self.horizontalLayout_44.setObjectName(u"horizontalLayout_44")
+        self.horizontalLayout_44.setContentsMargins(0, 0, 0, 0)
+        self.graph3_2 = QVBoxLayout()
+        self.graph3_2.setObjectName(u"graph3_2")
+
+        self.horizontalLayout_44.addLayout(self.graph3_2)
+
+
+        self.gridLayout_2.addWidget(self.frame_68, 1, 0, 1, 1)
+
+
+        self.horizontalLayout_45.addWidget(self.frame_64)
+
+        self.tabWidget_2.addTab(self.tab_Gender, "")
+        self.tab_Region = QWidget()
+        self.tab_Region.setObjectName(u"tab_Region")
+        self.horizontalLayout_47 = QHBoxLayout(self.tab_Region)
+        self.horizontalLayout_47.setObjectName(u"horizontalLayout_47")
+        self.frame_69 = QFrame(self.tab_Region)
+        self.frame_69.setObjectName(u"frame_69")
+        self.frame_69.setFrameShape(QFrame.StyledPanel)
+        self.frame_69.setFrameShadow(QFrame.Raised)
+        self.gridLayout_4 = QGridLayout(self.frame_69)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.frame_70 = QFrame(self.frame_69)
+        self.frame_70.setObjectName(u"frame_70")
+        self.frame_70.setFrameShape(QFrame.StyledPanel)
+        self.frame_70.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_37 = QVBoxLayout(self.frame_70)
+        self.verticalLayout_37.setObjectName(u"verticalLayout_37")
+        self.verticalLayout_37.setContentsMargins(0, 0, 0, 0)
+        self.graph1_3 = QVBoxLayout()
+        self.graph1_3.setObjectName(u"graph1_3")
+
+        self.verticalLayout_37.addLayout(self.graph1_3)
+
+
+        self.gridLayout_4.addWidget(self.frame_70, 0, 0, 1, 1)
+
+        self.frame_71 = QFrame(self.frame_69)
+        self.frame_71.setObjectName(u"frame_71")
+        self.frame_71.setFrameShape(QFrame.StyledPanel)
+        self.frame_71.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_38 = QVBoxLayout(self.frame_71)
+        self.verticalLayout_38.setObjectName(u"verticalLayout_38")
+        self.verticalLayout_38.setContentsMargins(0, 0, 0, 0)
+        self.graph4_3 = QVBoxLayout()
+        self.graph4_3.setObjectName(u"graph4_3")
+
+        self.verticalLayout_38.addLayout(self.graph4_3)
+
+
+        self.gridLayout_4.addWidget(self.frame_71, 1, 1, 1, 1)
+
+        self.frame_72 = QFrame(self.frame_69)
+        self.frame_72.setObjectName(u"frame_72")
+        self.frame_72.setFrameShape(QFrame.StyledPanel)
+        self.frame_72.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_39 = QVBoxLayout(self.frame_72)
+        self.verticalLayout_39.setObjectName(u"verticalLayout_39")
+        self.verticalLayout_39.setContentsMargins(0, 0, 0, 0)
+        self.graph2_3 = QVBoxLayout()
+        self.graph2_3.setObjectName(u"graph2_3")
+
+        self.verticalLayout_39.addLayout(self.graph2_3)
+
+
+        self.gridLayout_4.addWidget(self.frame_72, 0, 1, 1, 1)
+
+        self.frame_73 = QFrame(self.frame_69)
+        self.frame_73.setObjectName(u"frame_73")
+        self.frame_73.setFrameShape(QFrame.StyledPanel)
+        self.frame_73.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_46 = QHBoxLayout(self.frame_73)
+        self.horizontalLayout_46.setObjectName(u"horizontalLayout_46")
+        self.horizontalLayout_46.setContentsMargins(0, 0, 0, 0)
+        self.graph3_3 = QVBoxLayout()
+        self.graph3_3.setObjectName(u"graph3_3")
+
+        self.horizontalLayout_46.addLayout(self.graph3_3)
+
+
+        self.gridLayout_4.addWidget(self.frame_73, 1, 0, 1, 1)
+
+
+        self.horizontalLayout_47.addWidget(self.frame_69)
+
+        self.tabWidget_2.addTab(self.tab_Region, "")
+
+        self.verticalLayout_19.addWidget(self.tabWidget_2)
 
 
         self.verticalLayout.addWidget(self.frame_19)
@@ -2093,7 +2311,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1122, 979))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, -468, 1122, 979))
         self.verticalLayout_22 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.verticalLayout_22.setContentsMargins(27, -1, -1, -1)
@@ -2478,8 +2696,7 @@ class Ui_MainWindow(object):
         font7.setItalic(False)
         font7.setWeight(50)
         self.label_2.setFont(font7)
-        self.label_2.setStyleSheet(u"font: 25px;\n"
-"text: bold;")
+        self.label_2.setStyleSheet(u"font: 25px;")
 
         self.verticalLayout_21.addWidget(self.label_2)
 
@@ -2562,7 +2779,8 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
+        self.tabWidget_2.setCurrentIndex(1)
         self.tabWidget.setCurrentIndex(0)
 
 
@@ -2730,6 +2948,9 @@ class Ui_MainWindow(object):
         self.comboBox_yearEnd.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.btn_select.setText(QCoreApplication.translate("MainWindow", u"Select", None))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Age), QCoreApplication.translate("MainWindow", u"Age", None))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Gender), QCoreApplication.translate("MainWindow", u"Gender", None))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Region), QCoreApplication.translate("MainWindow", u"Region", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Hospitals", None))
         ___qtablewidgetitem = self.tableWidget_hospitals.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Hospital Name", None));

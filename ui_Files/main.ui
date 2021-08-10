@@ -945,7 +945,7 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-medical-cross.png)</string>
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-medical-cross.png);</string>
                   </property>
                   <property name="text">
                    <string>Hospitals</string>
@@ -1784,7 +1784,7 @@ Button */
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>0</number>
+                      <number>1</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="styleSheet">
@@ -2925,6 +2925,12 @@ font: 20px bold;</string>
                           <enum>QFrame::Raised</enum>
                          </property>
                          <layout class="QVBoxLayout" name="verticalLayout_19">
+                          <property name="spacing">
+                           <number>20</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
                           <item>
                            <widget class="QFrame" name="frame_25">
                             <property name="maximumSize">
@@ -3613,75 +3619,479 @@ font: 20px bold;</string>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QFrame" name="frame_20">
-                            <property name="frameShape">
-                             <enum>QFrame::StyledPanel</enum>
+                           <widget class="QTabWidget" name="tabWidget_2">
+                            <property name="styleSheet">
+                             <string notr="true">QTabWidget::pane
+{
+    border: 1px solid gray;
+    color: #ffffff;
+	background-color: rgba(33, 37, 43, 180);
+}
+QTabBar::tab
+{
+	background-color: rgba(33, 37, 43, 180);
+    color: rgb(191, 191, 191);
+	font-size: 18px;
+	width: 250px;
+	height: 40px;
+	border: 2px solid gray;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: -9px;
+}
+QTabBar::tab:hover
+{
+	background-color: rgb(41, 44, 94);
+}
+QTabBar::tab:selected
+{
+    color: rgb(255, 255, 255);
+    background: rgb(13, 34, 42);
+}
+QTableWidget
+{
+	border: 1px solid gray;
+	background-color: rgb(13, 34, 42);;
+	alternate-background-color: rgb(88, 88, 88);
+	color: rgb(255, 255, 255);
+	font: 17px;
+	gridline-color: gray;
+}
+QHeaderView
+{
+	background-color: rgb(13, 34, 42);
+}
+QHeaderView::section
+{
+	background-color: rgb(52, 52, 52);	
+	color: rgb(255, 255, 255);
+	font: bold;
+}
+QTableWidget QTableCornerButton::section 
+{
+	background-color: rgb(52, 52, 52);	
+}</string>
                             </property>
-                            <property name="frameShadow">
-                             <enum>QFrame::Raised</enum>
+                            <property name="currentIndex">
+                             <number>1</number>
                             </property>
-                            <layout class="QGridLayout" name="gridLayout">
-                             <item row="0" column="0">
-                              <widget class="QFrame" name="frame_21">
-                               <property name="frameShape">
-                                <enum>QFrame::StyledPanel</enum>
-                               </property>
-                               <property name="frameShadow">
-                                <enum>QFrame::Raised</enum>
-                               </property>
-                               <layout class="QVBoxLayout" name="verticalLayout_17">
-                                <item>
-                                 <layout class="QVBoxLayout" name="graph1"/>
-                                </item>
-                               </layout>
-                              </widget>
-                             </item>
-                             <item row="1" column="1">
-                              <widget class="QFrame" name="frame_23">
-                               <property name="frameShape">
-                                <enum>QFrame::StyledPanel</enum>
-                               </property>
-                               <property name="frameShadow">
-                                <enum>QFrame::Raised</enum>
-                               </property>
-                               <layout class="QVBoxLayout" name="verticalLayout_18">
-                                <item>
-                                 <layout class="QVBoxLayout" name="graph4"/>
-                                </item>
-                               </layout>
-                              </widget>
-                             </item>
-                             <item row="0" column="1">
-                              <widget class="QFrame" name="frame_22">
-                               <property name="frameShape">
-                                <enum>QFrame::StyledPanel</enum>
-                               </property>
-                               <property name="frameShadow">
-                                <enum>QFrame::Raised</enum>
-                               </property>
-                               <layout class="QVBoxLayout" name="verticalLayout_16">
-                                <item>
-                                 <layout class="QVBoxLayout" name="graph2"/>
-                                </item>
-                               </layout>
-                              </widget>
-                             </item>
-                             <item row="1" column="0">
-                              <widget class="QFrame" name="frame_24">
-                               <property name="frameShape">
-                                <enum>QFrame::StyledPanel</enum>
-                               </property>
-                               <property name="frameShadow">
-                                <enum>QFrame::Raised</enum>
-                               </property>
-                               <layout class="QHBoxLayout" name="horizontalLayout_9">
-                                <item>
-                                 <layout class="QVBoxLayout" name="graph3"/>
-                                </item>
-                               </layout>
-                              </widget>
-                             </item>
-                            </layout>
+                            <widget class="QWidget" name="tab_Age">
+                             <attribute name="title">
+                              <string>Age</string>
+                             </attribute>
+                             <layout class="QHBoxLayout" name="horizontalLayout_43">
+                              <item>
+                               <widget class="QFrame" name="frame_20">
+                                <property name="frameShape">
+                                 <enum>QFrame::StyledPanel</enum>
+                                </property>
+                                <property name="frameShadow">
+                                 <enum>QFrame::Raised</enum>
+                                </property>
+                                <layout class="QGridLayout" name="gridLayout">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item row="0" column="0">
+                                  <widget class="QFrame" name="frame_21">
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_17">
+                                    <property name="leftMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="graph1"/>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item row="1" column="1">
+                                  <widget class="QFrame" name="frame_23">
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_18">
+                                    <property name="leftMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="graph4"/>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item row="0" column="1">
+                                  <widget class="QFrame" name="frame_22">
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_16">
+                                    <property name="leftMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="graph2"/>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item row="1" column="0">
+                                  <widget class="QFrame" name="frame_24">
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_9">
+                                    <property name="leftMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="graph3"/>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                            <widget class="QWidget" name="tab_Gender">
+                             <attribute name="title">
+                              <string>Gender</string>
+                             </attribute>
+                             <layout class="QHBoxLayout" name="horizontalLayout_45">
+                              <item>
+                               <widget class="QFrame" name="frame_64">
+                                <property name="frameShape">
+                                 <enum>QFrame::StyledPanel</enum>
+                                </property>
+                                <property name="frameShadow">
+                                 <enum>QFrame::Raised</enum>
+                                </property>
+                                <layout class="QGridLayout" name="gridLayout_2">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item row="0" column="0">
+                                  <widget class="QFrame" name="frame_65">
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_34">
+                                    <property name="leftMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="graph1_2"/>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item row="1" column="1">
+                                  <widget class="QFrame" name="frame_66">
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_35">
+                                    <property name="leftMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="graph4_2"/>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item row="0" column="1">
+                                  <widget class="QFrame" name="frame_67">
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_36">
+                                    <property name="leftMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="graph2_2"/>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item row="1" column="0">
+                                  <widget class="QFrame" name="frame_68">
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_44">
+                                    <property name="leftMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="graph3_2"/>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                            <widget class="QWidget" name="tab_Region">
+                             <attribute name="title">
+                              <string>Region</string>
+                             </attribute>
+                             <layout class="QHBoxLayout" name="horizontalLayout_47">
+                              <item>
+                               <widget class="QFrame" name="frame_69">
+                                <property name="frameShape">
+                                 <enum>QFrame::StyledPanel</enum>
+                                </property>
+                                <property name="frameShadow">
+                                 <enum>QFrame::Raised</enum>
+                                </property>
+                                <layout class="QGridLayout" name="gridLayout_4">
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item row="0" column="0">
+                                  <widget class="QFrame" name="frame_70">
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_37">
+                                    <property name="leftMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="graph1_3"/>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item row="1" column="1">
+                                  <widget class="QFrame" name="frame_71">
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_38">
+                                    <property name="leftMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="graph4_3"/>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item row="0" column="1">
+                                  <widget class="QFrame" name="frame_72">
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QVBoxLayout" name="verticalLayout_39">
+                                    <property name="leftMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="graph2_3"/>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item row="1" column="0">
+                                  <widget class="QFrame" name="frame_73">
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_46">
+                                    <property name="leftMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                     <number>0</number>
+                                    </property>
+                                    <item>
+                                     <layout class="QVBoxLayout" name="graph3_3"/>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
                            </widget>
                           </item>
                          </layout>
@@ -4254,7 +4664,7 @@ QTableWidget QTableCornerButton::section
                               <property name="geometry">
                                <rect>
                                 <x>0</x>
-                                <y>0</y>
+                                <y>-468</y>
                                 <width>1122</width>
                                 <height>979</height>
                                </rect>
@@ -5179,8 +5589,7 @@ font: bold;</string>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
-                                  <string notr="true">font: 25px;
-text: bold;</string>
+                                  <string notr="true">font: 25px;</string>
                                  </property>
                                  <property name="text">
                                   <string>Prevention is Better than Cure</string>
