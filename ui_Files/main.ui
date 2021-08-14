@@ -945,7 +945,7 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-chart-line.png);</string>
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-chart.png);</string>
                   </property>
                   <property name="text">
                    <string>World Statistics</string>
@@ -1821,7 +1821,7 @@ Button */
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>4</number>
+                      <number>3</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="styleSheet">
@@ -3710,7 +3710,7 @@ QTableWidget QTableCornerButton::section
 }</string>
                             </property>
                             <property name="currentIndex">
-                             <number>0</number>
+                             <number>1</number>
                             </property>
                             <widget class="QWidget" name="tab_Age">
                              <attribute name="title">
@@ -4202,7 +4202,7 @@ QTableWidget QTableCornerButton::section
 }</string>
                             </property>
                             <property name="currentIndex">
-                             <number>5</number>
+                             <number>3</number>
                             </property>
                             <widget class="QWidget" name="tab_Asia">
                              <attribute name="title">
@@ -5352,7 +5352,7 @@ QTableWidget QTableCornerButton::section
                                 <bool>false</bool>
                                </property>
                                <attribute name="horizontalHeaderVisible">
-                                <bool>false</bool>
+                                <bool>true</bool>
                                </attribute>
                                <attribute name="horizontalHeaderCascadingSectionResizes">
                                 <bool>true</bool>
@@ -5591,7 +5591,7 @@ QTableWidget QTableCornerButton::section
 }</string>
                          </property>
                          <property name="currentIndex">
-                          <number>2</number>
+                          <number>0</number>
                          </property>
                          <widget class="QWidget" name="tab_Symptoms">
                           <attribute name="title">

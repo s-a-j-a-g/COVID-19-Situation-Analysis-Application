@@ -686,7 +686,7 @@ class Ui_MainWindow(object):
         self.btn_worldStatistics.setFont(font)
         self.btn_worldStatistics.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_worldStatistics.setLayoutDirection(Qt.LeftToRight)
-        self.btn_worldStatistics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-chart-line.png);")
+        self.btn_worldStatistics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-chart.png);")
 
         self.verticalLayout_7.addWidget(self.btn_worldStatistics)
 
@@ -2758,7 +2758,7 @@ class Ui_MainWindow(object):
         self.tableWidget_hospitals.setShowGrid(True)
         self.tableWidget_hospitals.setGridStyle(Qt.SolidLine)
         self.tableWidget_hospitals.setSortingEnabled(False)
-        self.tableWidget_hospitals.horizontalHeader().setVisible(False)
+        self.tableWidget_hospitals.horizontalHeader().setVisible(True)
         self.tableWidget_hospitals.horizontalHeader().setCascadingSectionResizes(True)
         self.tableWidget_hospitals.horizontalHeader().setDefaultSectionSize(200)
         self.tableWidget_hospitals.horizontalHeader().setStretchLastSection(True)
@@ -3327,10 +3327,10 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(4)
-        self.tab_NationalStatistics.setCurrentIndex(0)
-        self.tab_worldStatistics.setCurrentIndex(5)
-        self.tabWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(3)
+        self.tab_NationalStatistics.setCurrentIndex(1)
+        self.tab_worldStatistics.setCurrentIndex(3)
+        self.tabWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
