@@ -7,6 +7,7 @@
     <file>images/images/symptoms.png</file>
     <file>images/images/nepal_flag.png</file>
     <file>images/images/world.png</file>
+    <file>images/images/dikshya.png</file>
   </qresource>
   <qresource prefix="icons">
     <file>images/icons/cil-3d.png</file>

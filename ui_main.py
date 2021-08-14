@@ -650,10 +650,10 @@ class Ui_MainWindow(object):
         self.topMenu.setObjectName(u"topMenu")
         self.topMenu.setFrameShape(QFrame.NoFrame)
         self.topMenu.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_8 = QVBoxLayout(self.topMenu)
-        self.verticalLayout_8.setSpacing(0)
-        self.verticalLayout_8.setObjectName(u"verticalLayout_8")
-        self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_7 = QVBoxLayout(self.topMenu)
+        self.verticalLayout_7.setSpacing(0)
+        self.verticalLayout_7.setObjectName(u"verticalLayout_7")
+        self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
         self.btn_home = QPushButton(self.topMenu)
         self.btn_home.setObjectName(u"btn_home")
         sizePolicy.setHeightForWidth(self.btn_home.sizePolicy().hasHeightForWidth())
@@ -664,19 +664,31 @@ class Ui_MainWindow(object):
         self.btn_home.setLayoutDirection(Qt.LeftToRight)
         self.btn_home.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-home.png);")
 
-        self.verticalLayout_8.addWidget(self.btn_home)
+        self.verticalLayout_7.addWidget(self.btn_home)
 
-        self.btn_statistics = QPushButton(self.topMenu)
-        self.btn_statistics.setObjectName(u"btn_statistics")
-        sizePolicy.setHeightForWidth(self.btn_statistics.sizePolicy().hasHeightForWidth())
-        self.btn_statistics.setSizePolicy(sizePolicy)
-        self.btn_statistics.setMinimumSize(QSize(0, 45))
-        self.btn_statistics.setFont(font)
-        self.btn_statistics.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_statistics.setLayoutDirection(Qt.LeftToRight)
-        self.btn_statistics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-chart-line.png);")
+        self.btn_nationalStatistics = QPushButton(self.topMenu)
+        self.btn_nationalStatistics.setObjectName(u"btn_nationalStatistics")
+        sizePolicy.setHeightForWidth(self.btn_nationalStatistics.sizePolicy().hasHeightForWidth())
+        self.btn_nationalStatistics.setSizePolicy(sizePolicy)
+        self.btn_nationalStatistics.setMinimumSize(QSize(0, 45))
+        self.btn_nationalStatistics.setFont(font)
+        self.btn_nationalStatistics.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_nationalStatistics.setLayoutDirection(Qt.LeftToRight)
+        self.btn_nationalStatistics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-chart-line.png);")
 
-        self.verticalLayout_8.addWidget(self.btn_statistics)
+        self.verticalLayout_7.addWidget(self.btn_nationalStatistics)
+
+        self.btn_worldStatistics = QPushButton(self.topMenu)
+        self.btn_worldStatistics.setObjectName(u"btn_worldStatistics")
+        sizePolicy.setHeightForWidth(self.btn_worldStatistics.sizePolicy().hasHeightForWidth())
+        self.btn_worldStatistics.setSizePolicy(sizePolicy)
+        self.btn_worldStatistics.setMinimumSize(QSize(0, 45))
+        self.btn_worldStatistics.setFont(font)
+        self.btn_worldStatistics.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_worldStatistics.setLayoutDirection(Qt.LeftToRight)
+        self.btn_worldStatistics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-chart-line.png);")
+
+        self.verticalLayout_7.addWidget(self.btn_worldStatistics)
 
         self.btn_hospitals = QPushButton(self.topMenu)
         self.btn_hospitals.setObjectName(u"btn_hospitals")
@@ -688,7 +700,7 @@ class Ui_MainWindow(object):
         self.btn_hospitals.setLayoutDirection(Qt.LeftToRight)
         self.btn_hospitals.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-medical-cross.png);")
 
-        self.verticalLayout_8.addWidget(self.btn_hospitals)
+        self.verticalLayout_7.addWidget(self.btn_hospitals)
 
         self.btn_infographics = QPushButton(self.topMenu)
         self.btn_infographics.setObjectName(u"btn_infographics")
@@ -700,7 +712,7 @@ class Ui_MainWindow(object):
         self.btn_infographics.setLayoutDirection(Qt.LeftToRight)
         self.btn_infographics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-clipboard.png);")
 
-        self.verticalLayout_8.addWidget(self.btn_infographics)
+        self.verticalLayout_7.addWidget(self.btn_infographics)
 
         self.btn_exit = QPushButton(self.topMenu)
         self.btn_exit.setObjectName(u"btn_exit")
@@ -712,7 +724,7 @@ class Ui_MainWindow(object):
         self.btn_exit.setLayoutDirection(Qt.LeftToRight)
         self.btn_exit.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-x.png);")
 
-        self.verticalLayout_8.addWidget(self.btn_exit)
+        self.verticalLayout_7.addWidget(self.btn_exit)
 
 
         self.verticalMenuLayout.addWidget(self.topMenu, 0, Qt.AlignTop)
@@ -1569,14 +1581,14 @@ class Ui_MainWindow(object):
         self.horizontalLayout_14.addWidget(self.home_frame)
 
         self.stackedWidget.addWidget(self.home)
-        self.statistics = QWidget()
-        self.statistics.setObjectName(u"statistics")
-        self.statistics.setStyleSheet(u"b")
-        self.verticalLayout = QVBoxLayout(self.statistics)
+        self.national_Statistics = QWidget()
+        self.national_Statistics.setObjectName(u"national_Statistics")
+        self.national_Statistics.setStyleSheet(u"b")
+        self.verticalLayout = QVBoxLayout(self.national_Statistics)
         self.verticalLayout.setSpacing(10)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(10, 10, 10, 10)
-        self.frame_19 = QFrame(self.statistics)
+        self.frame_19 = QFrame(self.national_Statistics)
         self.frame_19.setObjectName(u"frame_19")
         self.frame_19.setFrameShape(QFrame.StyledPanel)
         self.frame_19.setFrameShadow(QFrame.Raised)
@@ -1787,9 +1799,9 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_19.addWidget(self.frame_25)
 
-        self.tabWidget_2 = QTabWidget(self.frame_19)
-        self.tabWidget_2.setObjectName(u"tabWidget_2")
-        self.tabWidget_2.setStyleSheet(u"QTabWidget::pane\n"
+        self.tab_NationalStatistics = QTabWidget(self.frame_19)
+        self.tab_NationalStatistics.setObjectName(u"tab_NationalStatistics")
+        self.tab_NationalStatistics.setStyleSheet(u"QTabWidget::pane\n"
 "{\n"
 "    border: 1px solid gray;\n"
 "    color: #ffffff;\n"
@@ -1914,7 +1926,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_43.addWidget(self.frame_20)
 
-        self.tabWidget_2.addTab(self.tab_Age, "")
+        self.tab_NationalStatistics.addTab(self.tab_Age, "")
         self.tab_Gender = QWidget()
         self.tab_Gender.setObjectName(u"tab_Gender")
         self.horizontalLayout_45 = QHBoxLayout(self.tab_Gender)
@@ -1989,7 +2001,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_45.addWidget(self.frame_64)
 
-        self.tabWidget_2.addTab(self.tab_Gender, "")
+        self.tab_NationalStatistics.addTab(self.tab_Gender, "")
         self.tab_Region = QWidget()
         self.tab_Region.setObjectName(u"tab_Region")
         self.horizontalLayout_47 = QHBoxLayout(self.tab_Region)
@@ -2064,14 +2076,534 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_47.addWidget(self.frame_69)
 
-        self.tabWidget_2.addTab(self.tab_Region, "")
+        self.tab_NationalStatistics.addTab(self.tab_Region, "")
 
-        self.verticalLayout_19.addWidget(self.tabWidget_2)
+        self.verticalLayout_19.addWidget(self.tab_NationalStatistics)
 
 
         self.verticalLayout.addWidget(self.frame_19)
 
-        self.stackedWidget.addWidget(self.statistics)
+        self.stackedWidget.addWidget(self.national_Statistics)
+        self.world_statistics = QWidget()
+        self.world_statistics.setObjectName(u"world_statistics")
+        self.horizontalLayout_49 = QHBoxLayout(self.world_statistics)
+        self.horizontalLayout_49.setObjectName(u"horizontalLayout_49")
+        self.frame_76 = QFrame(self.world_statistics)
+        self.frame_76.setObjectName(u"frame_76")
+        self.frame_76.setFrameShape(QFrame.StyledPanel)
+        self.frame_76.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_8 = QVBoxLayout(self.frame_76)
+        self.verticalLayout_8.setObjectName(u"verticalLayout_8")
+        self.tab_worldStatistics = QTabWidget(self.frame_76)
+        self.tab_worldStatistics.setObjectName(u"tab_worldStatistics")
+        self.tab_worldStatistics.setStyleSheet(u"QTabWidget::pane\n"
+"{\n"
+"    border: 1px solid gray;\n"
+"    color: #ffffff;\n"
+"	background-color: rgba(33, 37, 43, 180);\n"
+"}\n"
+"QTabBar::tab\n"
+"{\n"
+"	background-color: rgba(33, 37, 43, 180);\n"
+"    color: rgb(191, 191, 191);\n"
+"	font-size: 18px;\n"
+"	width: 150px;\n"
+"	height: 40px;\n"
+"	border: 2px solid gray;\n"
+"	border-top-left-radius: 5px;\n"
+"	border-top-right-radius: 5px;\n"
+"	border-bottom-left-radius: -9px;\n"
+"}\n"
+"QTabBar::tab:hover\n"
+"{\n"
+"	background-color: rgb(41, 44, 94);\n"
+"}\n"
+"QTabBar::tab:selected\n"
+"{\n"
+"    color: rgb(255, 255, 255);\n"
+"    background: rgb(13, 34, 42);\n"
+"}\n"
+"QTableWidget\n"
+"{\n"
+"	border: 1px solid gray;\n"
+"	background-color: rgb(13, 34, 42);;\n"
+"	alternate-background-color: rgb(88, 88, 88);\n"
+"	color: rgb(255, 255, 255);\n"
+"	font: 17px;\n"
+"	gridline-color: gray;\n"
+"}\n"
+"QHeaderView\n"
+"{\n"
+"	background-color: rgb(13, 34, 42);\n"
+"}\n"
+"QHeaderView::section\n"
+"{\n"
+"	background-color: rgb(52, 52, 52);	\n"
+"	color: rgb(255, 255, 255);\n"
+"	f"
+                        "ont: bold;\n"
+"}\n"
+"QTableWidget QTableCornerButton::section \n"
+"{\n"
+"	background-color: rgb(52, 52, 52);	\n"
+"}")
+        self.tab_Asia = QWidget()
+        self.tab_Asia.setObjectName(u"tab_Asia")
+        self.horizontalLayout_50 = QHBoxLayout(self.tab_Asia)
+        self.horizontalLayout_50.setObjectName(u"horizontalLayout_50")
+        self.frame_77 = QFrame(self.tab_Asia)
+        self.frame_77.setObjectName(u"frame_77")
+        self.frame_77.setFrameShape(QFrame.StyledPanel)
+        self.frame_77.setFrameShadow(QFrame.Raised)
+        self.gridLayout_5 = QGridLayout(self.frame_77)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.frame_78 = QFrame(self.frame_77)
+        self.frame_78.setObjectName(u"frame_78")
+        self.frame_78.setFrameShape(QFrame.StyledPanel)
+        self.frame_78.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_40 = QVBoxLayout(self.frame_78)
+        self.verticalLayout_40.setObjectName(u"verticalLayout_40")
+        self.verticalLayout_40.setContentsMargins(0, 0, 0, 0)
+        self.graph1_4 = QVBoxLayout()
+        self.graph1_4.setObjectName(u"graph1_4")
+
+        self.verticalLayout_40.addLayout(self.graph1_4)
+
+
+        self.gridLayout_5.addWidget(self.frame_78, 0, 0, 1, 1)
+
+        self.frame_79 = QFrame(self.frame_77)
+        self.frame_79.setObjectName(u"frame_79")
+        self.frame_79.setFrameShape(QFrame.StyledPanel)
+        self.frame_79.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_41 = QVBoxLayout(self.frame_79)
+        self.verticalLayout_41.setObjectName(u"verticalLayout_41")
+        self.verticalLayout_41.setContentsMargins(0, 0, 0, 0)
+        self.graph4_4 = QVBoxLayout()
+        self.graph4_4.setObjectName(u"graph4_4")
+
+        self.verticalLayout_41.addLayout(self.graph4_4)
+
+
+        self.gridLayout_5.addWidget(self.frame_79, 1, 1, 1, 1)
+
+        self.frame_80 = QFrame(self.frame_77)
+        self.frame_80.setObjectName(u"frame_80")
+        self.frame_80.setFrameShape(QFrame.StyledPanel)
+        self.frame_80.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_42 = QVBoxLayout(self.frame_80)
+        self.verticalLayout_42.setObjectName(u"verticalLayout_42")
+        self.verticalLayout_42.setContentsMargins(0, 0, 0, 0)
+        self.graph2_4 = QVBoxLayout()
+        self.graph2_4.setObjectName(u"graph2_4")
+
+        self.verticalLayout_42.addLayout(self.graph2_4)
+
+
+        self.gridLayout_5.addWidget(self.frame_80, 0, 1, 1, 1)
+
+        self.frame_81 = QFrame(self.frame_77)
+        self.frame_81.setObjectName(u"frame_81")
+        self.frame_81.setFrameShape(QFrame.StyledPanel)
+        self.frame_81.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_51 = QHBoxLayout(self.frame_81)
+        self.horizontalLayout_51.setObjectName(u"horizontalLayout_51")
+        self.horizontalLayout_51.setContentsMargins(0, 0, 0, 0)
+        self.graph3_4 = QVBoxLayout()
+        self.graph3_4.setObjectName(u"graph3_4")
+
+        self.horizontalLayout_51.addLayout(self.graph3_4)
+
+
+        self.gridLayout_5.addWidget(self.frame_81, 1, 0, 1, 1)
+
+
+        self.horizontalLayout_50.addWidget(self.frame_77)
+
+        self.tab_worldStatistics.addTab(self.tab_Asia, "")
+        self.tab_Africa = QWidget()
+        self.tab_Africa.setObjectName(u"tab_Africa")
+        self.horizontalLayout_52 = QHBoxLayout(self.tab_Africa)
+        self.horizontalLayout_52.setObjectName(u"horizontalLayout_52")
+        self.frame_82 = QFrame(self.tab_Africa)
+        self.frame_82.setObjectName(u"frame_82")
+        self.frame_82.setFrameShape(QFrame.StyledPanel)
+        self.frame_82.setFrameShadow(QFrame.Raised)
+        self.gridLayout_6 = QGridLayout(self.frame_82)
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.gridLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.frame_83 = QFrame(self.frame_82)
+        self.frame_83.setObjectName(u"frame_83")
+        self.frame_83.setFrameShape(QFrame.StyledPanel)
+        self.frame_83.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_43 = QVBoxLayout(self.frame_83)
+        self.verticalLayout_43.setObjectName(u"verticalLayout_43")
+        self.verticalLayout_43.setContentsMargins(0, 0, 0, 0)
+        self.graph1_5 = QVBoxLayout()
+        self.graph1_5.setObjectName(u"graph1_5")
+
+        self.verticalLayout_43.addLayout(self.graph1_5)
+
+
+        self.gridLayout_6.addWidget(self.frame_83, 0, 0, 1, 1)
+
+        self.frame_84 = QFrame(self.frame_82)
+        self.frame_84.setObjectName(u"frame_84")
+        self.frame_84.setFrameShape(QFrame.StyledPanel)
+        self.frame_84.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_44 = QVBoxLayout(self.frame_84)
+        self.verticalLayout_44.setObjectName(u"verticalLayout_44")
+        self.verticalLayout_44.setContentsMargins(0, 0, 0, 0)
+        self.graph4_5 = QVBoxLayout()
+        self.graph4_5.setObjectName(u"graph4_5")
+
+        self.verticalLayout_44.addLayout(self.graph4_5)
+
+
+        self.gridLayout_6.addWidget(self.frame_84, 1, 1, 1, 1)
+
+        self.frame_85 = QFrame(self.frame_82)
+        self.frame_85.setObjectName(u"frame_85")
+        self.frame_85.setFrameShape(QFrame.StyledPanel)
+        self.frame_85.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_45 = QVBoxLayout(self.frame_85)
+        self.verticalLayout_45.setObjectName(u"verticalLayout_45")
+        self.verticalLayout_45.setContentsMargins(0, 0, 0, 0)
+        self.graph2_5 = QVBoxLayout()
+        self.graph2_5.setObjectName(u"graph2_5")
+
+        self.verticalLayout_45.addLayout(self.graph2_5)
+
+
+        self.gridLayout_6.addWidget(self.frame_85, 0, 1, 1, 1)
+
+        self.frame_86 = QFrame(self.frame_82)
+        self.frame_86.setObjectName(u"frame_86")
+        self.frame_86.setFrameShape(QFrame.StyledPanel)
+        self.frame_86.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_53 = QHBoxLayout(self.frame_86)
+        self.horizontalLayout_53.setObjectName(u"horizontalLayout_53")
+        self.horizontalLayout_53.setContentsMargins(0, 0, 0, 0)
+        self.graph3_5 = QVBoxLayout()
+        self.graph3_5.setObjectName(u"graph3_5")
+
+        self.horizontalLayout_53.addLayout(self.graph3_5)
+
+
+        self.gridLayout_6.addWidget(self.frame_86, 1, 0, 1, 1)
+
+
+        self.horizontalLayout_52.addWidget(self.frame_82)
+
+        self.tab_worldStatistics.addTab(self.tab_Africa, "")
+        self.tab_Europe = QWidget()
+        self.tab_Europe.setObjectName(u"tab_Europe")
+        self.horizontalLayout_54 = QHBoxLayout(self.tab_Europe)
+        self.horizontalLayout_54.setObjectName(u"horizontalLayout_54")
+        self.frame_87 = QFrame(self.tab_Europe)
+        self.frame_87.setObjectName(u"frame_87")
+        self.frame_87.setFrameShape(QFrame.StyledPanel)
+        self.frame_87.setFrameShadow(QFrame.Raised)
+        self.gridLayout_7 = QGridLayout(self.frame_87)
+        self.gridLayout_7.setObjectName(u"gridLayout_7")
+        self.gridLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.frame_88 = QFrame(self.frame_87)
+        self.frame_88.setObjectName(u"frame_88")
+        self.frame_88.setFrameShape(QFrame.StyledPanel)
+        self.frame_88.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_46 = QVBoxLayout(self.frame_88)
+        self.verticalLayout_46.setObjectName(u"verticalLayout_46")
+        self.verticalLayout_46.setContentsMargins(0, 0, 0, 0)
+        self.graph1_6 = QVBoxLayout()
+        self.graph1_6.setObjectName(u"graph1_6")
+
+        self.verticalLayout_46.addLayout(self.graph1_6)
+
+
+        self.gridLayout_7.addWidget(self.frame_88, 0, 0, 1, 1)
+
+        self.frame_89 = QFrame(self.frame_87)
+        self.frame_89.setObjectName(u"frame_89")
+        self.frame_89.setFrameShape(QFrame.StyledPanel)
+        self.frame_89.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_47 = QVBoxLayout(self.frame_89)
+        self.verticalLayout_47.setObjectName(u"verticalLayout_47")
+        self.verticalLayout_47.setContentsMargins(0, 0, 0, 0)
+        self.graph4_6 = QVBoxLayout()
+        self.graph4_6.setObjectName(u"graph4_6")
+
+        self.verticalLayout_47.addLayout(self.graph4_6)
+
+
+        self.gridLayout_7.addWidget(self.frame_89, 1, 1, 1, 1)
+
+        self.frame_90 = QFrame(self.frame_87)
+        self.frame_90.setObjectName(u"frame_90")
+        self.frame_90.setFrameShape(QFrame.StyledPanel)
+        self.frame_90.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_48 = QVBoxLayout(self.frame_90)
+        self.verticalLayout_48.setObjectName(u"verticalLayout_48")
+        self.verticalLayout_48.setContentsMargins(0, 0, 0, 0)
+        self.graph2_6 = QVBoxLayout()
+        self.graph2_6.setObjectName(u"graph2_6")
+
+        self.verticalLayout_48.addLayout(self.graph2_6)
+
+
+        self.gridLayout_7.addWidget(self.frame_90, 0, 1, 1, 1)
+
+        self.frame_91 = QFrame(self.frame_87)
+        self.frame_91.setObjectName(u"frame_91")
+        self.frame_91.setFrameShape(QFrame.StyledPanel)
+        self.frame_91.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_55 = QHBoxLayout(self.frame_91)
+        self.horizontalLayout_55.setObjectName(u"horizontalLayout_55")
+        self.horizontalLayout_55.setContentsMargins(0, 0, 0, 0)
+        self.graph3_6 = QVBoxLayout()
+        self.graph3_6.setObjectName(u"graph3_6")
+
+        self.horizontalLayout_55.addLayout(self.graph3_6)
+
+
+        self.gridLayout_7.addWidget(self.frame_91, 1, 0, 1, 1)
+
+
+        self.horizontalLayout_54.addWidget(self.frame_87)
+
+        self.tab_worldStatistics.addTab(self.tab_Europe, "")
+        self.tab_NorthAmerica = QWidget()
+        self.tab_NorthAmerica.setObjectName(u"tab_NorthAmerica")
+        self.verticalLayout_10 = QVBoxLayout(self.tab_NorthAmerica)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.frame_92 = QFrame(self.tab_NorthAmerica)
+        self.frame_92.setObjectName(u"frame_92")
+        self.frame_92.setFrameShape(QFrame.StyledPanel)
+        self.frame_92.setFrameShadow(QFrame.Raised)
+        self.gridLayout_8 = QGridLayout(self.frame_92)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.frame_93 = QFrame(self.frame_92)
+        self.frame_93.setObjectName(u"frame_93")
+        self.frame_93.setFrameShape(QFrame.StyledPanel)
+        self.frame_93.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_49 = QVBoxLayout(self.frame_93)
+        self.verticalLayout_49.setObjectName(u"verticalLayout_49")
+        self.verticalLayout_49.setContentsMargins(0, 0, 0, 0)
+        self.graph1_7 = QVBoxLayout()
+        self.graph1_7.setObjectName(u"graph1_7")
+
+        self.verticalLayout_49.addLayout(self.graph1_7)
+
+
+        self.gridLayout_8.addWidget(self.frame_93, 0, 0, 1, 1)
+
+        self.frame_94 = QFrame(self.frame_92)
+        self.frame_94.setObjectName(u"frame_94")
+        self.frame_94.setFrameShape(QFrame.StyledPanel)
+        self.frame_94.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_50 = QVBoxLayout(self.frame_94)
+        self.verticalLayout_50.setObjectName(u"verticalLayout_50")
+        self.verticalLayout_50.setContentsMargins(0, 0, 0, 0)
+        self.graph4_7 = QVBoxLayout()
+        self.graph4_7.setObjectName(u"graph4_7")
+
+        self.verticalLayout_50.addLayout(self.graph4_7)
+
+
+        self.gridLayout_8.addWidget(self.frame_94, 1, 1, 1, 1)
+
+        self.frame_95 = QFrame(self.frame_92)
+        self.frame_95.setObjectName(u"frame_95")
+        self.frame_95.setFrameShape(QFrame.StyledPanel)
+        self.frame_95.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_51 = QVBoxLayout(self.frame_95)
+        self.verticalLayout_51.setObjectName(u"verticalLayout_51")
+        self.verticalLayout_51.setContentsMargins(0, 0, 0, 0)
+        self.graph2_7 = QVBoxLayout()
+        self.graph2_7.setObjectName(u"graph2_7")
+
+        self.verticalLayout_51.addLayout(self.graph2_7)
+
+
+        self.gridLayout_8.addWidget(self.frame_95, 0, 1, 1, 1)
+
+        self.frame_96 = QFrame(self.frame_92)
+        self.frame_96.setObjectName(u"frame_96")
+        self.frame_96.setFrameShape(QFrame.StyledPanel)
+        self.frame_96.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_56 = QHBoxLayout(self.frame_96)
+        self.horizontalLayout_56.setObjectName(u"horizontalLayout_56")
+        self.horizontalLayout_56.setContentsMargins(0, 0, 0, 0)
+        self.graph3_7 = QVBoxLayout()
+        self.graph3_7.setObjectName(u"graph3_7")
+
+        self.horizontalLayout_56.addLayout(self.graph3_7)
+
+
+        self.gridLayout_8.addWidget(self.frame_96, 1, 0, 1, 1)
+
+
+        self.verticalLayout_10.addWidget(self.frame_92)
+
+        self.tab_worldStatistics.addTab(self.tab_NorthAmerica, "")
+        self.tab_southAmerica = QWidget()
+        self.tab_southAmerica.setObjectName(u"tab_southAmerica")
+        self.verticalLayout_13 = QVBoxLayout(self.tab_southAmerica)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.frame_97 = QFrame(self.tab_southAmerica)
+        self.frame_97.setObjectName(u"frame_97")
+        self.frame_97.setFrameShape(QFrame.StyledPanel)
+        self.frame_97.setFrameShadow(QFrame.Raised)
+        self.gridLayout_9 = QGridLayout(self.frame_97)
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.gridLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.frame_98 = QFrame(self.frame_97)
+        self.frame_98.setObjectName(u"frame_98")
+        self.frame_98.setFrameShape(QFrame.StyledPanel)
+        self.frame_98.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_52 = QVBoxLayout(self.frame_98)
+        self.verticalLayout_52.setObjectName(u"verticalLayout_52")
+        self.verticalLayout_52.setContentsMargins(0, 0, 0, 0)
+        self.graph1_8 = QVBoxLayout()
+        self.graph1_8.setObjectName(u"graph1_8")
+
+        self.verticalLayout_52.addLayout(self.graph1_8)
+
+
+        self.gridLayout_9.addWidget(self.frame_98, 0, 0, 1, 1)
+
+        self.frame_99 = QFrame(self.frame_97)
+        self.frame_99.setObjectName(u"frame_99")
+        self.frame_99.setFrameShape(QFrame.StyledPanel)
+        self.frame_99.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_53 = QVBoxLayout(self.frame_99)
+        self.verticalLayout_53.setObjectName(u"verticalLayout_53")
+        self.verticalLayout_53.setContentsMargins(0, 0, 0, 0)
+        self.graph4_8 = QVBoxLayout()
+        self.graph4_8.setObjectName(u"graph4_8")
+
+        self.verticalLayout_53.addLayout(self.graph4_8)
+
+
+        self.gridLayout_9.addWidget(self.frame_99, 1, 1, 1, 1)
+
+        self.frame_100 = QFrame(self.frame_97)
+        self.frame_100.setObjectName(u"frame_100")
+        self.frame_100.setFrameShape(QFrame.StyledPanel)
+        self.frame_100.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_54 = QVBoxLayout(self.frame_100)
+        self.verticalLayout_54.setObjectName(u"verticalLayout_54")
+        self.verticalLayout_54.setContentsMargins(0, 0, 0, 0)
+        self.graph2_8 = QVBoxLayout()
+        self.graph2_8.setObjectName(u"graph2_8")
+
+        self.verticalLayout_54.addLayout(self.graph2_8)
+
+
+        self.gridLayout_9.addWidget(self.frame_100, 0, 1, 1, 1)
+
+        self.frame_101 = QFrame(self.frame_97)
+        self.frame_101.setObjectName(u"frame_101")
+        self.frame_101.setFrameShape(QFrame.StyledPanel)
+        self.frame_101.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_57 = QHBoxLayout(self.frame_101)
+        self.horizontalLayout_57.setObjectName(u"horizontalLayout_57")
+        self.horizontalLayout_57.setContentsMargins(0, 0, 0, 0)
+        self.graph3_8 = QVBoxLayout()
+        self.graph3_8.setObjectName(u"graph3_8")
+
+        self.horizontalLayout_57.addLayout(self.graph3_8)
+
+
+        self.gridLayout_9.addWidget(self.frame_101, 1, 0, 1, 1)
+
+
+        self.verticalLayout_13.addWidget(self.frame_97)
+
+        self.tab_worldStatistics.addTab(self.tab_southAmerica, "")
+        self.tab_Australia = QWidget()
+        self.tab_Australia.setObjectName(u"tab_Australia")
+        self.verticalLayout_14 = QVBoxLayout(self.tab_Australia)
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.frame_102 = QFrame(self.tab_Australia)
+        self.frame_102.setObjectName(u"frame_102")
+        self.frame_102.setFrameShape(QFrame.StyledPanel)
+        self.frame_102.setFrameShadow(QFrame.Raised)
+        self.gridLayout_10 = QGridLayout(self.frame_102)
+        self.gridLayout_10.setObjectName(u"gridLayout_10")
+        self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.frame_103 = QFrame(self.frame_102)
+        self.frame_103.setObjectName(u"frame_103")
+        self.frame_103.setFrameShape(QFrame.StyledPanel)
+        self.frame_103.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_55 = QVBoxLayout(self.frame_103)
+        self.verticalLayout_55.setObjectName(u"verticalLayout_55")
+        self.verticalLayout_55.setContentsMargins(0, 0, 0, 0)
+        self.graph1_9 = QVBoxLayout()
+        self.graph1_9.setObjectName(u"graph1_9")
+
+        self.verticalLayout_55.addLayout(self.graph1_9)
+
+
+        self.gridLayout_10.addWidget(self.frame_103, 0, 0, 1, 1)
+
+        self.frame_104 = QFrame(self.frame_102)
+        self.frame_104.setObjectName(u"frame_104")
+        self.frame_104.setFrameShape(QFrame.StyledPanel)
+        self.frame_104.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_56 = QVBoxLayout(self.frame_104)
+        self.verticalLayout_56.setObjectName(u"verticalLayout_56")
+        self.verticalLayout_56.setContentsMargins(0, 0, 0, 0)
+        self.graph4_9 = QVBoxLayout()
+        self.graph4_9.setObjectName(u"graph4_9")
+
+        self.verticalLayout_56.addLayout(self.graph4_9)
+
+
+        self.gridLayout_10.addWidget(self.frame_104, 1, 1, 1, 1)
+
+        self.frame_105 = QFrame(self.frame_102)
+        self.frame_105.setObjectName(u"frame_105")
+        self.frame_105.setFrameShape(QFrame.StyledPanel)
+        self.frame_105.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_57 = QVBoxLayout(self.frame_105)
+        self.verticalLayout_57.setObjectName(u"verticalLayout_57")
+        self.verticalLayout_57.setContentsMargins(0, 0, 0, 0)
+        self.graph2_9 = QVBoxLayout()
+        self.graph2_9.setObjectName(u"graph2_9")
+
+        self.verticalLayout_57.addLayout(self.graph2_9)
+
+
+        self.gridLayout_10.addWidget(self.frame_105, 0, 1, 1, 1)
+
+        self.frame_106 = QFrame(self.frame_102)
+        self.frame_106.setObjectName(u"frame_106")
+        self.frame_106.setFrameShape(QFrame.StyledPanel)
+        self.frame_106.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_58 = QHBoxLayout(self.frame_106)
+        self.horizontalLayout_58.setObjectName(u"horizontalLayout_58")
+        self.horizontalLayout_58.setContentsMargins(0, 0, 0, 0)
+        self.graph3_9 = QVBoxLayout()
+        self.graph3_9.setObjectName(u"graph3_9")
+
+        self.horizontalLayout_58.addLayout(self.graph3_9)
+
+
+        self.gridLayout_10.addWidget(self.frame_106, 1, 0, 1, 1)
+
+
+        self.verticalLayout_14.addWidget(self.frame_102)
+
+        self.tab_worldStatistics.addTab(self.tab_Australia, "")
+
+        self.verticalLayout_8.addWidget(self.tab_worldStatistics)
+
+
+        self.horizontalLayout_49.addWidget(self.frame_76)
+
+        self.stackedWidget.addWidget(self.world_statistics)
         self.hospitals = QWidget()
         self.hospitals.setObjectName(u"hospitals")
         self.horizontalLayout_18 = QHBoxLayout(self.hospitals)
@@ -2311,7 +2843,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, -468, 1122, 979))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1122, 979))
         self.verticalLayout_22 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.verticalLayout_22.setContentsMargins(27, -1, -1, -1)
@@ -2500,7 +3032,7 @@ class Ui_MainWindow(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollAreaWidgetContents_3 = QWidget()
         self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, -898, 1122, 1409))
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 1122, 1409))
         self.verticalLayout_21 = QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_21.setObjectName(u"verticalLayout_21")
         self.verticalLayout_21.setContentsMargins(-1, 0, -1, -1)
@@ -2707,15 +3239,31 @@ class Ui_MainWindow(object):
         self.tabWidget.addTab(self.tab_prevention, "")
         self.tab = QWidget()
         self.tab.setObjectName(u"tab")
-        self.label_3 = QLabel(self.tab)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(30, 50, 171, 71))
-        self.label_5 = QLabel(self.tab)
-        self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(170, 40, 301, 91))
-        self.label_6 = QLabel(self.tab)
+        self.horizontalLayout_48 = QHBoxLayout(self.tab)
+        self.horizontalLayout_48.setObjectName(u"horizontalLayout_48")
+        self.frame_74 = QFrame(self.tab)
+        self.frame_74.setObjectName(u"frame_74")
+        self.frame_74.setFrameShape(QFrame.StyledPanel)
+        self.frame_74.setFrameShadow(QFrame.Raised)
+        self.label_6 = QLabel(self.frame_74)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(250, 410, 55, 16))
+        self.label_6.setGeometry(QRect(40, 30, 471, 71))
+        self.label_6.setStyleSheet(u"font: 18pt \"Lato\";")
+        self.label_5 = QLabel(self.frame_74)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(40, 260, 1091, 71))
+        self.label_5.setStyleSheet(u"font: 25pt \"Lato\";")
+        self.label_8 = QLabel(self.frame_74)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setGeometry(QRect(40, 110, 651, 71))
+        self.label_8.setStyleSheet(u"font: 25pt \"Lato\";")
+        self.label_9 = QLabel(self.frame_74)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setGeometry(QRect(40, 180, 651, 71))
+        self.label_9.setStyleSheet(u"font:  25pt \"Lato\";")
+
+        self.horizontalLayout_48.addWidget(self.frame_74)
+
         self.tabWidget.addTab(self.tab, "")
 
         self.verticalLayout_20.addWidget(self.tabWidget)
@@ -2779,9 +3327,10 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
-        self.tabWidget_2.setCurrentIndex(1)
-        self.tabWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(4)
+        self.tab_NationalStatistics.setCurrentIndex(0)
+        self.tab_worldStatistics.setCurrentIndex(5)
+        self.tabWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2793,7 +3342,8 @@ class Ui_MainWindow(object):
         self.titleLeftDescription.setText(QCoreApplication.translate("MainWindow", u"Stay Safe", None))
         self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
-        self.btn_statistics.setText(QCoreApplication.translate("MainWindow", u"Statistics", None))
+        self.btn_nationalStatistics.setText(QCoreApplication.translate("MainWindow", u"National Statistics", None))
+        self.btn_worldStatistics.setText(QCoreApplication.translate("MainWindow", u"World Statistics", None))
         self.btn_hospitals.setText(QCoreApplication.translate("MainWindow", u"Hospitals", None))
         self.btn_infographics.setText(QCoreApplication.translate("MainWindow", u"Infographics", None))
         self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
@@ -2948,9 +3498,15 @@ class Ui_MainWindow(object):
         self.comboBox_yearEnd.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.btn_select.setText(QCoreApplication.translate("MainWindow", u"Select", None))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Age), QCoreApplication.translate("MainWindow", u"Age", None))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Gender), QCoreApplication.translate("MainWindow", u"Gender", None))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Region), QCoreApplication.translate("MainWindow", u"Region", None))
+        self.tab_NationalStatistics.setTabText(self.tab_NationalStatistics.indexOf(self.tab_Age), QCoreApplication.translate("MainWindow", u"Age", None))
+        self.tab_NationalStatistics.setTabText(self.tab_NationalStatistics.indexOf(self.tab_Gender), QCoreApplication.translate("MainWindow", u"Gender", None))
+        self.tab_NationalStatistics.setTabText(self.tab_NationalStatistics.indexOf(self.tab_Region), QCoreApplication.translate("MainWindow", u"Region", None))
+        self.tab_worldStatistics.setTabText(self.tab_worldStatistics.indexOf(self.tab_Asia), QCoreApplication.translate("MainWindow", u"Asia", None))
+        self.tab_worldStatistics.setTabText(self.tab_worldStatistics.indexOf(self.tab_Africa), QCoreApplication.translate("MainWindow", u"Africa", None))
+        self.tab_worldStatistics.setTabText(self.tab_worldStatistics.indexOf(self.tab_Europe), QCoreApplication.translate("MainWindow", u"Europe", None))
+        self.tab_worldStatistics.setTabText(self.tab_worldStatistics.indexOf(self.tab_NorthAmerica), QCoreApplication.translate("MainWindow", u"North America", None))
+        self.tab_worldStatistics.setTabText(self.tab_worldStatistics.indexOf(self.tab_southAmerica), QCoreApplication.translate("MainWindow", u"South America", None))
+        self.tab_worldStatistics.setTabText(self.tab_worldStatistics.indexOf(self.tab_Australia), QCoreApplication.translate("MainWindow", u"Australia", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Hospitals", None))
         ___qtablewidgetitem = self.tableWidget_hospitals.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Hospital Name", None));
@@ -3075,9 +3631,10 @@ class Ui_MainWindow(object):
 "\u2022 AstraZeneca", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Prevention is Better than Cure", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_prevention), QCoreApplication.translate("MainWindow", u"Prevention", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Contact Number:", None))
-        self.label_5.setText(QCoreApplication.translate("MainWindow", u"XXXXXXXXXX", None))
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"COVID-19 Hotline Number(MoHP)", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"9851255834 | 9851255837 (08:00 AM - 08:00 PM)", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"1133 (24 Hours)", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"1115 (06:00 AM - 10:00 PM)", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Helpline", None))
         self.creditsLabel.setText(QCoreApplication.translate("MainWindow", u"By: DASS", None))
         self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0.3", None))

@@ -56,7 +56,8 @@ class MainWindow(QMainWindow):
 
         ## LEFT MENU BUTTON CLICKED
         self.ui.btn_home.clicked.connect(self.buttonClick)
-        self.ui.btn_statistics.clicked.connect(self.buttonClick)
+        self.ui.btn_nationalStatistics.clicked.connect(self.buttonClick)
+        self.ui.btn_worldStatistics.clicked.connect(self.buttonClick)
         self.ui.btn_hospitals.clicked.connect(self.buttonClick)
         self.ui.btn_infographics.clicked.connect(self.buttonClick)
         ## EXIT WINDOW CLICKED
@@ -98,16 +99,40 @@ class MainWindow(QMainWindow):
         ############### GRAPH  ###############
         ##### IMPORTED FROM statistics.py ####
         ######################################
-        self.graph = Canvas(self)
+
+        ##AGE
+        self.graph1 = Canvas(self)
         self.graph2 = Canvas(self)
         self.graph3 = Canvas(self)
         self.graph4 = Canvas(self)
 
-        self.ui.graph1.addWidget(self.graph)
+        self.ui.graph1.addWidget(self.graph1)
         self.ui.graph2.addWidget(self.graph2)
         self.ui.graph3.addWidget(self.graph3)
         self.ui.graph4.addWidget(self.graph4)
 
+        #GENDER
+        self.graph1_2 = Canvas(self)
+        self.graph2_2 = Canvas(self)
+        self.graph3_2 = Canvas(self)
+        self.graph4_2 = Canvas(self)
+
+        self.ui.graph1_2.addWidget(self.graph1_2)
+        self.ui.graph2_2.addWidget(self.graph2_2)
+        self.ui.graph3_2.addWidget(self.graph3_2)
+        self.ui.graph4_2.addWidget(self.graph4_2)
+
+        
+        #REGION
+        self.graph1_3 = Canvas(self)
+        self.graph2_3 = Canvas(self)
+        self.graph3_3 = Canvas(self)
+        self.graph4_3 = Canvas(self)
+
+        self.ui.graph1_3.addWidget(self.graph1_3)
+        self.ui.graph2_3.addWidget(self.graph2_3)
+        self.ui.graph3_3.addWidget(self.graph3_3)
+        self.ui.graph4_3.addWidget(self.graph4_3)
 
 
         ######################################
@@ -153,9 +178,15 @@ class MainWindow(QMainWindow):
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
-        ## NAVIGATE TO STATISTICS PAGE
-        if btnName == "btn_statistics":
-            self.ui.stackedWidget.setCurrentWidget(self.ui.statistics)
+        ## NAVIGATE TO NATIONAL STATISTICS PAGE
+        if btnName == "btn_nationalStatistics":
+            self.ui.stackedWidget.setCurrentWidget(self.ui.national_Statistics)
+            UIFunctions.resetStyle(self, btnName)
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+
+         ## NAVIGATE TO WORLD STATISTICS PAGE
+        if btnName == "btn_worldStatistics":
+            self.ui.stackedWidget.setCurrentWidget(self.ui.world_statistics)
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
