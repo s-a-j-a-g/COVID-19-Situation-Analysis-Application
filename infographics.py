@@ -1,4 +1,5 @@
 import sys
+import matplotlib
 from matplotlib.backends.backend_qt5 import FigureCanvasQT
 import numpy as np
 import matplotlib.pyplot as plt
@@ -32,6 +33,7 @@ class Seriousness_of_Symptoms(FigureCanvasQTAgg):
 
         plt.pie(slices, labels = index, colors = slice_colors, wedgeprops = {'edgecolor':  'black'}, shadow = True, autopct = '%1.1f%%')
         plt.title('Seriousness of Symptoms\nThe Majority of Infections are Mild')
+        plt.annotate('study of 44,672 confirmed cases in Mainland China\nSource: China Center for Diesease Control & Prevention', (0,0), (-80,-20), fontsize = 8, xycoords='axes fraction', textcoords='offset points', va='top')
 
         # plt.legend(loc = (-0.4, -0.2))
 
@@ -68,11 +70,12 @@ class Agewise_Risk_Analysis(FigureCanvasQTAgg):
         plt.bar(x_indexes - bar_width, italy, width = bar_width, label = 'Italy')
         plt.bar(x_indexes + bar_width, uk, width = bar_width, label = 'UK')
 
-        plt.xticks(ticks = x_indexes, labels = age) #fixes x-axis label issue
+        plt.xticks(ticks = x_indexes, labels = age, fontsize = 8) #fixes x-axis label issue and fontsize
 
         plt.title('% of deceased')
         plt.xlabel('Age')
         plt.ylabel('')
+        plt.annotate('study of 3,372 death cases in UK & 21,551 deaths in Italy\nSource: Italian Portal of Epidemiology for Public Health, UK Office of National Statistics', (0,0), (-80,-70), fontsize = 8, xycoords='axes fraction', textcoords='offset points', va='top')
 
         plt.legend()
         plt.grid(True)
@@ -105,8 +108,11 @@ class Best_Household_Materials_For_a_Mask(FigureCanvasQTAgg):
 
 
         plt.title('Best Household Materials for a Mask')
-        plt.xlabel('Household Materials')
-        plt.ylabel('Percent of 0.02-microns captured when coughing')
+        plt.xlabel('Household Materials', fontsize = 11)
+        plt.ylabel('Percent of 0.02-microns\ncaptured when coughing', fontsize = 11)
+        plt.annotate('Source: Davies et al(2013), "Disaster Medicine & Public Health Preparedness"', (0,0), (-80,-50), fontsize = 8, xycoords='axes fraction', textcoords='offset points', va='top')
+
+        plt.yticks(fontsize = 9)
 
         # plt.legend()
         plt.grid(True)
