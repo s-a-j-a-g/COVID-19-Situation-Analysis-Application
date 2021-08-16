@@ -5776,7 +5776,7 @@ QTableWidget QTableCornerButton::section
                            <number>0</number>
                           </property>
                           <item>
-                           <widget class="QTabWidget" name="tabWidget_nationalStatistics_2">
+                           <widget class="QTabWidget" name="tabWidget_worldStatistics">
                             <property name="styleSheet">
                              <string notr="true">QTabWidget::pane
 {

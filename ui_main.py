@@ -2602,9 +2602,9 @@ class Ui_MainWindow(object):
         self.verticalLayout_8 = QVBoxLayout(self.frame_76)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
-        self.tabWidget_nationalStatistics_2 = QTabWidget(self.frame_76)
-        self.tabWidget_nationalStatistics_2.setObjectName(u"tabWidget_nationalStatistics_2")
-        self.tabWidget_nationalStatistics_2.setStyleSheet(u"QTabWidget::pane\n"
+        self.tabWidget_worldStatistics = QTabWidget(self.frame_76)
+        self.tabWidget_worldStatistics.setObjectName(u"tabWidget_worldStatistics")
+        self.tabWidget_worldStatistics.setStyleSheet(u"QTabWidget::pane\n"
 "{\n"
 "    border: 1px solid gray;\n"
 "    color: #ffffff;\n"
@@ -2949,7 +2949,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_50.addWidget(self.scrollArea_7)
 
-        self.tabWidget_nationalStatistics_2.addTab(self.tab_Cases_2, "")
+        self.tabWidget_worldStatistics.addTab(self.tab_Cases_2, "")
         self.tab_Deaths_2 = QWidget()
         self.tab_Deaths_2.setObjectName(u"tab_Deaths_2")
         self.verticalLayout_42 = QVBoxLayout(self.tab_Deaths_2)
@@ -3244,7 +3244,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_42.addWidget(self.scrollArea_8)
 
-        self.tabWidget_nationalStatistics_2.addTab(self.tab_Deaths_2, "")
+        self.tabWidget_worldStatistics.addTab(self.tab_Deaths_2, "")
         self.tab_Recovered_2 = QWidget()
         self.tab_Recovered_2.setObjectName(u"tab_Recovered_2")
         self.verticalLayout_45 = QVBoxLayout(self.tab_Recovered_2)
@@ -3539,7 +3539,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_45.addWidget(self.scrollArea_9)
 
-        self.tabWidget_nationalStatistics_2.addTab(self.tab_Recovered_2, "")
+        self.tabWidget_worldStatistics.addTab(self.tab_Recovered_2, "")
         self.tab_Vaccination_2 = QWidget()
         self.tab_Vaccination_2.setObjectName(u"tab_Vaccination_2")
         self.verticalLayout_47 = QVBoxLayout(self.tab_Vaccination_2)
@@ -3588,9 +3588,9 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_47.addWidget(self.scrollArea_10)
 
-        self.tabWidget_nationalStatistics_2.addTab(self.tab_Vaccination_2, "")
+        self.tabWidget_worldStatistics.addTab(self.tab_Vaccination_2, "")
 
-        self.verticalLayout_8.addWidget(self.tabWidget_nationalStatistics_2)
+        self.verticalLayout_8.addWidget(self.tabWidget_worldStatistics)
 
 
         self.horizontalLayout_49.addWidget(self.frame_76)
@@ -4542,7 +4542,7 @@ class Ui_MainWindow(object):
 
         self.stackedWidget.setCurrentIndex(2)
         self.tabWidget_nationalStatistics.setCurrentIndex(3)
-        self.tabWidget_nationalStatistics_2.setCurrentIndex(0)
+        self.tabWidget_worldStatistics.setCurrentIndex(0)
         self.tabWidget_infographics.setCurrentIndex(1)
 
 
@@ -5012,7 +5012,7 @@ class Ui_MainWindow(object):
         self.comboBox_yearEnd_4.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.btn_select_4.setText(QCoreApplication.translate("MainWindow", u"Select", None))
-        self.tabWidget_nationalStatistics_2.setTabText(self.tabWidget_nationalStatistics_2.indexOf(self.tab_Cases_2), QCoreApplication.translate("MainWindow", u"Cases", None))
+        self.tabWidget_worldStatistics.setTabText(self.tabWidget_worldStatistics.indexOf(self.tab_Cases_2), QCoreApplication.translate("MainWindow", u"Cases", None))
         self.label_60.setText(QCoreApplication.translate("MainWindow", u"Start Date: ", None))
         self.comboBox_dateStart_5.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
         self.comboBox_dateStart_5.setItemText(1, QCoreApplication.translate("MainWindow", u"2", None))
@@ -5112,7 +5112,7 @@ class Ui_MainWindow(object):
         self.comboBox_yearEnd_5.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.btn_select_5.setText(QCoreApplication.translate("MainWindow", u"Select", None))
-        self.tabWidget_nationalStatistics_2.setTabText(self.tabWidget_nationalStatistics_2.indexOf(self.tab_Deaths_2), QCoreApplication.translate("MainWindow", u"Deaths", None))
+        self.tabWidget_worldStatistics.setTabText(self.tabWidget_worldStatistics.indexOf(self.tab_Deaths_2), QCoreApplication.translate("MainWindow", u"Deaths", None))
         self.label_62.setText(QCoreApplication.translate("MainWindow", u"Start Date: ", None))
         self.comboBox_dateStart_6.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
         self.comboBox_dateStart_6.setItemText(1, QCoreApplication.translate("MainWindow", u"2", None))
@@ -5212,8 +5212,8 @@ class Ui_MainWindow(object):
         self.comboBox_yearEnd_6.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.btn_select_6.setText(QCoreApplication.translate("MainWindow", u"Select", None))
-        self.tabWidget_nationalStatistics_2.setTabText(self.tabWidget_nationalStatistics_2.indexOf(self.tab_Recovered_2), QCoreApplication.translate("MainWindow", u"Recovered", None))
-        self.tabWidget_nationalStatistics_2.setTabText(self.tabWidget_nationalStatistics_2.indexOf(self.tab_Vaccination_2), QCoreApplication.translate("MainWindow", u"Vaccination", None))
+        self.tabWidget_worldStatistics.setTabText(self.tabWidget_worldStatistics.indexOf(self.tab_Recovered_2), QCoreApplication.translate("MainWindow", u"Recovered", None))
+        self.tabWidget_worldStatistics.setTabText(self.tabWidget_worldStatistics.indexOf(self.tab_Vaccination_2), QCoreApplication.translate("MainWindow", u"Vaccination", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Hospitals", None))
         ___qtablewidgetitem = self.tableWidget_hospitals.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Hospital Name", None));
