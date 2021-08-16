@@ -143,39 +143,39 @@ class MainWindow(QMainWindow):
         ##### IMPORTED FROM statistics.py ####
         ######################################
 
-        ##AGE
+        ##CASES
         self.graph1 = Canvas(self)
         self.graph2 = Canvas(self)
         self.graph3 = Canvas(self)
         self.graph4 = Canvas(self)
 
-        self.ui.graph1.addWidget(self.graph1)
-        self.ui.graph2.addWidget(self.graph2)
-        self.ui.graph3.addWidget(self.graph3)
-        self.ui.graph4.addWidget(self.graph4)
+        self.ui.graph_Cases_LatestMonth.addWidget(self.graph1)
+        self.ui.graph_Cases_LatestWeek.addWidget(self.graph2)
+        self.ui.graph_Cases_Overall.addWidget(self.graph3)
+        self.ui.graph_Cases_CustomTimeFrame.addWidget(self.graph4)
 
-        #GENDER
+        #DEATHS
         self.graph1_2 = Canvas(self)
         self.graph2_2 = Canvas(self)
         self.graph3_2 = Canvas(self)
         self.graph4_2 = Canvas(self)
 
-        self.ui.graph1_2.addWidget(self.graph1_2)
-        self.ui.graph2_2.addWidget(self.graph2_2)
-        self.ui.graph3_2.addWidget(self.graph3_2)
-        self.ui.graph4_2.addWidget(self.graph4_2)
+        self.ui.graph_Deaths_LatestMonth.addWidget(self.graph1_2)
+        self.ui.graph_Deaths_LatestWeek.addWidget(self.graph2_2)
+        self.ui.graph_Deaths_Overall.addWidget(self.graph3_2)
+        self.ui.graph_Deaths_CustomTimeFrame.addWidget(self.graph4_2)
 
         
-        #REGION
+        #RECOVERED
         self.graph1_3 = Canvas(self)
         self.graph2_3 = Canvas(self)
         self.graph3_3 = Canvas(self)
         self.graph4_3 = Canvas(self)
 
-        self.ui.graph1_3.addWidget(self.graph1_3)
-        self.ui.graph2_3.addWidget(self.graph2_3)
-        self.ui.graph3_3.addWidget(self.graph3_3)
-        self.ui.graph4_3.addWidget(self.graph4_3)
+        self.ui.graph_Recovered_LatestMonth.addWidget(self.graph1_3)
+        self.ui.graph_Recovered_LatestWeek.addWidget(self.graph2_3)
+        self.ui.graph_Recovered_Overall.addWidget(self.graph3_3)
+        self.ui.graph_Recovered_CustomTimeFrame.addWidget(self.graph4_3)
 
 
         ######################################

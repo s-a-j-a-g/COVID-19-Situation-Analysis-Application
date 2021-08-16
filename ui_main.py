@@ -1670,10 +1670,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_71 = QHBoxLayout(self.frame_21)
         self.horizontalLayout_71.setObjectName(u"horizontalLayout_71")
         self.horizontalLayout_71.setContentsMargins(0, 0, 0, 0)
-        self.graph1 = QHBoxLayout()
-        self.graph1.setObjectName(u"graph1")
+        self.graph_Cases_LatestMonth = QHBoxLayout()
+        self.graph_Cases_LatestMonth.setObjectName(u"graph_Cases_LatestMonth")
 
-        self.horizontalLayout_71.addLayout(self.graph1)
+        self.horizontalLayout_71.addLayout(self.graph_Cases_LatestMonth)
 
 
         self.verticalLayout_16.addWidget(self.frame_21)
@@ -1686,10 +1686,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_72 = QHBoxLayout(self.frame_20)
         self.horizontalLayout_72.setObjectName(u"horizontalLayout_72")
         self.horizontalLayout_72.setContentsMargins(0, 0, 0, 0)
-        self.graph2 = QHBoxLayout()
-        self.graph2.setObjectName(u"graph2")
+        self.graph_Cases_LatestWeek = QHBoxLayout()
+        self.graph_Cases_LatestWeek.setObjectName(u"graph_Cases_LatestWeek")
 
-        self.horizontalLayout_72.addLayout(self.graph2)
+        self.horizontalLayout_72.addLayout(self.graph_Cases_LatestWeek)
 
 
         self.verticalLayout_16.addWidget(self.frame_20)
@@ -1702,10 +1702,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_73 = QHBoxLayout(self.frame_22)
         self.horizontalLayout_73.setObjectName(u"horizontalLayout_73")
         self.horizontalLayout_73.setContentsMargins(0, 0, 0, 0)
-        self.graph3 = QHBoxLayout()
-        self.graph3.setObjectName(u"graph3")
+        self.graph_Cases_Overall = QHBoxLayout()
+        self.graph_Cases_Overall.setObjectName(u"graph_Cases_Overall")
 
-        self.horizontalLayout_73.addLayout(self.graph3)
+        self.horizontalLayout_73.addLayout(self.graph_Cases_Overall)
 
 
         self.verticalLayout_16.addWidget(self.frame_22)
@@ -1929,10 +1929,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_9 = QHBoxLayout(self.frame_142)
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
         self.horizontalLayout_9.setContentsMargins(0, 0, 0, 0)
-        self.graph4 = QHBoxLayout()
-        self.graph4.setObjectName(u"graph4")
+        self.graph_Cases_CustomTimeFrame = QHBoxLayout()
+        self.graph_Cases_CustomTimeFrame.setObjectName(u"graph_Cases_CustomTimeFrame")
 
-        self.horizontalLayout_9.addLayout(self.graph4)
+        self.horizontalLayout_9.addLayout(self.graph_Cases_CustomTimeFrame)
 
 
         self.verticalLayout_38.addWidget(self.frame_142)
@@ -1954,7 +1954,7 @@ class Ui_MainWindow(object):
         self.scrollArea_4.setWidgetResizable(True)
         self.scrollAreaWidgetContents_4 = QWidget()
         self.scrollAreaWidgetContents_4.setObjectName(u"scrollAreaWidgetContents_4")
-        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, -1234, 1100, 1734))
+        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, -1215, 1100, 1734))
         self.verticalLayout_17 = QVBoxLayout(self.scrollAreaWidgetContents_4)
         self.verticalLayout_17.setObjectName(u"verticalLayout_17")
         self.frame_24 = QFrame(self.scrollAreaWidgetContents_4)
@@ -1965,10 +1965,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_74 = QHBoxLayout(self.frame_24)
         self.horizontalLayout_74.setObjectName(u"horizontalLayout_74")
         self.horizontalLayout_74.setContentsMargins(0, 0, 0, 0)
-        self.graph1_2 = QHBoxLayout()
-        self.graph1_2.setObjectName(u"graph1_2")
+        self.graph_Deaths_LatestMonth = QHBoxLayout()
+        self.graph_Deaths_LatestMonth.setObjectName(u"graph_Deaths_LatestMonth")
 
-        self.horizontalLayout_74.addLayout(self.graph1_2)
+        self.horizontalLayout_74.addLayout(self.graph_Deaths_LatestMonth)
 
 
         self.verticalLayout_17.addWidget(self.frame_24)
@@ -1981,10 +1981,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_75 = QHBoxLayout(self.frame_64)
         self.horizontalLayout_75.setObjectName(u"horizontalLayout_75")
         self.horizontalLayout_75.setContentsMargins(0, 0, 0, 0)
-        self.graph2_2 = QHBoxLayout()
-        self.graph2_2.setObjectName(u"graph2_2")
+        self.graph_Deaths_LatestWeek = QHBoxLayout()
+        self.graph_Deaths_LatestWeek.setObjectName(u"graph_Deaths_LatestWeek")
 
-        self.horizontalLayout_75.addLayout(self.graph2_2)
+        self.horizontalLayout_75.addLayout(self.graph_Deaths_LatestWeek)
 
 
         self.verticalLayout_17.addWidget(self.frame_64)
@@ -1997,10 +1997,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_76 = QHBoxLayout(self.frame_65)
         self.horizontalLayout_76.setObjectName(u"horizontalLayout_76")
         self.horizontalLayout_76.setContentsMargins(0, 0, 0, 0)
-        self.graph3_2 = QHBoxLayout()
-        self.graph3_2.setObjectName(u"graph3_2")
+        self.graph_Deaths_Overall = QHBoxLayout()
+        self.graph_Deaths_Overall.setObjectName(u"graph_Deaths_Overall")
 
-        self.horizontalLayout_76.addLayout(self.graph3_2)
+        self.horizontalLayout_76.addLayout(self.graph_Deaths_Overall)
 
 
         self.verticalLayout_17.addWidget(self.frame_65)
@@ -2224,10 +2224,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_70 = QHBoxLayout(self.frame_143)
         self.horizontalLayout_70.setObjectName(u"horizontalLayout_70")
         self.horizontalLayout_70.setContentsMargins(0, 0, 0, 0)
-        self.graph4_2 = QHBoxLayout()
-        self.graph4_2.setObjectName(u"graph4_2")
+        self.graph_Deaths_CustomTimeFrame = QHBoxLayout()
+        self.graph_Deaths_CustomTimeFrame.setObjectName(u"graph_Deaths_CustomTimeFrame")
 
-        self.horizontalLayout_70.addLayout(self.graph4_2)
+        self.horizontalLayout_70.addLayout(self.graph_Deaths_CustomTimeFrame)
 
 
         self.verticalLayout_39.addWidget(self.frame_143)
@@ -2249,7 +2249,7 @@ class Ui_MainWindow(object):
         self.scrollArea_5.setWidgetResizable(True)
         self.scrollAreaWidgetContents_5 = QWidget()
         self.scrollAreaWidgetContents_5.setObjectName(u"scrollAreaWidgetContents_5")
-        self.scrollAreaWidgetContents_5.setGeometry(QRect(0, 0, 1100, 1734))
+        self.scrollAreaWidgetContents_5.setGeometry(QRect(0, -1230, 1100, 1734))
         self.verticalLayout_34 = QVBoxLayout(self.scrollAreaWidgetContents_5)
         self.verticalLayout_34.setObjectName(u"verticalLayout_34")
         self.frame_67 = QFrame(self.scrollAreaWidgetContents_5)
@@ -2260,10 +2260,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_77 = QHBoxLayout(self.frame_67)
         self.horizontalLayout_77.setObjectName(u"horizontalLayout_77")
         self.horizontalLayout_77.setContentsMargins(0, 0, 0, 0)
-        self.graph1_3 = QHBoxLayout()
-        self.graph1_3.setObjectName(u"graph1_3")
+        self.graph_Recovered_LatestMonth = QHBoxLayout()
+        self.graph_Recovered_LatestMonth.setObjectName(u"graph_Recovered_LatestMonth")
 
-        self.horizontalLayout_77.addLayout(self.graph1_3)
+        self.horizontalLayout_77.addLayout(self.graph_Recovered_LatestMonth)
 
 
         self.verticalLayout_34.addWidget(self.frame_67)
@@ -2276,10 +2276,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_78 = QHBoxLayout(self.frame_68)
         self.horizontalLayout_78.setObjectName(u"horizontalLayout_78")
         self.horizontalLayout_78.setContentsMargins(0, 0, 0, 0)
-        self.graph2_3 = QHBoxLayout()
-        self.graph2_3.setObjectName(u"graph2_3")
+        self.graph_Recovered_LatestWeek = QHBoxLayout()
+        self.graph_Recovered_LatestWeek.setObjectName(u"graph_Recovered_LatestWeek")
 
-        self.horizontalLayout_78.addLayout(self.graph2_3)
+        self.horizontalLayout_78.addLayout(self.graph_Recovered_LatestWeek)
 
 
         self.verticalLayout_34.addWidget(self.frame_68)
@@ -2292,10 +2292,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_79 = QHBoxLayout(self.frame_69)
         self.horizontalLayout_79.setObjectName(u"horizontalLayout_79")
         self.horizontalLayout_79.setContentsMargins(0, 0, 0, 0)
-        self.graph3_3 = QHBoxLayout()
-        self.graph3_3.setObjectName(u"graph3_3")
+        self.graph_Recovered_Overall = QHBoxLayout()
+        self.graph_Recovered_Overall.setObjectName(u"graph_Recovered_Overall")
 
-        self.horizontalLayout_79.addLayout(self.graph3_3)
+        self.horizontalLayout_79.addLayout(self.graph_Recovered_Overall)
 
 
         self.verticalLayout_34.addWidget(self.frame_69)
@@ -2519,10 +2519,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_80 = QHBoxLayout(self.frame_144)
         self.horizontalLayout_80.setObjectName(u"horizontalLayout_80")
         self.horizontalLayout_80.setContentsMargins(0, 0, 0, 0)
-        self.graph4_3 = QHBoxLayout()
-        self.graph4_3.setObjectName(u"graph4_3")
+        self.graph_Recovered_CustomTimeFrame = QHBoxLayout()
+        self.graph_Recovered_CustomTimeFrame.setObjectName(u"graph_Recovered_CustomTimeFrame")
 
-        self.horizontalLayout_80.addLayout(self.graph4_3)
+        self.horizontalLayout_80.addLayout(self.graph_Recovered_CustomTimeFrame)
 
 
         self.verticalLayout_64.addWidget(self.frame_144)

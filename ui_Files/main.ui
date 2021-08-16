@@ -3076,7 +3076,7 @@ QTableWidget QTableCornerButton::section
                                       <number>0</number>
                                      </property>
                                      <item>
-                                      <layout class="QHBoxLayout" name="graph1"/>
+                                      <layout class="QHBoxLayout" name="graph_Cases_LatestMonth"/>
                                      </item>
                                     </layout>
                                    </widget>
@@ -3109,7 +3109,7 @@ QTableWidget QTableCornerButton::section
                                       <number>0</number>
                                      </property>
                                      <item>
-                                      <layout class="QHBoxLayout" name="graph2"/>
+                                      <layout class="QHBoxLayout" name="graph_Cases_LatestWeek"/>
                                      </item>
                                     </layout>
                                    </widget>
@@ -3142,7 +3142,7 @@ QTableWidget QTableCornerButton::section
                                       <number>0</number>
                                      </property>
                                      <item>
-                                      <layout class="QHBoxLayout" name="graph3"/>
+                                      <layout class="QHBoxLayout" name="graph_Cases_Overall"/>
                                      </item>
                                     </layout>
                                    </widget>
@@ -3889,7 +3889,7 @@ QTableWidget QTableCornerButton::section
                                          <number>0</number>
                                         </property>
                                         <item>
-                                         <layout class="QHBoxLayout" name="graph4"/>
+                                         <layout class="QHBoxLayout" name="graph_Cases_CustomTimeFrame"/>
                                         </item>
                                        </layout>
                                       </widget>
@@ -3917,7 +3917,7 @@ QTableWidget QTableCornerButton::section
                                  <property name="geometry">
                                   <rect>
                                    <x>0</x>
-                                   <y>-1234</y>
+                                   <y>-1215</y>
                                    <width>1100</width>
                                    <height>1734</height>
                                   </rect>
@@ -3951,7 +3951,7 @@ QTableWidget QTableCornerButton::section
                                       <number>0</number>
                                      </property>
                                      <item>
-                                      <layout class="QHBoxLayout" name="graph1_2"/>
+                                      <layout class="QHBoxLayout" name="graph_Deaths_LatestMonth"/>
                                      </item>
                                     </layout>
                                    </widget>
@@ -3984,7 +3984,7 @@ QTableWidget QTableCornerButton::section
                                       <number>0</number>
                                      </property>
                                      <item>
-                                      <layout class="QHBoxLayout" name="graph2_2"/>
+                                      <layout class="QHBoxLayout" name="graph_Deaths_LatestWeek"/>
                                      </item>
                                     </layout>
                                    </widget>
@@ -4017,7 +4017,7 @@ QTableWidget QTableCornerButton::section
                                       <number>0</number>
                                      </property>
                                      <item>
-                                      <layout class="QHBoxLayout" name="graph3_2"/>
+                                      <layout class="QHBoxLayout" name="graph_Deaths_Overall"/>
                                      </item>
                                     </layout>
                                    </widget>
@@ -4764,7 +4764,7 @@ QTableWidget QTableCornerButton::section
                                          <number>0</number>
                                         </property>
                                         <item>
-                                         <layout class="QHBoxLayout" name="graph4_2"/>
+                                         <layout class="QHBoxLayout" name="graph_Deaths_CustomTimeFrame"/>
                                         </item>
                                        </layout>
                                       </widget>
@@ -4792,7 +4792,7 @@ QTableWidget QTableCornerButton::section
                                  <property name="geometry">
                                   <rect>
                                    <x>0</x>
-                                   <y>0</y>
+                                   <y>-1230</y>
                                    <width>1100</width>
                                    <height>1734</height>
                                   </rect>
@@ -4826,7 +4826,7 @@ QTableWidget QTableCornerButton::section
                                       <number>0</number>
                                      </property>
                                      <item>
-                                      <layout class="QHBoxLayout" name="graph1_3"/>
+                                      <layout class="QHBoxLayout" name="graph_Recovered_LatestMonth"/>
                                      </item>
                                     </layout>
                                    </widget>
@@ -4859,7 +4859,7 @@ QTableWidget QTableCornerButton::section
                                       <number>0</number>
                                      </property>
                                      <item>
-                                      <layout class="QHBoxLayout" name="graph2_3"/>
+                                      <layout class="QHBoxLayout" name="graph_Recovered_LatestWeek"/>
                                      </item>
                                     </layout>
                                    </widget>
@@ -4892,7 +4892,7 @@ QTableWidget QTableCornerButton::section
                                       <number>0</number>
                                      </property>
                                      <item>
-                                      <layout class="QHBoxLayout" name="graph3_3"/>
+                                      <layout class="QHBoxLayout" name="graph_Recovered_Overall"/>
                                      </item>
                                     </layout>
                                    </widget>
@@ -5639,7 +5639,7 @@ QTableWidget QTableCornerButton::section
                                          <number>0</number>
                                         </property>
                                         <item>
-                                         <layout class="QHBoxLayout" name="graph4_3"/>
+                                         <layout class="QHBoxLayout" name="graph_Recovered_CustomTimeFrame"/>
                                         </item>
                                        </layout>
                                       </widget>
