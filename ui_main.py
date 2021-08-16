@@ -12,7 +12,7 @@ from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
-import rc_resources
+import resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -1597,7 +1597,128 @@ class Ui_MainWindow(object):
         self.verticalLayout_19.setSpacing(20)
         self.verticalLayout_19.setObjectName(u"verticalLayout_19")
         self.verticalLayout_19.setContentsMargins(-1, 0, -1, -1)
-        self.frame_25 = QFrame(self.frame_19)
+        self.tabWidget_nationalStatistics = QTabWidget(self.frame_19)
+        self.tabWidget_nationalStatistics.setObjectName(u"tabWidget_nationalStatistics")
+        self.tabWidget_nationalStatistics.setStyleSheet(u"QTabWidget::pane\n"
+"{\n"
+"    border: 1px solid gray;\n"
+"    color: #ffffff;\n"
+"	background-color: rgba(33, 37, 43, 180);\n"
+"}\n"
+"QTabBar::tab\n"
+"{\n"
+"	background-color: rgba(33, 37, 43, 180);\n"
+"    color: rgb(191, 191, 191);\n"
+"	font-size: 18px;\n"
+"	width: 250px;\n"
+"	height: 40px;\n"
+"	border: 2px solid gray;\n"
+"	border-top-left-radius: 5px;\n"
+"	border-top-right-radius: 5px;\n"
+"	border-bottom-left-radius: -9px;\n"
+"}\n"
+"QTabBar::tab:hover\n"
+"{\n"
+"	background-color: rgb(41, 44, 94);\n"
+"}\n"
+"QTabBar::tab:selected\n"
+"{\n"
+"    color: rgb(255, 255, 255);\n"
+"    background: rgb(13, 34, 42);\n"
+"}\n"
+"QTableWidget\n"
+"{\n"
+"	border: 1px solid gray;\n"
+"	background-color: rgb(13, 34, 42);;\n"
+"	alternate-background-color: rgb(88, 88, 88);\n"
+"	color: rgb(255, 255, 255);\n"
+"	font: 17px;\n"
+"	gridline-color: gray;\n"
+"}\n"
+"QHeaderView\n"
+"{\n"
+"	background-color: rgb(13, 34, 42);\n"
+"}\n"
+"QHeaderView::section\n"
+"{\n"
+"	background-color: rgb(52, 52, 52);	\n"
+"	color: rgb(255, 255, 255);\n"
+"	f"
+                        "ont: bold;\n"
+"}\n"
+"QTableWidget QTableCornerButton::section \n"
+"{\n"
+"	background-color: rgb(52, 52, 52);	\n"
+"}")
+        self.tab_Cases = QWidget()
+        self.tab_Cases.setObjectName(u"tab_Cases")
+        self.horizontalLayout_43 = QHBoxLayout(self.tab_Cases)
+        self.horizontalLayout_43.setObjectName(u"horizontalLayout_43")
+        self.scrollArea = QScrollArea(self.tab_Cases)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1100, 1734))
+        self.verticalLayout_16 = QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
+        self.frame_21 = QFrame(self.scrollAreaWidgetContents)
+        self.frame_21.setObjectName(u"frame_21")
+        self.frame_21.setMinimumSize(QSize(0, 400))
+        self.frame_21.setFrameShape(QFrame.StyledPanel)
+        self.frame_21.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_71 = QHBoxLayout(self.frame_21)
+        self.horizontalLayout_71.setObjectName(u"horizontalLayout_71")
+        self.horizontalLayout_71.setContentsMargins(0, 0, 0, 0)
+        self.graph1 = QHBoxLayout()
+        self.graph1.setObjectName(u"graph1")
+
+        self.horizontalLayout_71.addLayout(self.graph1)
+
+
+        self.verticalLayout_16.addWidget(self.frame_21)
+
+        self.frame_20 = QFrame(self.scrollAreaWidgetContents)
+        self.frame_20.setObjectName(u"frame_20")
+        self.frame_20.setMinimumSize(QSize(0, 400))
+        self.frame_20.setFrameShape(QFrame.StyledPanel)
+        self.frame_20.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_72 = QHBoxLayout(self.frame_20)
+        self.horizontalLayout_72.setObjectName(u"horizontalLayout_72")
+        self.horizontalLayout_72.setContentsMargins(0, 0, 0, 0)
+        self.graph2 = QHBoxLayout()
+        self.graph2.setObjectName(u"graph2")
+
+        self.horizontalLayout_72.addLayout(self.graph2)
+
+
+        self.verticalLayout_16.addWidget(self.frame_20)
+
+        self.frame_22 = QFrame(self.scrollAreaWidgetContents)
+        self.frame_22.setObjectName(u"frame_22")
+        self.frame_22.setMinimumSize(QSize(0, 400))
+        self.frame_22.setFrameShape(QFrame.StyledPanel)
+        self.frame_22.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_73 = QHBoxLayout(self.frame_22)
+        self.horizontalLayout_73.setObjectName(u"horizontalLayout_73")
+        self.horizontalLayout_73.setContentsMargins(0, 0, 0, 0)
+        self.graph3 = QHBoxLayout()
+        self.graph3.setObjectName(u"graph3")
+
+        self.horizontalLayout_73.addLayout(self.graph3)
+
+
+        self.verticalLayout_16.addWidget(self.frame_22)
+
+        self.frame_23 = QFrame(self.scrollAreaWidgetContents)
+        self.frame_23.setObjectName(u"frame_23")
+        self.frame_23.setMinimumSize(QSize(0, 0))
+        self.frame_23.setFrameShape(QFrame.StyledPanel)
+        self.frame_23.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_38 = QVBoxLayout(self.frame_23)
+        self.verticalLayout_38.setObjectName(u"verticalLayout_38")
+        self.verticalLayout_38.setContentsMargins(0, 40, 0, 0)
+        self.frame_25 = QFrame(self.frame_23)
         self.frame_25.setObjectName(u"frame_25")
         self.frame_25.setMaximumSize(QSize(16777215, 50))
         self.frame_25.setFrameShape(QFrame.StyledPanel)
@@ -1798,286 +1919,671 @@ class Ui_MainWindow(object):
         self.horizontalLayout_11.addWidget(self.frame_29)
 
 
-        self.verticalLayout_19.addWidget(self.frame_25)
+        self.verticalLayout_38.addWidget(self.frame_25)
 
-        self.tabWidget_nationalStatistics = QTabWidget(self.frame_19)
-        self.tabWidget_nationalStatistics.setObjectName(u"tabWidget_nationalStatistics")
-        self.tabWidget_nationalStatistics.setStyleSheet(u"QTabWidget::pane\n"
-"{\n"
-"    border: 1px solid gray;\n"
-"    color: #ffffff;\n"
-"	background-color: rgba(33, 37, 43, 180);\n"
-"}\n"
-"QTabBar::tab\n"
-"{\n"
-"	background-color: rgba(33, 37, 43, 180);\n"
-"    color: rgb(191, 191, 191);\n"
-"	font-size: 18px;\n"
-"	width: 250px;\n"
-"	height: 40px;\n"
-"	border: 2px solid gray;\n"
-"	border-top-left-radius: 5px;\n"
-"	border-top-right-radius: 5px;\n"
-"	border-bottom-left-radius: -9px;\n"
-"}\n"
-"QTabBar::tab:hover\n"
-"{\n"
-"	background-color: rgb(41, 44, 94);\n"
-"}\n"
-"QTabBar::tab:selected\n"
-"{\n"
-"    color: rgb(255, 255, 255);\n"
-"    background: rgb(13, 34, 42);\n"
-"}\n"
-"QTableWidget\n"
-"{\n"
-"	border: 1px solid gray;\n"
-"	background-color: rgb(13, 34, 42);;\n"
-"	alternate-background-color: rgb(88, 88, 88);\n"
-"	color: rgb(255, 255, 255);\n"
-"	font: 17px;\n"
-"	gridline-color: gray;\n"
-"}\n"
-"QHeaderView\n"
-"{\n"
-"	background-color: rgb(13, 34, 42);\n"
-"}\n"
-"QHeaderView::section\n"
-"{\n"
-"	background-color: rgb(52, 52, 52);	\n"
-"	color: rgb(255, 255, 255);\n"
-"	f"
-                        "ont: bold;\n"
-"}\n"
-"QTableWidget QTableCornerButton::section \n"
-"{\n"
-"	background-color: rgb(52, 52, 52);	\n"
-"}")
-        self.tab_Age = QWidget()
-        self.tab_Age.setObjectName(u"tab_Age")
-        self.horizontalLayout_43 = QHBoxLayout(self.tab_Age)
-        self.horizontalLayout_43.setObjectName(u"horizontalLayout_43")
-        self.frame_20 = QFrame(self.tab_Age)
-        self.frame_20.setObjectName(u"frame_20")
-        self.frame_20.setFrameShape(QFrame.StyledPanel)
-        self.frame_20.setFrameShadow(QFrame.Raised)
-        self.gridLayout = QGridLayout(self.frame_20)
-        self.gridLayout.setObjectName(u"gridLayout")
-        self.gridLayout.setContentsMargins(0, 0, 0, 0)
-        self.frame_21 = QFrame(self.frame_20)
-        self.frame_21.setObjectName(u"frame_21")
-        self.frame_21.setFrameShape(QFrame.StyledPanel)
-        self.frame_21.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_17 = QVBoxLayout(self.frame_21)
-        self.verticalLayout_17.setObjectName(u"verticalLayout_17")
-        self.verticalLayout_17.setContentsMargins(0, 0, 0, 0)
-        self.graph1 = QVBoxLayout()
-        self.graph1.setObjectName(u"graph1")
-
-        self.verticalLayout_17.addLayout(self.graph1)
-
-
-        self.gridLayout.addWidget(self.frame_21, 0, 0, 1, 1)
-
-        self.frame_23 = QFrame(self.frame_20)
-        self.frame_23.setObjectName(u"frame_23")
-        self.frame_23.setFrameShape(QFrame.StyledPanel)
-        self.frame_23.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_18 = QVBoxLayout(self.frame_23)
-        self.verticalLayout_18.setObjectName(u"verticalLayout_18")
-        self.verticalLayout_18.setContentsMargins(0, 0, 0, 0)
-        self.graph4 = QVBoxLayout()
-        self.graph4.setObjectName(u"graph4")
-
-        self.verticalLayout_18.addLayout(self.graph4)
-
-
-        self.gridLayout.addWidget(self.frame_23, 1, 1, 1, 1)
-
-        self.frame_22 = QFrame(self.frame_20)
-        self.frame_22.setObjectName(u"frame_22")
-        self.frame_22.setFrameShape(QFrame.StyledPanel)
-        self.frame_22.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_16 = QVBoxLayout(self.frame_22)
-        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
-        self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
-        self.graph2 = QVBoxLayout()
-        self.graph2.setObjectName(u"graph2")
-
-        self.verticalLayout_16.addLayout(self.graph2)
-
-
-        self.gridLayout.addWidget(self.frame_22, 0, 1, 1, 1)
-
-        self.frame_24 = QFrame(self.frame_20)
-        self.frame_24.setObjectName(u"frame_24")
-        self.frame_24.setFrameShape(QFrame.StyledPanel)
-        self.frame_24.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_9 = QHBoxLayout(self.frame_24)
+        self.frame_142 = QFrame(self.frame_23)
+        self.frame_142.setObjectName(u"frame_142")
+        self.frame_142.setMinimumSize(QSize(0, 400))
+        self.frame_142.setFrameShape(QFrame.StyledPanel)
+        self.frame_142.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_9 = QHBoxLayout(self.frame_142)
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
         self.horizontalLayout_9.setContentsMargins(0, 0, 0, 0)
-        self.graph3 = QVBoxLayout()
-        self.graph3.setObjectName(u"graph3")
+        self.graph4 = QHBoxLayout()
+        self.graph4.setObjectName(u"graph4")
 
-        self.horizontalLayout_9.addLayout(self.graph3)
-
-
-        self.gridLayout.addWidget(self.frame_24, 1, 0, 1, 1)
+        self.horizontalLayout_9.addLayout(self.graph4)
 
 
-        self.horizontalLayout_43.addWidget(self.frame_20)
+        self.verticalLayout_38.addWidget(self.frame_142)
 
-        self.tabWidget_nationalStatistics.addTab(self.tab_Age, "")
-        self.tab_Gender = QWidget()
-        self.tab_Gender.setObjectName(u"tab_Gender")
-        self.horizontalLayout_45 = QHBoxLayout(self.tab_Gender)
-        self.horizontalLayout_45.setObjectName(u"horizontalLayout_45")
-        self.frame_64 = QFrame(self.tab_Gender)
-        self.frame_64.setObjectName(u"frame_64")
-        self.frame_64.setFrameShape(QFrame.StyledPanel)
-        self.frame_64.setFrameShadow(QFrame.Raised)
-        self.gridLayout_2 = QGridLayout(self.frame_64)
-        self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.frame_65 = QFrame(self.frame_64)
-        self.frame_65.setObjectName(u"frame_65")
-        self.frame_65.setFrameShape(QFrame.StyledPanel)
-        self.frame_65.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_34 = QVBoxLayout(self.frame_65)
-        self.verticalLayout_34.setObjectName(u"verticalLayout_34")
-        self.verticalLayout_34.setContentsMargins(0, 0, 0, 0)
-        self.graph1_2 = QVBoxLayout()
+
+        self.verticalLayout_16.addWidget(self.frame_23)
+
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+
+        self.horizontalLayout_43.addWidget(self.scrollArea)
+
+        self.tabWidget_nationalStatistics.addTab(self.tab_Cases, "")
+        self.tab_Deaths = QWidget()
+        self.tab_Deaths.setObjectName(u"tab_Deaths")
+        self.verticalLayout_18 = QVBoxLayout(self.tab_Deaths)
+        self.verticalLayout_18.setObjectName(u"verticalLayout_18")
+        self.scrollArea_4 = QScrollArea(self.tab_Deaths)
+        self.scrollArea_4.setObjectName(u"scrollArea_4")
+        self.scrollArea_4.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_4 = QWidget()
+        self.scrollAreaWidgetContents_4.setObjectName(u"scrollAreaWidgetContents_4")
+        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, -1234, 1100, 1734))
+        self.verticalLayout_17 = QVBoxLayout(self.scrollAreaWidgetContents_4)
+        self.verticalLayout_17.setObjectName(u"verticalLayout_17")
+        self.frame_24 = QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_24.setObjectName(u"frame_24")
+        self.frame_24.setMinimumSize(QSize(0, 400))
+        self.frame_24.setFrameShape(QFrame.StyledPanel)
+        self.frame_24.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_74 = QHBoxLayout(self.frame_24)
+        self.horizontalLayout_74.setObjectName(u"horizontalLayout_74")
+        self.horizontalLayout_74.setContentsMargins(0, 0, 0, 0)
+        self.graph1_2 = QHBoxLayout()
         self.graph1_2.setObjectName(u"graph1_2")
 
-        self.verticalLayout_34.addLayout(self.graph1_2)
+        self.horizontalLayout_74.addLayout(self.graph1_2)
 
 
-        self.gridLayout_2.addWidget(self.frame_65, 0, 0, 1, 1)
+        self.verticalLayout_17.addWidget(self.frame_24)
 
-        self.frame_66 = QFrame(self.frame_64)
-        self.frame_66.setObjectName(u"frame_66")
-        self.frame_66.setFrameShape(QFrame.StyledPanel)
-        self.frame_66.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_35 = QVBoxLayout(self.frame_66)
-        self.verticalLayout_35.setObjectName(u"verticalLayout_35")
-        self.verticalLayout_35.setContentsMargins(0, 0, 0, 0)
-        self.graph4_2 = QVBoxLayout()
-        self.graph4_2.setObjectName(u"graph4_2")
-
-        self.verticalLayout_35.addLayout(self.graph4_2)
-
-
-        self.gridLayout_2.addWidget(self.frame_66, 1, 1, 1, 1)
-
-        self.frame_67 = QFrame(self.frame_64)
-        self.frame_67.setObjectName(u"frame_67")
-        self.frame_67.setFrameShape(QFrame.StyledPanel)
-        self.frame_67.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_36 = QVBoxLayout(self.frame_67)
-        self.verticalLayout_36.setObjectName(u"verticalLayout_36")
-        self.verticalLayout_36.setContentsMargins(0, 0, 0, 0)
-        self.graph2_2 = QVBoxLayout()
+        self.frame_64 = QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_64.setObjectName(u"frame_64")
+        self.frame_64.setMinimumSize(QSize(0, 400))
+        self.frame_64.setFrameShape(QFrame.StyledPanel)
+        self.frame_64.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_75 = QHBoxLayout(self.frame_64)
+        self.horizontalLayout_75.setObjectName(u"horizontalLayout_75")
+        self.horizontalLayout_75.setContentsMargins(0, 0, 0, 0)
+        self.graph2_2 = QHBoxLayout()
         self.graph2_2.setObjectName(u"graph2_2")
 
-        self.verticalLayout_36.addLayout(self.graph2_2)
+        self.horizontalLayout_75.addLayout(self.graph2_2)
 
 
-        self.gridLayout_2.addWidget(self.frame_67, 0, 1, 1, 1)
+        self.verticalLayout_17.addWidget(self.frame_64)
 
-        self.frame_68 = QFrame(self.frame_64)
-        self.frame_68.setObjectName(u"frame_68")
-        self.frame_68.setFrameShape(QFrame.StyledPanel)
-        self.frame_68.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_44 = QHBoxLayout(self.frame_68)
-        self.horizontalLayout_44.setObjectName(u"horizontalLayout_44")
-        self.horizontalLayout_44.setContentsMargins(0, 0, 0, 0)
-        self.graph3_2 = QVBoxLayout()
+        self.frame_65 = QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_65.setObjectName(u"frame_65")
+        self.frame_65.setMinimumSize(QSize(0, 400))
+        self.frame_65.setFrameShape(QFrame.StyledPanel)
+        self.frame_65.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_76 = QHBoxLayout(self.frame_65)
+        self.horizontalLayout_76.setObjectName(u"horizontalLayout_76")
+        self.horizontalLayout_76.setContentsMargins(0, 0, 0, 0)
+        self.graph3_2 = QHBoxLayout()
         self.graph3_2.setObjectName(u"graph3_2")
 
-        self.horizontalLayout_44.addLayout(self.graph3_2)
+        self.horizontalLayout_76.addLayout(self.graph3_2)
 
 
-        self.gridLayout_2.addWidget(self.frame_68, 1, 0, 1, 1)
+        self.verticalLayout_17.addWidget(self.frame_65)
 
-
-        self.horizontalLayout_45.addWidget(self.frame_64)
-
-        self.tabWidget_nationalStatistics.addTab(self.tab_Gender, "")
-        self.tab_Region = QWidget()
-        self.tab_Region.setObjectName(u"tab_Region")
-        self.horizontalLayout_47 = QHBoxLayout(self.tab_Region)
-        self.horizontalLayout_47.setObjectName(u"horizontalLayout_47")
-        self.frame_69 = QFrame(self.tab_Region)
-        self.frame_69.setObjectName(u"frame_69")
-        self.frame_69.setFrameShape(QFrame.StyledPanel)
-        self.frame_69.setFrameShadow(QFrame.Raised)
-        self.gridLayout_4 = QGridLayout(self.frame_69)
-        self.gridLayout_4.setObjectName(u"gridLayout_4")
-        self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
-        self.frame_70 = QFrame(self.frame_69)
-        self.frame_70.setObjectName(u"frame_70")
-        self.frame_70.setFrameShape(QFrame.StyledPanel)
-        self.frame_70.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_37 = QVBoxLayout(self.frame_70)
-        self.verticalLayout_37.setObjectName(u"verticalLayout_37")
-        self.verticalLayout_37.setContentsMargins(0, 0, 0, 0)
-        self.graph1_3 = QVBoxLayout()
-        self.graph1_3.setObjectName(u"graph1_3")
-
-        self.verticalLayout_37.addLayout(self.graph1_3)
-
-
-        self.gridLayout_4.addWidget(self.frame_70, 0, 0, 1, 1)
-
-        self.frame_71 = QFrame(self.frame_69)
-        self.frame_71.setObjectName(u"frame_71")
-        self.frame_71.setFrameShape(QFrame.StyledPanel)
-        self.frame_71.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_38 = QVBoxLayout(self.frame_71)
-        self.verticalLayout_38.setObjectName(u"verticalLayout_38")
-        self.verticalLayout_38.setContentsMargins(0, 0, 0, 0)
-        self.graph4_3 = QVBoxLayout()
-        self.graph4_3.setObjectName(u"graph4_3")
-
-        self.verticalLayout_38.addLayout(self.graph4_3)
-
-
-        self.gridLayout_4.addWidget(self.frame_71, 1, 1, 1, 1)
-
-        self.frame_72 = QFrame(self.frame_69)
-        self.frame_72.setObjectName(u"frame_72")
-        self.frame_72.setFrameShape(QFrame.StyledPanel)
-        self.frame_72.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_39 = QVBoxLayout(self.frame_72)
+        self.frame_66 = QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_66.setObjectName(u"frame_66")
+        self.frame_66.setMinimumSize(QSize(0, 0))
+        self.frame_66.setFrameShape(QFrame.StyledPanel)
+        self.frame_66.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_39 = QVBoxLayout(self.frame_66)
         self.verticalLayout_39.setObjectName(u"verticalLayout_39")
-        self.verticalLayout_39.setContentsMargins(0, 0, 0, 0)
-        self.graph2_3 = QVBoxLayout()
-        self.graph2_3.setObjectName(u"graph2_3")
-
-        self.verticalLayout_39.addLayout(self.graph2_3)
-
-
-        self.gridLayout_4.addWidget(self.frame_72, 0, 1, 1, 1)
-
-        self.frame_73 = QFrame(self.frame_69)
+        self.verticalLayout_39.setContentsMargins(0, 40, 0, 0)
+        self.frame_73 = QFrame(self.frame_66)
         self.frame_73.setObjectName(u"frame_73")
+        self.frame_73.setMaximumSize(QSize(16777215, 50))
         self.frame_73.setFrameShape(QFrame.StyledPanel)
         self.frame_73.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_46 = QHBoxLayout(self.frame_73)
+        self.horizontalLayout_44 = QHBoxLayout(self.frame_73)
+        self.horizontalLayout_44.setObjectName(u"horizontalLayout_44")
+        self.horizontalLayout_44.setContentsMargins(0, 0, 15, 0)
+        self.frame_131 = QFrame(self.frame_73)
+        self.frame_131.setObjectName(u"frame_131")
+        self.frame_131.setFrameShape(QFrame.StyledPanel)
+        self.frame_131.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout_44.addWidget(self.frame_131)
+
+        self.frame_132 = QFrame(self.frame_73)
+        self.frame_132.setObjectName(u"frame_132")
+        self.frame_132.setFrameShape(QFrame.StyledPanel)
+        self.frame_132.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_45 = QHBoxLayout(self.frame_132)
+        self.horizontalLayout_45.setObjectName(u"horizontalLayout_45")
+        self.horizontalLayout_45.setContentsMargins(0, 0, 0, 0)
+        self.label_29 = QLabel(self.frame_132)
+        self.label_29.setObjectName(u"label_29")
+        self.label_29.setMinimumSize(QSize(0, 35))
+        self.label_29.setStyleSheet(u"font: 12pt \"MS Shell Dlg 2\";")
+        self.label_29.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+
+        self.horizontalLayout_45.addWidget(self.label_29)
+
+        self.comboBox_dateStart_2 = QComboBox(self.frame_132)
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.addItem("")
+        self.comboBox_dateStart_2.setObjectName(u"comboBox_dateStart_2")
+        self.comboBox_dateStart_2.setMinimumSize(QSize(0, 35))
+
+        self.horizontalLayout_45.addWidget(self.comboBox_dateStart_2)
+
+        self.comboBox_monthStart_2 = QComboBox(self.frame_132)
+        self.comboBox_monthStart_2.addItem("")
+        self.comboBox_monthStart_2.addItem("")
+        self.comboBox_monthStart_2.addItem("")
+        self.comboBox_monthStart_2.addItem("")
+        self.comboBox_monthStart_2.addItem("")
+        self.comboBox_monthStart_2.addItem("")
+        self.comboBox_monthStart_2.addItem("")
+        self.comboBox_monthStart_2.addItem("")
+        self.comboBox_monthStart_2.addItem("")
+        self.comboBox_monthStart_2.addItem("")
+        self.comboBox_monthStart_2.addItem("")
+        self.comboBox_monthStart_2.addItem("")
+        self.comboBox_monthStart_2.setObjectName(u"comboBox_monthStart_2")
+        self.comboBox_monthStart_2.setMinimumSize(QSize(0, 35))
+
+        self.horizontalLayout_45.addWidget(self.comboBox_monthStart_2)
+
+        self.comboBox_yearStart_2 = QComboBox(self.frame_132)
+        self.comboBox_yearStart_2.addItem("")
+        self.comboBox_yearStart_2.addItem("")
+        self.comboBox_yearStart_2.addItem("")
+        self.comboBox_yearStart_2.setObjectName(u"comboBox_yearStart_2")
+        self.comboBox_yearStart_2.setMinimumSize(QSize(0, 35))
+
+        self.horizontalLayout_45.addWidget(self.comboBox_yearStart_2)
+
+
+        self.horizontalLayout_44.addWidget(self.frame_132)
+
+        self.frame_133 = QFrame(self.frame_73)
+        self.frame_133.setObjectName(u"frame_133")
+        self.frame_133.setMinimumSize(QSize(20, 0))
+        self.frame_133.setMaximumSize(QSize(30, 16777215))
+        self.frame_133.setFrameShape(QFrame.StyledPanel)
+        self.frame_133.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout_44.addWidget(self.frame_133)
+
+        self.frame_134 = QFrame(self.frame_73)
+        self.frame_134.setObjectName(u"frame_134")
+        self.frame_134.setFrameShape(QFrame.StyledPanel)
+        self.frame_134.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_46 = QHBoxLayout(self.frame_134)
         self.horizontalLayout_46.setObjectName(u"horizontalLayout_46")
         self.horizontalLayout_46.setContentsMargins(0, 0, 0, 0)
-        self.graph3_3 = QVBoxLayout()
+        self.label_31 = QLabel(self.frame_134)
+        self.label_31.setObjectName(u"label_31")
+        self.label_31.setMinimumSize(QSize(0, 35))
+        self.label_31.setStyleSheet(u"font: 12pt \"MS Shell Dlg 2\";")
+        self.label_31.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+
+        self.horizontalLayout_46.addWidget(self.label_31)
+
+        self.comboBox_dateEnd_2 = QComboBox(self.frame_134)
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.addItem("")
+        self.comboBox_dateEnd_2.setObjectName(u"comboBox_dateEnd_2")
+        self.comboBox_dateEnd_2.setMinimumSize(QSize(0, 35))
+
+        self.horizontalLayout_46.addWidget(self.comboBox_dateEnd_2)
+
+        self.comboBox_monthEnd_2 = QComboBox(self.frame_134)
+        self.comboBox_monthEnd_2.addItem("")
+        self.comboBox_monthEnd_2.addItem("")
+        self.comboBox_monthEnd_2.addItem("")
+        self.comboBox_monthEnd_2.addItem("")
+        self.comboBox_monthEnd_2.addItem("")
+        self.comboBox_monthEnd_2.addItem("")
+        self.comboBox_monthEnd_2.addItem("")
+        self.comboBox_monthEnd_2.addItem("")
+        self.comboBox_monthEnd_2.addItem("")
+        self.comboBox_monthEnd_2.addItem("")
+        self.comboBox_monthEnd_2.addItem("")
+        self.comboBox_monthEnd_2.addItem("")
+        self.comboBox_monthEnd_2.setObjectName(u"comboBox_monthEnd_2")
+        self.comboBox_monthEnd_2.setMinimumSize(QSize(0, 35))
+
+        self.horizontalLayout_46.addWidget(self.comboBox_monthEnd_2)
+
+        self.comboBox_yearEnd_2 = QComboBox(self.frame_134)
+        self.comboBox_yearEnd_2.addItem("")
+        self.comboBox_yearEnd_2.addItem("")
+        self.comboBox_yearEnd_2.addItem("")
+        self.comboBox_yearEnd_2.setObjectName(u"comboBox_yearEnd_2")
+        self.comboBox_yearEnd_2.setMinimumSize(QSize(0, 35))
+
+        self.horizontalLayout_46.addWidget(self.comboBox_yearEnd_2)
+
+
+        self.horizontalLayout_44.addWidget(self.frame_134)
+
+        self.btn_select_2 = QPushButton(self.frame_73)
+        self.btn_select_2.setObjectName(u"btn_select_2")
+        self.btn_select_2.setMinimumSize(QSize(140, 40))
+        self.btn_select_2.setMaximumSize(QSize(140, 16777215))
+
+        self.horizontalLayout_44.addWidget(self.btn_select_2)
+
+        self.frame_135 = QFrame(self.frame_73)
+        self.frame_135.setObjectName(u"frame_135")
+        self.frame_135.setFrameShape(QFrame.StyledPanel)
+        self.frame_135.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout_44.addWidget(self.frame_135)
+
+
+        self.verticalLayout_39.addWidget(self.frame_73)
+
+        self.frame_143 = QFrame(self.frame_66)
+        self.frame_143.setObjectName(u"frame_143")
+        self.frame_143.setMinimumSize(QSize(0, 400))
+        self.frame_143.setFrameShape(QFrame.StyledPanel)
+        self.frame_143.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_70 = QHBoxLayout(self.frame_143)
+        self.horizontalLayout_70.setObjectName(u"horizontalLayout_70")
+        self.horizontalLayout_70.setContentsMargins(0, 0, 0, 0)
+        self.graph4_2 = QHBoxLayout()
+        self.graph4_2.setObjectName(u"graph4_2")
+
+        self.horizontalLayout_70.addLayout(self.graph4_2)
+
+
+        self.verticalLayout_39.addWidget(self.frame_143)
+
+
+        self.verticalLayout_17.addWidget(self.frame_66)
+
+        self.scrollArea_4.setWidget(self.scrollAreaWidgetContents_4)
+
+        self.verticalLayout_18.addWidget(self.scrollArea_4)
+
+        self.tabWidget_nationalStatistics.addTab(self.tab_Deaths, "")
+        self.tab_Recovered = QWidget()
+        self.tab_Recovered.setObjectName(u"tab_Recovered")
+        self.verticalLayout_35 = QVBoxLayout(self.tab_Recovered)
+        self.verticalLayout_35.setObjectName(u"verticalLayout_35")
+        self.scrollArea_5 = QScrollArea(self.tab_Recovered)
+        self.scrollArea_5.setObjectName(u"scrollArea_5")
+        self.scrollArea_5.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_5 = QWidget()
+        self.scrollAreaWidgetContents_5.setObjectName(u"scrollAreaWidgetContents_5")
+        self.scrollAreaWidgetContents_5.setGeometry(QRect(0, 0, 1100, 1734))
+        self.verticalLayout_34 = QVBoxLayout(self.scrollAreaWidgetContents_5)
+        self.verticalLayout_34.setObjectName(u"verticalLayout_34")
+        self.frame_67 = QFrame(self.scrollAreaWidgetContents_5)
+        self.frame_67.setObjectName(u"frame_67")
+        self.frame_67.setMinimumSize(QSize(0, 400))
+        self.frame_67.setFrameShape(QFrame.StyledPanel)
+        self.frame_67.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_77 = QHBoxLayout(self.frame_67)
+        self.horizontalLayout_77.setObjectName(u"horizontalLayout_77")
+        self.horizontalLayout_77.setContentsMargins(0, 0, 0, 0)
+        self.graph1_3 = QHBoxLayout()
+        self.graph1_3.setObjectName(u"graph1_3")
+
+        self.horizontalLayout_77.addLayout(self.graph1_3)
+
+
+        self.verticalLayout_34.addWidget(self.frame_67)
+
+        self.frame_68 = QFrame(self.scrollAreaWidgetContents_5)
+        self.frame_68.setObjectName(u"frame_68")
+        self.frame_68.setMinimumSize(QSize(0, 400))
+        self.frame_68.setFrameShape(QFrame.StyledPanel)
+        self.frame_68.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_78 = QHBoxLayout(self.frame_68)
+        self.horizontalLayout_78.setObjectName(u"horizontalLayout_78")
+        self.horizontalLayout_78.setContentsMargins(0, 0, 0, 0)
+        self.graph2_3 = QHBoxLayout()
+        self.graph2_3.setObjectName(u"graph2_3")
+
+        self.horizontalLayout_78.addLayout(self.graph2_3)
+
+
+        self.verticalLayout_34.addWidget(self.frame_68)
+
+        self.frame_69 = QFrame(self.scrollAreaWidgetContents_5)
+        self.frame_69.setObjectName(u"frame_69")
+        self.frame_69.setMinimumSize(QSize(0, 400))
+        self.frame_69.setFrameShape(QFrame.StyledPanel)
+        self.frame_69.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_79 = QHBoxLayout(self.frame_69)
+        self.horizontalLayout_79.setObjectName(u"horizontalLayout_79")
+        self.horizontalLayout_79.setContentsMargins(0, 0, 0, 0)
+        self.graph3_3 = QHBoxLayout()
         self.graph3_3.setObjectName(u"graph3_3")
 
-        self.horizontalLayout_46.addLayout(self.graph3_3)
+        self.horizontalLayout_79.addLayout(self.graph3_3)
 
 
-        self.gridLayout_4.addWidget(self.frame_73, 1, 0, 1, 1)
+        self.verticalLayout_34.addWidget(self.frame_69)
+
+        self.frame_70 = QFrame(self.scrollAreaWidgetContents_5)
+        self.frame_70.setObjectName(u"frame_70")
+        self.frame_70.setMinimumSize(QSize(0, 0))
+        self.frame_70.setFrameShape(QFrame.StyledPanel)
+        self.frame_70.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_64 = QVBoxLayout(self.frame_70)
+        self.verticalLayout_64.setObjectName(u"verticalLayout_64")
+        self.verticalLayout_64.setContentsMargins(0, 40, 0, 0)
+        self.frame_136 = QFrame(self.frame_70)
+        self.frame_136.setObjectName(u"frame_136")
+        self.frame_136.setMaximumSize(QSize(16777215, 50))
+        self.frame_136.setFrameShape(QFrame.StyledPanel)
+        self.frame_136.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_47 = QHBoxLayout(self.frame_136)
+        self.horizontalLayout_47.setObjectName(u"horizontalLayout_47")
+        self.horizontalLayout_47.setContentsMargins(0, 0, 15, 0)
+        self.frame_137 = QFrame(self.frame_136)
+        self.frame_137.setObjectName(u"frame_137")
+        self.frame_137.setFrameShape(QFrame.StyledPanel)
+        self.frame_137.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout_47.addWidget(self.frame_137)
+
+        self.frame_138 = QFrame(self.frame_136)
+        self.frame_138.setObjectName(u"frame_138")
+        self.frame_138.setFrameShape(QFrame.StyledPanel)
+        self.frame_138.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_68 = QHBoxLayout(self.frame_138)
+        self.horizontalLayout_68.setObjectName(u"horizontalLayout_68")
+        self.horizontalLayout_68.setContentsMargins(0, 0, 0, 0)
+        self.label_32 = QLabel(self.frame_138)
+        self.label_32.setObjectName(u"label_32")
+        self.label_32.setMinimumSize(QSize(0, 35))
+        self.label_32.setStyleSheet(u"font: 12pt \"MS Shell Dlg 2\";")
+        self.label_32.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+
+        self.horizontalLayout_68.addWidget(self.label_32)
+
+        self.comboBox_dateStart_3 = QComboBox(self.frame_138)
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.addItem("")
+        self.comboBox_dateStart_3.setObjectName(u"comboBox_dateStart_3")
+        self.comboBox_dateStart_3.setMinimumSize(QSize(0, 35))
+
+        self.horizontalLayout_68.addWidget(self.comboBox_dateStart_3)
+
+        self.comboBox_monthStart_3 = QComboBox(self.frame_138)
+        self.comboBox_monthStart_3.addItem("")
+        self.comboBox_monthStart_3.addItem("")
+        self.comboBox_monthStart_3.addItem("")
+        self.comboBox_monthStart_3.addItem("")
+        self.comboBox_monthStart_3.addItem("")
+        self.comboBox_monthStart_3.addItem("")
+        self.comboBox_monthStart_3.addItem("")
+        self.comboBox_monthStart_3.addItem("")
+        self.comboBox_monthStart_3.addItem("")
+        self.comboBox_monthStart_3.addItem("")
+        self.comboBox_monthStart_3.addItem("")
+        self.comboBox_monthStart_3.addItem("")
+        self.comboBox_monthStart_3.setObjectName(u"comboBox_monthStart_3")
+        self.comboBox_monthStart_3.setMinimumSize(QSize(0, 35))
+
+        self.horizontalLayout_68.addWidget(self.comboBox_monthStart_3)
+
+        self.comboBox_yearStart_3 = QComboBox(self.frame_138)
+        self.comboBox_yearStart_3.addItem("")
+        self.comboBox_yearStart_3.addItem("")
+        self.comboBox_yearStart_3.addItem("")
+        self.comboBox_yearStart_3.setObjectName(u"comboBox_yearStart_3")
+        self.comboBox_yearStart_3.setMinimumSize(QSize(0, 35))
+
+        self.horizontalLayout_68.addWidget(self.comboBox_yearStart_3)
 
 
-        self.horizontalLayout_47.addWidget(self.frame_69)
+        self.horizontalLayout_47.addWidget(self.frame_138)
 
-        self.tabWidget_nationalStatistics.addTab(self.tab_Region, "")
+        self.frame_139 = QFrame(self.frame_136)
+        self.frame_139.setObjectName(u"frame_139")
+        self.frame_139.setMinimumSize(QSize(20, 0))
+        self.frame_139.setMaximumSize(QSize(30, 16777215))
+        self.frame_139.setFrameShape(QFrame.StyledPanel)
+        self.frame_139.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout_47.addWidget(self.frame_139)
+
+        self.frame_140 = QFrame(self.frame_136)
+        self.frame_140.setObjectName(u"frame_140")
+        self.frame_140.setFrameShape(QFrame.StyledPanel)
+        self.frame_140.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_69 = QHBoxLayout(self.frame_140)
+        self.horizontalLayout_69.setObjectName(u"horizontalLayout_69")
+        self.horizontalLayout_69.setContentsMargins(0, 0, 0, 0)
+        self.label_57 = QLabel(self.frame_140)
+        self.label_57.setObjectName(u"label_57")
+        self.label_57.setMinimumSize(QSize(0, 35))
+        self.label_57.setStyleSheet(u"font: 12pt \"MS Shell Dlg 2\";")
+        self.label_57.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+
+        self.horizontalLayout_69.addWidget(self.label_57)
+
+        self.comboBox_dateEnd_3 = QComboBox(self.frame_140)
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.addItem("")
+        self.comboBox_dateEnd_3.setObjectName(u"comboBox_dateEnd_3")
+        self.comboBox_dateEnd_3.setMinimumSize(QSize(0, 35))
+
+        self.horizontalLayout_69.addWidget(self.comboBox_dateEnd_3)
+
+        self.comboBox_monthEnd_3 = QComboBox(self.frame_140)
+        self.comboBox_monthEnd_3.addItem("")
+        self.comboBox_monthEnd_3.addItem("")
+        self.comboBox_monthEnd_3.addItem("")
+        self.comboBox_monthEnd_3.addItem("")
+        self.comboBox_monthEnd_3.addItem("")
+        self.comboBox_monthEnd_3.addItem("")
+        self.comboBox_monthEnd_3.addItem("")
+        self.comboBox_monthEnd_3.addItem("")
+        self.comboBox_monthEnd_3.addItem("")
+        self.comboBox_monthEnd_3.addItem("")
+        self.comboBox_monthEnd_3.addItem("")
+        self.comboBox_monthEnd_3.addItem("")
+        self.comboBox_monthEnd_3.setObjectName(u"comboBox_monthEnd_3")
+        self.comboBox_monthEnd_3.setMinimumSize(QSize(0, 35))
+
+        self.horizontalLayout_69.addWidget(self.comboBox_monthEnd_3)
+
+        self.comboBox_yearEnd_3 = QComboBox(self.frame_140)
+        self.comboBox_yearEnd_3.addItem("")
+        self.comboBox_yearEnd_3.addItem("")
+        self.comboBox_yearEnd_3.addItem("")
+        self.comboBox_yearEnd_3.setObjectName(u"comboBox_yearEnd_3")
+        self.comboBox_yearEnd_3.setMinimumSize(QSize(0, 35))
+
+        self.horizontalLayout_69.addWidget(self.comboBox_yearEnd_3)
+
+
+        self.horizontalLayout_47.addWidget(self.frame_140)
+
+        self.btn_select_3 = QPushButton(self.frame_136)
+        self.btn_select_3.setObjectName(u"btn_select_3")
+        self.btn_select_3.setMinimumSize(QSize(140, 40))
+        self.btn_select_3.setMaximumSize(QSize(140, 16777215))
+
+        self.horizontalLayout_47.addWidget(self.btn_select_3)
+
+        self.frame_141 = QFrame(self.frame_136)
+        self.frame_141.setObjectName(u"frame_141")
+        self.frame_141.setFrameShape(QFrame.StyledPanel)
+        self.frame_141.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout_47.addWidget(self.frame_141)
+
+
+        self.verticalLayout_64.addWidget(self.frame_136)
+
+        self.frame_144 = QFrame(self.frame_70)
+        self.frame_144.setObjectName(u"frame_144")
+        self.frame_144.setMinimumSize(QSize(0, 400))
+        self.frame_144.setFrameShape(QFrame.StyledPanel)
+        self.frame_144.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_80 = QHBoxLayout(self.frame_144)
+        self.horizontalLayout_80.setObjectName(u"horizontalLayout_80")
+        self.horizontalLayout_80.setContentsMargins(0, 0, 0, 0)
+        self.graph4_3 = QHBoxLayout()
+        self.graph4_3.setObjectName(u"graph4_3")
+
+        self.horizontalLayout_80.addLayout(self.graph4_3)
+
+
+        self.verticalLayout_64.addWidget(self.frame_144)
+
+
+        self.verticalLayout_34.addWidget(self.frame_70)
+
+        self.scrollArea_5.setWidget(self.scrollAreaWidgetContents_5)
+
+        self.verticalLayout_35.addWidget(self.scrollArea_5)
+
+        self.tabWidget_nationalStatistics.addTab(self.tab_Recovered, "")
+        self.tab_Vaccination = QWidget()
+        self.tab_Vaccination.setObjectName(u"tab_Vaccination")
+        self.verticalLayout_37 = QVBoxLayout(self.tab_Vaccination)
+        self.verticalLayout_37.setObjectName(u"verticalLayout_37")
+        self.scrollArea_6 = QScrollArea(self.tab_Vaccination)
+        self.scrollArea_6.setObjectName(u"scrollArea_6")
+        self.scrollArea_6.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_6 = QWidget()
+        self.scrollAreaWidgetContents_6.setObjectName(u"scrollAreaWidgetContents_6")
+        self.scrollAreaWidgetContents_6.setGeometry(QRect(0, 0, 1100, 829))
+        self.verticalLayout_36 = QVBoxLayout(self.scrollAreaWidgetContents_6)
+        self.verticalLayout_36.setObjectName(u"verticalLayout_36")
+        self.frame_71 = QFrame(self.scrollAreaWidgetContents_6)
+        self.frame_71.setObjectName(u"frame_71")
+        self.frame_71.setMinimumSize(QSize(0, 400))
+        self.frame_71.setFrameShape(QFrame.StyledPanel)
+        self.frame_71.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_83 = QHBoxLayout(self.frame_71)
+        self.horizontalLayout_83.setObjectName(u"horizontalLayout_83")
+        self.horizontalLayout_83.setContentsMargins(0, 0, 0, 0)
+        self.graph1_10 = QHBoxLayout()
+        self.graph1_10.setObjectName(u"graph1_10")
+
+        self.horizontalLayout_83.addLayout(self.graph1_10)
+
+
+        self.verticalLayout_36.addWidget(self.frame_71)
+
+        self.frame_72 = QFrame(self.scrollAreaWidgetContents_6)
+        self.frame_72.setObjectName(u"frame_72")
+        self.frame_72.setMinimumSize(QSize(0, 400))
+        self.frame_72.setFrameShape(QFrame.StyledPanel)
+        self.frame_72.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_84 = QHBoxLayout(self.frame_72)
+        self.horizontalLayout_84.setObjectName(u"horizontalLayout_84")
+        self.horizontalLayout_84.setContentsMargins(0, 0, 0, 0)
+        self.graph2_10 = QHBoxLayout()
+        self.graph2_10.setObjectName(u"graph2_10")
+
+        self.horizontalLayout_84.addLayout(self.graph2_10)
+
+
+        self.verticalLayout_36.addWidget(self.frame_72)
+
+        self.scrollArea_6.setWidget(self.scrollAreaWidgetContents_6)
+
+        self.verticalLayout_37.addWidget(self.scrollArea_6)
+
+        self.tabWidget_nationalStatistics.addTab(self.tab_Vaccination, "")
 
         self.verticalLayout_19.addWidget(self.tabWidget_nationalStatistics)
 
@@ -2844,7 +3350,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 1122, 979))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 570, 979))
         self.verticalLayout_22 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.verticalLayout_22.setContentsMargins(27, -1, -1, -1)
@@ -3033,7 +3539,7 @@ class Ui_MainWindow(object):
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollAreaWidgetContents_3 = QWidget()
         self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, -567, 1122, 1859))
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 963, 1859))
         self.verticalLayout_21 = QVBoxLayout(self.scrollAreaWidgetContents_3)
         self.verticalLayout_21.setObjectName(u"verticalLayout_21")
         self.verticalLayout_21.setContentsMargins(-1, 0, -1, -1)
@@ -3549,8 +4055,8 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(4)
-        self.tabWidget_nationalStatistics.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
+        self.tabWidget_nationalStatistics.setCurrentIndex(2)
         self.tabWidget_worldStatistics.setCurrentIndex(0)
         self.tabWidget_infographics.setCurrentIndex(1)
 
@@ -3720,9 +4226,208 @@ class Ui_MainWindow(object):
         self.comboBox_yearEnd.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.btn_select.setText(QCoreApplication.translate("MainWindow", u"Select", None))
-        self.tabWidget_nationalStatistics.setTabText(self.tabWidget_nationalStatistics.indexOf(self.tab_Age), QCoreApplication.translate("MainWindow", u"Age", None))
-        self.tabWidget_nationalStatistics.setTabText(self.tabWidget_nationalStatistics.indexOf(self.tab_Gender), QCoreApplication.translate("MainWindow", u"Gender", None))
-        self.tabWidget_nationalStatistics.setTabText(self.tabWidget_nationalStatistics.indexOf(self.tab_Region), QCoreApplication.translate("MainWindow", u"Region", None))
+        self.tabWidget_nationalStatistics.setTabText(self.tabWidget_nationalStatistics.indexOf(self.tab_Cases), QCoreApplication.translate("MainWindow", u"Cases", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Start Date: ", None))
+        self.comboBox_dateStart_2.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
+        self.comboBox_dateStart_2.setItemText(1, QCoreApplication.translate("MainWindow", u"2", None))
+        self.comboBox_dateStart_2.setItemText(2, QCoreApplication.translate("MainWindow", u"3", None))
+        self.comboBox_dateStart_2.setItemText(3, QCoreApplication.translate("MainWindow", u"4", None))
+        self.comboBox_dateStart_2.setItemText(4, QCoreApplication.translate("MainWindow", u"5", None))
+        self.comboBox_dateStart_2.setItemText(5, QCoreApplication.translate("MainWindow", u"6", None))
+        self.comboBox_dateStart_2.setItemText(6, QCoreApplication.translate("MainWindow", u"7", None))
+        self.comboBox_dateStart_2.setItemText(7, QCoreApplication.translate("MainWindow", u"8", None))
+        self.comboBox_dateStart_2.setItemText(8, QCoreApplication.translate("MainWindow", u"9", None))
+        self.comboBox_dateStart_2.setItemText(9, QCoreApplication.translate("MainWindow", u"10", None))
+        self.comboBox_dateStart_2.setItemText(10, QCoreApplication.translate("MainWindow", u"11", None))
+        self.comboBox_dateStart_2.setItemText(11, QCoreApplication.translate("MainWindow", u"12", None))
+        self.comboBox_dateStart_2.setItemText(12, QCoreApplication.translate("MainWindow", u"13", None))
+        self.comboBox_dateStart_2.setItemText(13, QCoreApplication.translate("MainWindow", u"14", None))
+        self.comboBox_dateStart_2.setItemText(14, QCoreApplication.translate("MainWindow", u"15", None))
+        self.comboBox_dateStart_2.setItemText(15, QCoreApplication.translate("MainWindow", u"16", None))
+        self.comboBox_dateStart_2.setItemText(16, QCoreApplication.translate("MainWindow", u"17", None))
+        self.comboBox_dateStart_2.setItemText(17, QCoreApplication.translate("MainWindow", u"18", None))
+        self.comboBox_dateStart_2.setItemText(18, QCoreApplication.translate("MainWindow", u"19", None))
+        self.comboBox_dateStart_2.setItemText(19, QCoreApplication.translate("MainWindow", u"20", None))
+        self.comboBox_dateStart_2.setItemText(20, QCoreApplication.translate("MainWindow", u"21", None))
+        self.comboBox_dateStart_2.setItemText(21, QCoreApplication.translate("MainWindow", u"22", None))
+        self.comboBox_dateStart_2.setItemText(22, QCoreApplication.translate("MainWindow", u"23", None))
+        self.comboBox_dateStart_2.setItemText(23, QCoreApplication.translate("MainWindow", u"24", None))
+        self.comboBox_dateStart_2.setItemText(24, QCoreApplication.translate("MainWindow", u"25", None))
+        self.comboBox_dateStart_2.setItemText(25, QCoreApplication.translate("MainWindow", u"26", None))
+        self.comboBox_dateStart_2.setItemText(26, QCoreApplication.translate("MainWindow", u"28", None))
+        self.comboBox_dateStart_2.setItemText(27, QCoreApplication.translate("MainWindow", u"29", None))
+        self.comboBox_dateStart_2.setItemText(28, QCoreApplication.translate("MainWindow", u"30", None))
+        self.comboBox_dateStart_2.setItemText(29, QCoreApplication.translate("MainWindow", u"31", None))
+
+        self.comboBox_monthStart_2.setItemText(0, QCoreApplication.translate("MainWindow", u"January", None))
+        self.comboBox_monthStart_2.setItemText(1, QCoreApplication.translate("MainWindow", u"February", None))
+        self.comboBox_monthStart_2.setItemText(2, QCoreApplication.translate("MainWindow", u"March", None))
+        self.comboBox_monthStart_2.setItemText(3, QCoreApplication.translate("MainWindow", u"April", None))
+        self.comboBox_monthStart_2.setItemText(4, QCoreApplication.translate("MainWindow", u"May", None))
+        self.comboBox_monthStart_2.setItemText(5, QCoreApplication.translate("MainWindow", u"June", None))
+        self.comboBox_monthStart_2.setItemText(6, QCoreApplication.translate("MainWindow", u"July", None))
+        self.comboBox_monthStart_2.setItemText(7, QCoreApplication.translate("MainWindow", u"August", None))
+        self.comboBox_monthStart_2.setItemText(8, QCoreApplication.translate("MainWindow", u"September", None))
+        self.comboBox_monthStart_2.setItemText(9, QCoreApplication.translate("MainWindow", u"October", None))
+        self.comboBox_monthStart_2.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
+        self.comboBox_monthStart_2.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
+
+        self.comboBox_yearStart_2.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
+        self.comboBox_yearStart_2.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearStart_2.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"End Date: ", None))
+        self.comboBox_dateEnd_2.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
+        self.comboBox_dateEnd_2.setItemText(1, QCoreApplication.translate("MainWindow", u"2", None))
+        self.comboBox_dateEnd_2.setItemText(2, QCoreApplication.translate("MainWindow", u"3", None))
+        self.comboBox_dateEnd_2.setItemText(3, QCoreApplication.translate("MainWindow", u"4", None))
+        self.comboBox_dateEnd_2.setItemText(4, QCoreApplication.translate("MainWindow", u"5", None))
+        self.comboBox_dateEnd_2.setItemText(5, QCoreApplication.translate("MainWindow", u"6", None))
+        self.comboBox_dateEnd_2.setItemText(6, QCoreApplication.translate("MainWindow", u"7", None))
+        self.comboBox_dateEnd_2.setItemText(7, QCoreApplication.translate("MainWindow", u"8", None))
+        self.comboBox_dateEnd_2.setItemText(8, QCoreApplication.translate("MainWindow", u"9", None))
+        self.comboBox_dateEnd_2.setItemText(9, QCoreApplication.translate("MainWindow", u"10", None))
+        self.comboBox_dateEnd_2.setItemText(10, QCoreApplication.translate("MainWindow", u"11", None))
+        self.comboBox_dateEnd_2.setItemText(11, QCoreApplication.translate("MainWindow", u"12", None))
+        self.comboBox_dateEnd_2.setItemText(12, QCoreApplication.translate("MainWindow", u"13", None))
+        self.comboBox_dateEnd_2.setItemText(13, QCoreApplication.translate("MainWindow", u"14", None))
+        self.comboBox_dateEnd_2.setItemText(14, QCoreApplication.translate("MainWindow", u"15", None))
+        self.comboBox_dateEnd_2.setItemText(15, QCoreApplication.translate("MainWindow", u"16", None))
+        self.comboBox_dateEnd_2.setItemText(16, QCoreApplication.translate("MainWindow", u"17", None))
+        self.comboBox_dateEnd_2.setItemText(17, QCoreApplication.translate("MainWindow", u"18", None))
+        self.comboBox_dateEnd_2.setItemText(18, QCoreApplication.translate("MainWindow", u"19", None))
+        self.comboBox_dateEnd_2.setItemText(19, QCoreApplication.translate("MainWindow", u"20", None))
+        self.comboBox_dateEnd_2.setItemText(20, QCoreApplication.translate("MainWindow", u"21", None))
+        self.comboBox_dateEnd_2.setItemText(21, QCoreApplication.translate("MainWindow", u"22", None))
+        self.comboBox_dateEnd_2.setItemText(22, QCoreApplication.translate("MainWindow", u"23", None))
+        self.comboBox_dateEnd_2.setItemText(23, QCoreApplication.translate("MainWindow", u"24", None))
+        self.comboBox_dateEnd_2.setItemText(24, QCoreApplication.translate("MainWindow", u"25", None))
+        self.comboBox_dateEnd_2.setItemText(25, QCoreApplication.translate("MainWindow", u"26", None))
+        self.comboBox_dateEnd_2.setItemText(26, QCoreApplication.translate("MainWindow", u"28", None))
+        self.comboBox_dateEnd_2.setItemText(27, QCoreApplication.translate("MainWindow", u"29", None))
+        self.comboBox_dateEnd_2.setItemText(28, QCoreApplication.translate("MainWindow", u"30", None))
+        self.comboBox_dateEnd_2.setItemText(29, QCoreApplication.translate("MainWindow", u"31", None))
+
+        self.comboBox_monthEnd_2.setItemText(0, QCoreApplication.translate("MainWindow", u"January", None))
+        self.comboBox_monthEnd_2.setItemText(1, QCoreApplication.translate("MainWindow", u"February", None))
+        self.comboBox_monthEnd_2.setItemText(2, QCoreApplication.translate("MainWindow", u"March", None))
+        self.comboBox_monthEnd_2.setItemText(3, QCoreApplication.translate("MainWindow", u"April", None))
+        self.comboBox_monthEnd_2.setItemText(4, QCoreApplication.translate("MainWindow", u"May", None))
+        self.comboBox_monthEnd_2.setItemText(5, QCoreApplication.translate("MainWindow", u"June", None))
+        self.comboBox_monthEnd_2.setItemText(6, QCoreApplication.translate("MainWindow", u"July", None))
+        self.comboBox_monthEnd_2.setItemText(7, QCoreApplication.translate("MainWindow", u"August", None))
+        self.comboBox_monthEnd_2.setItemText(8, QCoreApplication.translate("MainWindow", u"September", None))
+        self.comboBox_monthEnd_2.setItemText(9, QCoreApplication.translate("MainWindow", u"October", None))
+        self.comboBox_monthEnd_2.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
+        self.comboBox_monthEnd_2.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
+
+        self.comboBox_yearEnd_2.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
+        self.comboBox_yearEnd_2.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearEnd_2.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+
+        self.btn_select_2.setText(QCoreApplication.translate("MainWindow", u"Select", None))
+        self.tabWidget_nationalStatistics.setTabText(self.tabWidget_nationalStatistics.indexOf(self.tab_Deaths), QCoreApplication.translate("MainWindow", u"Deaths", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"Start Date: ", None))
+        self.comboBox_dateStart_3.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
+        self.comboBox_dateStart_3.setItemText(1, QCoreApplication.translate("MainWindow", u"2", None))
+        self.comboBox_dateStart_3.setItemText(2, QCoreApplication.translate("MainWindow", u"3", None))
+        self.comboBox_dateStart_3.setItemText(3, QCoreApplication.translate("MainWindow", u"4", None))
+        self.comboBox_dateStart_3.setItemText(4, QCoreApplication.translate("MainWindow", u"5", None))
+        self.comboBox_dateStart_3.setItemText(5, QCoreApplication.translate("MainWindow", u"6", None))
+        self.comboBox_dateStart_3.setItemText(6, QCoreApplication.translate("MainWindow", u"7", None))
+        self.comboBox_dateStart_3.setItemText(7, QCoreApplication.translate("MainWindow", u"8", None))
+        self.comboBox_dateStart_3.setItemText(8, QCoreApplication.translate("MainWindow", u"9", None))
+        self.comboBox_dateStart_3.setItemText(9, QCoreApplication.translate("MainWindow", u"10", None))
+        self.comboBox_dateStart_3.setItemText(10, QCoreApplication.translate("MainWindow", u"11", None))
+        self.comboBox_dateStart_3.setItemText(11, QCoreApplication.translate("MainWindow", u"12", None))
+        self.comboBox_dateStart_3.setItemText(12, QCoreApplication.translate("MainWindow", u"13", None))
+        self.comboBox_dateStart_3.setItemText(13, QCoreApplication.translate("MainWindow", u"14", None))
+        self.comboBox_dateStart_3.setItemText(14, QCoreApplication.translate("MainWindow", u"15", None))
+        self.comboBox_dateStart_3.setItemText(15, QCoreApplication.translate("MainWindow", u"16", None))
+        self.comboBox_dateStart_3.setItemText(16, QCoreApplication.translate("MainWindow", u"17", None))
+        self.comboBox_dateStart_3.setItemText(17, QCoreApplication.translate("MainWindow", u"18", None))
+        self.comboBox_dateStart_3.setItemText(18, QCoreApplication.translate("MainWindow", u"19", None))
+        self.comboBox_dateStart_3.setItemText(19, QCoreApplication.translate("MainWindow", u"20", None))
+        self.comboBox_dateStart_3.setItemText(20, QCoreApplication.translate("MainWindow", u"21", None))
+        self.comboBox_dateStart_3.setItemText(21, QCoreApplication.translate("MainWindow", u"22", None))
+        self.comboBox_dateStart_3.setItemText(22, QCoreApplication.translate("MainWindow", u"23", None))
+        self.comboBox_dateStart_3.setItemText(23, QCoreApplication.translate("MainWindow", u"24", None))
+        self.comboBox_dateStart_3.setItemText(24, QCoreApplication.translate("MainWindow", u"25", None))
+        self.comboBox_dateStart_3.setItemText(25, QCoreApplication.translate("MainWindow", u"26", None))
+        self.comboBox_dateStart_3.setItemText(26, QCoreApplication.translate("MainWindow", u"28", None))
+        self.comboBox_dateStart_3.setItemText(27, QCoreApplication.translate("MainWindow", u"29", None))
+        self.comboBox_dateStart_3.setItemText(28, QCoreApplication.translate("MainWindow", u"30", None))
+        self.comboBox_dateStart_3.setItemText(29, QCoreApplication.translate("MainWindow", u"31", None))
+
+        self.comboBox_monthStart_3.setItemText(0, QCoreApplication.translate("MainWindow", u"January", None))
+        self.comboBox_monthStart_3.setItemText(1, QCoreApplication.translate("MainWindow", u"February", None))
+        self.comboBox_monthStart_3.setItemText(2, QCoreApplication.translate("MainWindow", u"March", None))
+        self.comboBox_monthStart_3.setItemText(3, QCoreApplication.translate("MainWindow", u"April", None))
+        self.comboBox_monthStart_3.setItemText(4, QCoreApplication.translate("MainWindow", u"May", None))
+        self.comboBox_monthStart_3.setItemText(5, QCoreApplication.translate("MainWindow", u"June", None))
+        self.comboBox_monthStart_3.setItemText(6, QCoreApplication.translate("MainWindow", u"July", None))
+        self.comboBox_monthStart_3.setItemText(7, QCoreApplication.translate("MainWindow", u"August", None))
+        self.comboBox_monthStart_3.setItemText(8, QCoreApplication.translate("MainWindow", u"September", None))
+        self.comboBox_monthStart_3.setItemText(9, QCoreApplication.translate("MainWindow", u"October", None))
+        self.comboBox_monthStart_3.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
+        self.comboBox_monthStart_3.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
+
+        self.comboBox_yearStart_3.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
+        self.comboBox_yearStart_3.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearStart_3.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+
+        self.label_57.setText(QCoreApplication.translate("MainWindow", u"End Date: ", None))
+        self.comboBox_dateEnd_3.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
+        self.comboBox_dateEnd_3.setItemText(1, QCoreApplication.translate("MainWindow", u"2", None))
+        self.comboBox_dateEnd_3.setItemText(2, QCoreApplication.translate("MainWindow", u"3", None))
+        self.comboBox_dateEnd_3.setItemText(3, QCoreApplication.translate("MainWindow", u"4", None))
+        self.comboBox_dateEnd_3.setItemText(4, QCoreApplication.translate("MainWindow", u"5", None))
+        self.comboBox_dateEnd_3.setItemText(5, QCoreApplication.translate("MainWindow", u"6", None))
+        self.comboBox_dateEnd_3.setItemText(6, QCoreApplication.translate("MainWindow", u"7", None))
+        self.comboBox_dateEnd_3.setItemText(7, QCoreApplication.translate("MainWindow", u"8", None))
+        self.comboBox_dateEnd_3.setItemText(8, QCoreApplication.translate("MainWindow", u"9", None))
+        self.comboBox_dateEnd_3.setItemText(9, QCoreApplication.translate("MainWindow", u"10", None))
+        self.comboBox_dateEnd_3.setItemText(10, QCoreApplication.translate("MainWindow", u"11", None))
+        self.comboBox_dateEnd_3.setItemText(11, QCoreApplication.translate("MainWindow", u"12", None))
+        self.comboBox_dateEnd_3.setItemText(12, QCoreApplication.translate("MainWindow", u"13", None))
+        self.comboBox_dateEnd_3.setItemText(13, QCoreApplication.translate("MainWindow", u"14", None))
+        self.comboBox_dateEnd_3.setItemText(14, QCoreApplication.translate("MainWindow", u"15", None))
+        self.comboBox_dateEnd_3.setItemText(15, QCoreApplication.translate("MainWindow", u"16", None))
+        self.comboBox_dateEnd_3.setItemText(16, QCoreApplication.translate("MainWindow", u"17", None))
+        self.comboBox_dateEnd_3.setItemText(17, QCoreApplication.translate("MainWindow", u"18", None))
+        self.comboBox_dateEnd_3.setItemText(18, QCoreApplication.translate("MainWindow", u"19", None))
+        self.comboBox_dateEnd_3.setItemText(19, QCoreApplication.translate("MainWindow", u"20", None))
+        self.comboBox_dateEnd_3.setItemText(20, QCoreApplication.translate("MainWindow", u"21", None))
+        self.comboBox_dateEnd_3.setItemText(21, QCoreApplication.translate("MainWindow", u"22", None))
+        self.comboBox_dateEnd_3.setItemText(22, QCoreApplication.translate("MainWindow", u"23", None))
+        self.comboBox_dateEnd_3.setItemText(23, QCoreApplication.translate("MainWindow", u"24", None))
+        self.comboBox_dateEnd_3.setItemText(24, QCoreApplication.translate("MainWindow", u"25", None))
+        self.comboBox_dateEnd_3.setItemText(25, QCoreApplication.translate("MainWindow", u"26", None))
+        self.comboBox_dateEnd_3.setItemText(26, QCoreApplication.translate("MainWindow", u"28", None))
+        self.comboBox_dateEnd_3.setItemText(27, QCoreApplication.translate("MainWindow", u"29", None))
+        self.comboBox_dateEnd_3.setItemText(28, QCoreApplication.translate("MainWindow", u"30", None))
+        self.comboBox_dateEnd_3.setItemText(29, QCoreApplication.translate("MainWindow", u"31", None))
+
+        self.comboBox_monthEnd_3.setItemText(0, QCoreApplication.translate("MainWindow", u"January", None))
+        self.comboBox_monthEnd_3.setItemText(1, QCoreApplication.translate("MainWindow", u"February", None))
+        self.comboBox_monthEnd_3.setItemText(2, QCoreApplication.translate("MainWindow", u"March", None))
+        self.comboBox_monthEnd_3.setItemText(3, QCoreApplication.translate("MainWindow", u"April", None))
+        self.comboBox_monthEnd_3.setItemText(4, QCoreApplication.translate("MainWindow", u"May", None))
+        self.comboBox_monthEnd_3.setItemText(5, QCoreApplication.translate("MainWindow", u"June", None))
+        self.comboBox_monthEnd_3.setItemText(6, QCoreApplication.translate("MainWindow", u"July", None))
+        self.comboBox_monthEnd_3.setItemText(7, QCoreApplication.translate("MainWindow", u"August", None))
+        self.comboBox_monthEnd_3.setItemText(8, QCoreApplication.translate("MainWindow", u"September", None))
+        self.comboBox_monthEnd_3.setItemText(9, QCoreApplication.translate("MainWindow", u"October", None))
+        self.comboBox_monthEnd_3.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
+        self.comboBox_monthEnd_3.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
+
+        self.comboBox_yearEnd_3.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
+        self.comboBox_yearEnd_3.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearEnd_3.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+
+        self.btn_select_3.setText(QCoreApplication.translate("MainWindow", u"Select", None))
+        self.tabWidget_nationalStatistics.setTabText(self.tabWidget_nationalStatistics.indexOf(self.tab_Recovered), QCoreApplication.translate("MainWindow", u"Recovered", None))
+        self.tabWidget_nationalStatistics.setTabText(self.tabWidget_nationalStatistics.indexOf(self.tab_Vaccination), QCoreApplication.translate("MainWindow", u"Vaccination", None))
         self.tabWidget_worldStatistics.setTabText(self.tabWidget_worldStatistics.indexOf(self.tab_Asia), QCoreApplication.translate("MainWindow", u"Asia", None))
         self.tabWidget_worldStatistics.setTabText(self.tabWidget_worldStatistics.indexOf(self.tab_Africa), QCoreApplication.translate("MainWindow", u"Africa", None))
         self.tabWidget_worldStatistics.setTabText(self.tabWidget_worldStatistics.indexOf(self.tab_Europe), QCoreApplication.translate("MainWindow", u"Europe", None))
