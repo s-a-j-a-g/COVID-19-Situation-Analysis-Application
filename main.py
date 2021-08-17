@@ -136,6 +136,12 @@ class MainWindow(QMainWindow):
         # self.ui.tableWidget_symptoms.setColumnWidth(3, 120)
         # self.ui.tableWidget_symptoms.setColumnWidth(4, 120)
         UIFunctions.loadSymptoms(self)
+        UIFunctions.loadHospitals(self)
+
+
+
+
+
 
 
         ######################################
@@ -195,8 +201,18 @@ class MainWindow(QMainWindow):
 
 
 
-        ##DATE SELECTED
-        self.ui.btn_select.clicked.connect(lambda: UIFunctions.getDate(self))
+        ##DATE SELECTED FOR CUSTOM TIME FRAME
+        self.ui.btn_select.clicked.connect(lambda: UIFunctions.getDate_NationalStatistics_Cases(self))
+        self.ui.btn_select_2.clicked.connect(lambda: UIFunctions.getDate_NationalStatistics_Deaths(self))
+        self.ui.btn_select_3.clicked.connect(lambda: UIFunctions.getDate_NationalStatistics_Recovered(self))
+        self.ui.btn_select_4.clicked.connect(lambda: UIFunctions.getDate_WorldStatistics_Cases(self))
+        self.ui.btn_select_5.clicked.connect(lambda: UIFunctions.getDate_WorldStatistics_Deaths(self))
+        self.ui.btn_select_6.clicked.connect(lambda: UIFunctions.getDate_WorldStatistics_Recovered(self))
+
+
+
+
+
 
         ################################### UPDATING DASHBOARD #######################
         self.ui.label_44.setText(str(NewCases_N_24))

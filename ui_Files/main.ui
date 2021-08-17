@@ -3026,7 +3026,7 @@ QTableWidget QTableCornerButton::section
 }</string>
                             </property>
                             <property name="currentIndex">
-                             <number>3</number>
+                             <number>2</number>
                             </property>
                             <widget class="QWidget" name="tab_Cases">
                              <attribute name="title">
@@ -3491,11 +3491,6 @@ QTableWidget QTableCornerButton::section
                                              </property>
                                              <item>
                                               <property name="text">
-                                               <string>2019</string>
-                                              </property>
-                                             </item>
-                                             <item>
-                                              <property name="text">
                                                <string>2020</string>
                                               </property>
                                              </item>
@@ -3811,11 +3806,6 @@ QTableWidget QTableCornerButton::section
                                              </property>
                                              <item>
                                               <property name="text">
-                                               <string>2019</string>
-                                              </property>
-                                             </item>
-                                             <item>
-                                              <property name="text">
                                                <string>2020</string>
                                               </property>
                                              </item>
@@ -3917,7 +3907,7 @@ QTableWidget QTableCornerButton::section
                                  <property name="geometry">
                                   <rect>
                                    <x>0</x>
-                                   <y>-1215</y>
+                                   <y>-1234</y>
                                    <width>1100</width>
                                    <height>1734</height>
                                   </rect>
@@ -4366,11 +4356,6 @@ QTableWidget QTableCornerButton::section
                                              </property>
                                              <item>
                                               <property name="text">
-                                               <string>2019</string>
-                                              </property>
-                                             </item>
-                                             <item>
-                                              <property name="text">
                                                <string>2020</string>
                                               </property>
                                              </item>
@@ -4684,11 +4669,6 @@ QTableWidget QTableCornerButton::section
                                                <height>35</height>
                                               </size>
                                              </property>
-                                             <item>
-                                              <property name="text">
-                                               <string>2019</string>
-                                              </property>
-                                             </item>
                                              <item>
                                               <property name="text">
                                                <string>2020</string>
@@ -5241,11 +5221,6 @@ QTableWidget QTableCornerButton::section
                                              </property>
                                              <item>
                                               <property name="text">
-                                               <string>2019</string>
-                                              </property>
-                                             </item>
-                                             <item>
-                                              <property name="text">
                                                <string>2020</string>
                                               </property>
                                              </item>
@@ -5561,11 +5536,6 @@ QTableWidget QTableCornerButton::section
                                              </property>
                                              <item>
                                               <property name="text">
-                                               <string>2019</string>
-                                              </property>
-                                             </item>
-                                             <item>
-                                              <property name="text">
                                                <string>2020</string>
                                               </property>
                                              </item>
@@ -5830,7 +5800,7 @@ QTableWidget QTableCornerButton::section
 }</string>
                             </property>
                             <property name="currentIndex">
-                             <number>0</number>
+                             <number>1</number>
                             </property>
                             <widget class="QWidget" name="tab_Cases_2">
                              <attribute name="title">
@@ -5846,7 +5816,7 @@ QTableWidget QTableCornerButton::section
                                  <property name="geometry">
                                   <rect>
                                    <x>0</x>
-                                   <y>-1128</y>
+                                   <y>-1151</y>
                                    <width>1120</width>
                                    <height>1734</height>
                                   </rect>
@@ -6295,11 +6265,6 @@ QTableWidget QTableCornerButton::section
                                              </property>
                                              <item>
                                               <property name="text">
-                                               <string>2019</string>
-                                              </property>
-                                             </item>
-                                             <item>
-                                              <property name="text">
                                                <string>2020</string>
                                               </property>
                                              </item>
@@ -6615,11 +6580,6 @@ QTableWidget QTableCornerButton::section
                                              </property>
                                              <item>
                                               <property name="text">
-                                               <string>2019</string>
-                                              </property>
-                                             </item>
-                                             <item>
-                                              <property name="text">
                                                <string>2020</string>
                                               </property>
                                              </item>
@@ -6721,7 +6681,7 @@ QTableWidget QTableCornerButton::section
                                  <property name="geometry">
                                   <rect>
                                    <x>0</x>
-                                   <y>0</y>
+                                   <y>-1225</y>
                                    <width>1120</width>
                                    <height>1734</height>
                                   </rect>
@@ -7170,11 +7130,6 @@ QTableWidget QTableCornerButton::section
                                              </property>
                                              <item>
                                               <property name="text">
-                                               <string>2019</string>
-                                              </property>
-                                             </item>
-                                             <item>
-                                              <property name="text">
                                                <string>2020</string>
                                               </property>
                                              </item>
@@ -7490,11 +7445,6 @@ QTableWidget QTableCornerButton::section
                                              </property>
                                              <item>
                                               <property name="text">
-                                               <string>2019</string>
-                                              </property>
-                                             </item>
-                                             <item>
-                                              <property name="text">
                                                <string>2020</string>
                                               </property>
                                              </item>
@@ -7596,7 +7546,7 @@ QTableWidget QTableCornerButton::section
                                  <property name="geometry">
                                   <rect>
                                    <x>0</x>
-                                   <y>0</y>
+                                   <y>-1162</y>
                                    <width>1120</width>
                                    <height>1734</height>
                                   </rect>
@@ -8045,11 +7995,6 @@ QTableWidget QTableCornerButton::section
                                              </property>
                                              <item>
                                               <property name="text">
-                                               <string>2019</string>
-                                              </property>
-                                             </item>
-                                             <item>
-                                              <property name="text">
                                                <string>2020</string>
                                               </property>
                                              </item>
@@ -8365,11 +8310,6 @@ QTableWidget QTableCornerButton::section
                                              </property>
                                              <item>
                                               <property name="text">
-                                               <string>2019</string>
-                                              </property>
-                                             </item>
-                                             <item>
-                                              <property name="text">
                                                <string>2020</string>
                                               </property>
                                              </item>
@@ -8471,7 +8411,7 @@ QTableWidget QTableCornerButton::section
                                  <property name="geometry">
                                   <rect>
                                    <x>0</x>
-                                   <y>-320</y>
+                                   <y>0</y>
                                    <width>1120</width>
                                    <height>829</height>
                                   </rect>
@@ -9102,7 +9042,7 @@ QTableWidget QTableCornerButton::section
 }</string>
                          </property>
                          <property name="currentIndex">
-                          <number>1</number>
+                          <number>2</number>
                          </property>
                          <widget class="QWidget" name="tab_Symptoms">
                           <attribute name="title">

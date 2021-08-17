@@ -128,7 +128,7 @@ class UIFunctions(MainWindow):
             self.close()
 
 
-    ##  LOAD SYMPTOMS FROM CSV TO THE TABLE IN INFROGRAPHICS
+    ##  LOAD SYMPTOMS FROM CSV TO THE TABLE IN INFROGRAPHICS PAGE
     def loadSymptoms(self):
         data = pd.read_csv('Resources/Symptoms.csv')
 
@@ -148,15 +148,100 @@ class UIFunctions(MainWindow):
             self.ui.tableWidget_symptoms.setItem(row, 4, QtWidgets.QTableWidgetItem(allergies[row]))
             row = row + 1
 
-    ## GET START AND END DATE FROM THE USER
-    def getDate(self):
-        date_start = self.ui.comboBox_dateStart.currentText()
-        month_start = self.ui.comboBox_monthStart.currentText()
-        year_start =  self.ui.comboBox_yearStart.currentText()
 
-        date_end = self.ui.comboBox_dateEnd.currentText()
-        month_end = self.ui.comboBox_monthEnd.currentText()
-        year_end =  self.ui.comboBox_yearEnd.currentText()
+    ## LOAD HOSPITALS FROM CSV TO THE TABLE IN HOSPITAL PAGE
+    def loadHospitals(self):
+        data = pd.read_csv('Resources/Hospitals.csv')
+
+        hospital_name = data['Hospital Name'].tolist()
+        contact = data['Contact'].tolist()
+        total_beds = data['Total Beds'].tolist()
+        icu_beds = data['ICU Beds'].tolist()
+        ventilators = data['Ventilators'].tolist()
+        isolation_beds = data['Isolation Beds'].tolist()
+
+        row = 0
+        self.ui.tableWidget_hospitals.setRowCount(len(hospital_name))
+        for item in hospital_name:    
+            self.ui.tableWidget_hospitals.setItem(row, 0, QtWidgets.QTableWidgetItem(hospital_name[row]))
+            # self.ui.tableWidget_hospitals.setItem(row, 1, QtWidgets.QTableWidgetItem(contact[row]))
+            self.ui.tableWidget_hospitals.setItem(row, 2, QtWidgets.QTableWidgetItem(total_beds[row]))
+            self.ui.tableWidget_hospitals.setItem(row, 3, QtWidgets.QTableWidgetItem(icu_beds[row]))
+            self.ui.tableWidget_hospitals.setItem(row, 4, QtWidgets.QTableWidgetItem(ventilators[row]))
+            # self.ui.tableWidget_hospitals.setItem(row, 5, QtWidgets.QTableWidgetItem(isolation_beds[row]))
+            row = row + 1
+
+
+    ## GET START AND END DATE FROM THE USER
+    def getDate_NationalStatistics_Cases(self):
+        date_start_ns_cases = self.ui.comboBox_dateStart.currentText()
+        month_start_ns_cases = self.ui.comboBox_monthStart.currentText()
+        year_start_ns_cases =  self.ui.comboBox_yearStart.currentText()
+
+        date_end_ns_cases = self.ui.comboBox_dateEnd.currentText()
+        month_end_ns_cases = self.ui.comboBox_monthEnd.currentText()
+        year_end_ns_cases =  self.ui.comboBox_yearEnd.currentText()
         
-        print(date_start, month_start, year_start)
-        print(date_end, month_end, year_end)
+        print(date_start_ns_cases, month_start_ns_cases, year_start_ns_cases)
+        print(date_end_ns_cases, month_end_ns_cases, year_end_ns_cases)
+
+    def getDate_NationalStatistics_Deaths(self):
+        date_start_ns_deaths = self.ui.comboBox_dateStart_2.currentText()
+        month_start_ns_deaths = self.ui.comboBox_monthStart_2.currentText()
+        year_start_ns_deaths =  self.ui.comboBox_yearStart_2.currentText()
+
+        date_end_ns_deaths = self.ui.comboBox_dateEnd_2.currentText()
+        month_end_ns_deaths = self.ui.comboBox_monthEnd_2.currentText()
+        year_end_ns_deaths =  self.ui.comboBox_yearEnd_2.currentText()
+        
+        print(date_start_ns_deaths, month_start_ns_deaths, year_start_ns_deaths)
+        print(date_end_ns_deaths, month_end_ns_deaths, year_end_ns_deaths)
+
+    def getDate_NationalStatistics_Recovered(self):
+        date_start_ns_recovered = self.ui.comboBox_dateStart_3.currentText()
+        month_start_ns_recovered = self.ui.comboBox_monthStart_3.currentText()
+        year_start_ns_recovered =  self.ui.comboBox_yearStart_3.currentText()
+
+        date_end_ns_recovered = self.ui.comboBox_dateEnd_3.currentText()
+        month_end_ns_recovered = self.ui.comboBox_monthEnd_3.currentText()
+        year_end_ns_recovered =  self.ui.comboBox_yearEnd_3.currentText()
+        
+        print(date_start_ns_recovered, month_start_ns_recovered, year_start_ns_recovered)
+        print(date_end_ns_recovered, month_end_ns_recovered, year_end_ns_recovered)
+
+    def getDate_WorldStatistics_Cases(self):
+        date_start_ws_cases = self.ui.comboBox_dateStart_4.currentText()
+        month_start_ws_cases = self.ui.comboBox_monthStart_4.currentText()
+        year_start_ws_cases =  self.ui.comboBox_yearStart_4.currentText()
+
+        date_end_ws_cases = self.ui.comboBox_dateEnd_4.currentText()
+        month_end_ws_cases = self.ui.comboBox_monthEnd_4.currentText()
+        year_end_ws_cases =  self.ui.comboBox_yearEnd_4.currentText()
+        
+        print(date_start_ws_cases, month_start_ws_cases, year_start_ws_cases)
+        print(date_end_ws_cases, month_end_ws_cases, year_end_ws_cases)
+
+    def getDate_WorldStatistics_Deaths(self):
+        date_start_ws_deaths = self.ui.comboBox_dateStart_5.currentText()
+        month_start_ws_deaths = self.ui.comboBox_monthStart_5.currentText()
+        year_start_ws_deaths =  self.ui.comboBox_yearStart_5.currentText()
+
+        date_end_ws_deaths = self.ui.comboBox_dateEnd_5.currentText()
+        month_end_ws_deaths = self.ui.comboBox_monthEnd_5.currentText()
+        year_end_ws_deaths =  self.ui.comboBox_yearEnd_5.currentText()
+        
+        print(date_start_ws_deaths, month_start_ws_deaths, year_start_ws_deaths)
+        print(date_end_ws_deaths, month_end_ws_deaths, year_end_ws_deaths)
+
+    def getDate_WorldStatistics_Recovered(self):
+        date_start_ws_recovered = self.ui.comboBox_dateStart_6.currentText()
+        month_start_ws_recovered = self.ui.comboBox_monthStart_6.currentText()
+        year_start_ws_recovered =  self.ui.comboBox_yearStart_6.currentText()
+
+        date_end_ws_recovered = self.ui.comboBox_dateEnd_6.currentText()
+        month_end_ws_recovered = self.ui.comboBox_monthEnd_6.currentText()
+        year_end_ws_recovered =  self.ui.comboBox_yearEnd_6.currentText()
+        
+        print(date_start_ws_recovered, month_start_ws_recovered, year_start_ws_recovered)
+        print(date_end_ws_recovered, month_end_ws_recovered, year_end_ws_recovered)
+

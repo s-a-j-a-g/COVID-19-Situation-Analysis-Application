@@ -1805,7 +1805,6 @@ class Ui_MainWindow(object):
         self.comboBox_yearStart = QComboBox(self.frame_26)
         self.comboBox_yearStart.addItem("")
         self.comboBox_yearStart.addItem("")
-        self.comboBox_yearStart.addItem("")
         self.comboBox_yearStart.setObjectName(u"comboBox_yearStart")
         self.comboBox_yearStart.setMinimumSize(QSize(0, 35))
 
@@ -1895,7 +1894,6 @@ class Ui_MainWindow(object):
         self.comboBox_yearEnd = QComboBox(self.frame_27)
         self.comboBox_yearEnd.addItem("")
         self.comboBox_yearEnd.addItem("")
-        self.comboBox_yearEnd.addItem("")
         self.comboBox_yearEnd.setObjectName(u"comboBox_yearEnd")
         self.comboBox_yearEnd.setMinimumSize(QSize(0, 35))
 
@@ -1954,7 +1952,7 @@ class Ui_MainWindow(object):
         self.scrollArea_4.setWidgetResizable(True)
         self.scrollAreaWidgetContents_4 = QWidget()
         self.scrollAreaWidgetContents_4.setObjectName(u"scrollAreaWidgetContents_4")
-        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, -1215, 1100, 1734))
+        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, -1234, 1100, 1734))
         self.verticalLayout_17 = QVBoxLayout(self.scrollAreaWidgetContents_4)
         self.verticalLayout_17.setObjectName(u"verticalLayout_17")
         self.frame_24 = QFrame(self.scrollAreaWidgetContents_4)
@@ -2100,7 +2098,6 @@ class Ui_MainWindow(object):
         self.comboBox_yearStart_2 = QComboBox(self.frame_132)
         self.comboBox_yearStart_2.addItem("")
         self.comboBox_yearStart_2.addItem("")
-        self.comboBox_yearStart_2.addItem("")
         self.comboBox_yearStart_2.setObjectName(u"comboBox_yearStart_2")
         self.comboBox_yearStart_2.setMinimumSize(QSize(0, 35))
 
@@ -2188,7 +2185,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_46.addWidget(self.comboBox_monthEnd_2)
 
         self.comboBox_yearEnd_2 = QComboBox(self.frame_134)
-        self.comboBox_yearEnd_2.addItem("")
         self.comboBox_yearEnd_2.addItem("")
         self.comboBox_yearEnd_2.addItem("")
         self.comboBox_yearEnd_2.setObjectName(u"comboBox_yearEnd_2")
@@ -2395,7 +2391,6 @@ class Ui_MainWindow(object):
         self.comboBox_yearStart_3 = QComboBox(self.frame_138)
         self.comboBox_yearStart_3.addItem("")
         self.comboBox_yearStart_3.addItem("")
-        self.comboBox_yearStart_3.addItem("")
         self.comboBox_yearStart_3.setObjectName(u"comboBox_yearStart_3")
         self.comboBox_yearStart_3.setMinimumSize(QSize(0, 35))
 
@@ -2483,7 +2478,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_69.addWidget(self.comboBox_monthEnd_3)
 
         self.comboBox_yearEnd_3 = QComboBox(self.frame_140)
-        self.comboBox_yearEnd_3.addItem("")
         self.comboBox_yearEnd_3.addItem("")
         self.comboBox_yearEnd_3.addItem("")
         self.comboBox_yearEnd_3.setObjectName(u"comboBox_yearEnd_3")
@@ -2664,7 +2658,7 @@ class Ui_MainWindow(object):
         self.scrollArea_7.setWidgetResizable(True)
         self.scrollAreaWidgetContents_7 = QWidget()
         self.scrollAreaWidgetContents_7.setObjectName(u"scrollAreaWidgetContents_7")
-        self.scrollAreaWidgetContents_7.setGeometry(QRect(0, -1128, 1120, 1734))
+        self.scrollAreaWidgetContents_7.setGeometry(QRect(0, -1151, 1120, 1734))
         self.verticalLayout_40 = QVBoxLayout(self.scrollAreaWidgetContents_7)
         self.verticalLayout_40.setObjectName(u"verticalLayout_40")
         self.frame_77 = QFrame(self.scrollAreaWidgetContents_7)
@@ -2810,7 +2804,6 @@ class Ui_MainWindow(object):
         self.comboBox_yearStart_4 = QComboBox(self.frame_83)
         self.comboBox_yearStart_4.addItem("")
         self.comboBox_yearStart_4.addItem("")
-        self.comboBox_yearStart_4.addItem("")
         self.comboBox_yearStart_4.setObjectName(u"comboBox_yearStart_4")
         self.comboBox_yearStart_4.setMinimumSize(QSize(0, 35))
 
@@ -2900,7 +2893,6 @@ class Ui_MainWindow(object):
         self.comboBox_yearEnd_4 = QComboBox(self.frame_85)
         self.comboBox_yearEnd_4.addItem("")
         self.comboBox_yearEnd_4.addItem("")
-        self.comboBox_yearEnd_4.addItem("")
         self.comboBox_yearEnd_4.setObjectName(u"comboBox_yearEnd_4")
         self.comboBox_yearEnd_4.setMinimumSize(QSize(0, 35))
 
@@ -2959,7 +2951,7 @@ class Ui_MainWindow(object):
         self.scrollArea_8.setWidgetResizable(True)
         self.scrollAreaWidgetContents_8 = QWidget()
         self.scrollAreaWidgetContents_8.setObjectName(u"scrollAreaWidgetContents_8")
-        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, 0, 1120, 1734))
+        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, -1225, 1120, 1734))
         self.verticalLayout_43 = QVBoxLayout(self.scrollAreaWidgetContents_8)
         self.verticalLayout_43.setObjectName(u"verticalLayout_43")
         self.frame_87 = QFrame(self.scrollAreaWidgetContents_8)
@@ -3105,7 +3097,6 @@ class Ui_MainWindow(object):
         self.comboBox_yearStart_5 = QComboBox(self.frame_147)
         self.comboBox_yearStart_5.addItem("")
         self.comboBox_yearStart_5.addItem("")
-        self.comboBox_yearStart_5.addItem("")
         self.comboBox_yearStart_5.setObjectName(u"comboBox_yearStart_5")
         self.comboBox_yearStart_5.setMinimumSize(QSize(0, 35))
 
@@ -3195,7 +3186,6 @@ class Ui_MainWindow(object):
         self.comboBox_yearEnd_5 = QComboBox(self.frame_149)
         self.comboBox_yearEnd_5.addItem("")
         self.comboBox_yearEnd_5.addItem("")
-        self.comboBox_yearEnd_5.addItem("")
         self.comboBox_yearEnd_5.setObjectName(u"comboBox_yearEnd_5")
         self.comboBox_yearEnd_5.setMinimumSize(QSize(0, 35))
 
@@ -3254,7 +3244,7 @@ class Ui_MainWindow(object):
         self.scrollArea_9.setWidgetResizable(True)
         self.scrollAreaWidgetContents_9 = QWidget()
         self.scrollAreaWidgetContents_9.setObjectName(u"scrollAreaWidgetContents_9")
-        self.scrollAreaWidgetContents_9.setGeometry(QRect(0, 0, 1120, 1734))
+        self.scrollAreaWidgetContents_9.setGeometry(QRect(0, -1162, 1120, 1734))
         self.verticalLayout_46 = QVBoxLayout(self.scrollAreaWidgetContents_9)
         self.verticalLayout_46.setObjectName(u"verticalLayout_46")
         self.frame_92 = QFrame(self.scrollAreaWidgetContents_9)
@@ -3400,7 +3390,6 @@ class Ui_MainWindow(object):
         self.comboBox_yearStart_6 = QComboBox(self.frame_154)
         self.comboBox_yearStart_6.addItem("")
         self.comboBox_yearStart_6.addItem("")
-        self.comboBox_yearStart_6.addItem("")
         self.comboBox_yearStart_6.setObjectName(u"comboBox_yearStart_6")
         self.comboBox_yearStart_6.setMinimumSize(QSize(0, 35))
 
@@ -3490,7 +3479,6 @@ class Ui_MainWindow(object):
         self.comboBox_yearEnd_6 = QComboBox(self.frame_156)
         self.comboBox_yearEnd_6.addItem("")
         self.comboBox_yearEnd_6.addItem("")
-        self.comboBox_yearEnd_6.addItem("")
         self.comboBox_yearEnd_6.setObjectName(u"comboBox_yearEnd_6")
         self.comboBox_yearEnd_6.setMinimumSize(QSize(0, 35))
 
@@ -3549,7 +3537,7 @@ class Ui_MainWindow(object):
         self.scrollArea_10.setWidgetResizable(True)
         self.scrollAreaWidgetContents_10 = QWidget()
         self.scrollAreaWidgetContents_10.setObjectName(u"scrollAreaWidgetContents_10")
-        self.scrollAreaWidgetContents_10.setGeometry(QRect(0, -320, 1120, 829))
+        self.scrollAreaWidgetContents_10.setGeometry(QRect(0, 0, 1120, 829))
         self.verticalLayout_48 = QVBoxLayout(self.scrollAreaWidgetContents_10)
         self.verticalLayout_48.setObjectName(u"verticalLayout_48")
         self.frame_96 = QFrame(self.scrollAreaWidgetContents_10)
@@ -4541,9 +4529,9 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.stackedWidget.setCurrentIndex(2)
-        self.tabWidget_nationalStatistics.setCurrentIndex(3)
-        self.tabWidget_worldStatistics.setCurrentIndex(0)
-        self.tabWidget_infographics.setCurrentIndex(1)
+        self.tabWidget_nationalStatistics.setCurrentIndex(2)
+        self.tabWidget_worldStatistics.setCurrentIndex(1)
+        self.tabWidget_infographics.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -4657,9 +4645,8 @@ class Ui_MainWindow(object):
         self.comboBox_monthStart.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
         self.comboBox_monthStart.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
 
-        self.comboBox_yearStart.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
-        self.comboBox_yearStart.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
-        self.comboBox_yearStart.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+        self.comboBox_yearStart.setItemText(0, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearStart.setItemText(1, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.label_30.setText(QCoreApplication.translate("MainWindow", u"End Date: ", None))
         self.comboBox_dateEnd.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
@@ -4706,9 +4693,8 @@ class Ui_MainWindow(object):
         self.comboBox_monthEnd.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
         self.comboBox_monthEnd.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
 
-        self.comboBox_yearEnd.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
-        self.comboBox_yearEnd.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
-        self.comboBox_yearEnd.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+        self.comboBox_yearEnd.setItemText(0, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearEnd.setItemText(1, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.btn_select.setText(QCoreApplication.translate("MainWindow", u"Select", None))
         self.tabWidget_nationalStatistics.setTabText(self.tabWidget_nationalStatistics.indexOf(self.tab_Cases), QCoreApplication.translate("MainWindow", u"Cases", None))
@@ -4757,9 +4743,8 @@ class Ui_MainWindow(object):
         self.comboBox_monthStart_2.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
         self.comboBox_monthStart_2.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
 
-        self.comboBox_yearStart_2.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
-        self.comboBox_yearStart_2.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
-        self.comboBox_yearStart_2.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+        self.comboBox_yearStart_2.setItemText(0, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearStart_2.setItemText(1, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.label_31.setText(QCoreApplication.translate("MainWindow", u"End Date: ", None))
         self.comboBox_dateEnd_2.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
@@ -4806,9 +4791,8 @@ class Ui_MainWindow(object):
         self.comboBox_monthEnd_2.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
         self.comboBox_monthEnd_2.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
 
-        self.comboBox_yearEnd_2.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
-        self.comboBox_yearEnd_2.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
-        self.comboBox_yearEnd_2.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+        self.comboBox_yearEnd_2.setItemText(0, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearEnd_2.setItemText(1, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.btn_select_2.setText(QCoreApplication.translate("MainWindow", u"Select", None))
         self.tabWidget_nationalStatistics.setTabText(self.tabWidget_nationalStatistics.indexOf(self.tab_Deaths), QCoreApplication.translate("MainWindow", u"Deaths", None))
@@ -4857,9 +4841,8 @@ class Ui_MainWindow(object):
         self.comboBox_monthStart_3.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
         self.comboBox_monthStart_3.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
 
-        self.comboBox_yearStart_3.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
-        self.comboBox_yearStart_3.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
-        self.comboBox_yearStart_3.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+        self.comboBox_yearStart_3.setItemText(0, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearStart_3.setItemText(1, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.label_57.setText(QCoreApplication.translate("MainWindow", u"End Date: ", None))
         self.comboBox_dateEnd_3.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
@@ -4906,9 +4889,8 @@ class Ui_MainWindow(object):
         self.comboBox_monthEnd_3.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
         self.comboBox_monthEnd_3.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
 
-        self.comboBox_yearEnd_3.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
-        self.comboBox_yearEnd_3.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
-        self.comboBox_yearEnd_3.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+        self.comboBox_yearEnd_3.setItemText(0, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearEnd_3.setItemText(1, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.btn_select_3.setText(QCoreApplication.translate("MainWindow", u"Select", None))
         self.tabWidget_nationalStatistics.setTabText(self.tabWidget_nationalStatistics.indexOf(self.tab_Recovered), QCoreApplication.translate("MainWindow", u"Recovered", None))
@@ -4958,9 +4940,8 @@ class Ui_MainWindow(object):
         self.comboBox_monthStart_4.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
         self.comboBox_monthStart_4.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
 
-        self.comboBox_yearStart_4.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
-        self.comboBox_yearStart_4.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
-        self.comboBox_yearStart_4.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+        self.comboBox_yearStart_4.setItemText(0, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearStart_4.setItemText(1, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.label_59.setText(QCoreApplication.translate("MainWindow", u"End Date: ", None))
         self.comboBox_dateEnd_4.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
@@ -5007,9 +4988,8 @@ class Ui_MainWindow(object):
         self.comboBox_monthEnd_4.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
         self.comboBox_monthEnd_4.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
 
-        self.comboBox_yearEnd_4.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
-        self.comboBox_yearEnd_4.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
-        self.comboBox_yearEnd_4.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+        self.comboBox_yearEnd_4.setItemText(0, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearEnd_4.setItemText(1, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.btn_select_4.setText(QCoreApplication.translate("MainWindow", u"Select", None))
         self.tabWidget_worldStatistics.setTabText(self.tabWidget_worldStatistics.indexOf(self.tab_Cases_2), QCoreApplication.translate("MainWindow", u"Cases", None))
@@ -5058,9 +5038,8 @@ class Ui_MainWindow(object):
         self.comboBox_monthStart_5.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
         self.comboBox_monthStart_5.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
 
-        self.comboBox_yearStart_5.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
-        self.comboBox_yearStart_5.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
-        self.comboBox_yearStart_5.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+        self.comboBox_yearStart_5.setItemText(0, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearStart_5.setItemText(1, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.label_61.setText(QCoreApplication.translate("MainWindow", u"End Date: ", None))
         self.comboBox_dateEnd_5.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
@@ -5107,9 +5086,8 @@ class Ui_MainWindow(object):
         self.comboBox_monthEnd_5.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
         self.comboBox_monthEnd_5.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
 
-        self.comboBox_yearEnd_5.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
-        self.comboBox_yearEnd_5.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
-        self.comboBox_yearEnd_5.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+        self.comboBox_yearEnd_5.setItemText(0, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearEnd_5.setItemText(1, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.btn_select_5.setText(QCoreApplication.translate("MainWindow", u"Select", None))
         self.tabWidget_worldStatistics.setTabText(self.tabWidget_worldStatistics.indexOf(self.tab_Deaths_2), QCoreApplication.translate("MainWindow", u"Deaths", None))
@@ -5158,9 +5136,8 @@ class Ui_MainWindow(object):
         self.comboBox_monthStart_6.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
         self.comboBox_monthStart_6.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
 
-        self.comboBox_yearStart_6.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
-        self.comboBox_yearStart_6.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
-        self.comboBox_yearStart_6.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+        self.comboBox_yearStart_6.setItemText(0, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearStart_6.setItemText(1, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.label_63.setText(QCoreApplication.translate("MainWindow", u"End Date: ", None))
         self.comboBox_dateEnd_6.setItemText(0, QCoreApplication.translate("MainWindow", u"1", None))
@@ -5207,9 +5184,8 @@ class Ui_MainWindow(object):
         self.comboBox_monthEnd_6.setItemText(10, QCoreApplication.translate("MainWindow", u"November", None))
         self.comboBox_monthEnd_6.setItemText(11, QCoreApplication.translate("MainWindow", u"December", None))
 
-        self.comboBox_yearEnd_6.setItemText(0, QCoreApplication.translate("MainWindow", u"2019", None))
-        self.comboBox_yearEnd_6.setItemText(1, QCoreApplication.translate("MainWindow", u"2020", None))
-        self.comboBox_yearEnd_6.setItemText(2, QCoreApplication.translate("MainWindow", u"2021", None))
+        self.comboBox_yearEnd_6.setItemText(0, QCoreApplication.translate("MainWindow", u"2020", None))
+        self.comboBox_yearEnd_6.setItemText(1, QCoreApplication.translate("MainWindow", u"2021", None))
 
         self.btn_select_6.setText(QCoreApplication.translate("MainWindow", u"Select", None))
         self.tabWidget_worldStatistics.setTabText(self.tabWidget_worldStatistics.indexOf(self.tab_Recovered_2), QCoreApplication.translate("MainWindow", u"Recovered", None))
