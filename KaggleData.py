@@ -63,11 +63,27 @@ def DownloadCommand():
 
 
 def Download():
+    toRemove = [
+        "CovidDataAfrica.csv",
+        "CovidDataAsia.csv",
+        "CovidDataEurope.csv",
+        "CovidDataNepal.csv",
+        "CovidDataNorth America.csv",
+        "CovidDataOceania",
+        "CovidDataSouth America.csv",
+    ]
+
     if os.path.exists(file):
         print("File Exists")
         if FileUptoDate(file) == False:
             print("File Outdated")
+
             os.remove(file)
+            for i in toRemove:
+                filteredFiles = os.path.join(point2.AbsoluteProjectRoot,"Resources",i)
+                if os.path.exists(filteredFiles):
+                    os.remove(filteredFiles)
+
             DownloadCommand()
     else:
         print("File Doesn't Exists")

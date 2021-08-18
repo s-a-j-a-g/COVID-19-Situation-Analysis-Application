@@ -11,7 +11,7 @@ import KaggleData
 
 
 # from splashScreen import SplashScreen
-from statistics import Canvas
+from statistics import *
 from ui_functions import *
 from infographics import Seriousness_of_Symptoms, Agewise_Risk_Analysis, Best_Household_Materials_For_a_Mask
 
@@ -139,49 +139,44 @@ class MainWindow(QMainWindow):
         UIFunctions.loadHospitals(self)
 
 
-
-
-
-
-
         ######################################
         ############### GRAPH  ###############
         ##### IMPORTED FROM statistics.py ####
         ######################################
 
-        ##CASES
-        self.graph1 = Canvas(self)
-        self.graph2 = Canvas(self)
-        self.graph3 = Canvas(self)
-        self.graph4 = Canvas(self)
+        ## NEPAL CASES
+        self.N_Cases_mnth = Canvas_N_Cases_mnth(self)
+        self.N_Cases_week = Canvas_N_Cases_week(self)
+        self.N_Cases_overall = Canvas_N_Cases_overall(self)
+        #self.N_Cases_custom = Canvas_N_Cases_custom(self)
+        self.N_Cases_custom = Canvas_N_Cases_mnth(self)
 
-        self.ui.graph_Cases_LatestMonth.addWidget(self.graph1)
-        self.ui.graph_Cases_LatestWeek.addWidget(self.graph2)
-        self.ui.graph_Cases_Overall.addWidget(self.graph3)
-        self.ui.graph_Cases_CustomTimeFrame.addWidget(self.graph4)
 
-        #DEATHS
-        self.graph1_2 = Canvas(self)
-        self.graph2_2 = Canvas(self)
-        self.graph3_2 = Canvas(self)
-        self.graph4_2 = Canvas(self)
+        self.ui.graph_Cases_LatestMonth.addWidget(self.N_Cases_mnth)
+        self.ui.graph_Cases_LatestWeek.addWidget(self.N_Cases_week)
+        self.ui.graph_Cases_Overall.addWidget(self.N_Cases_overall)
+        self.ui.graph_Cases_CustomTimeFrame.addWidget(self.N_Cases_custom)
 
-        self.ui.graph_Deaths_LatestMonth.addWidget(self.graph1_2)
-        self.ui.graph_Deaths_LatestWeek.addWidget(self.graph2_2)
-        self.ui.graph_Deaths_Overall.addWidget(self.graph3_2)
-        self.ui.graph_Deaths_CustomTimeFrame.addWidget(self.graph4_2)
+        #NEPAL DEATHS
+        self.N_Deaths_mnth = Canvas_N_Deaths_mnth(self)
+        self.N_Deaths_week = Canvas_N_Deaths_week(self)
+        self.N_Deaths_overall = Canvas_N_Deaths_overall(self)
+        #self.N_Deaths_custom = Canvas_N_Deaths_custom(self)
+        self.N_Deaths_custom = Canvas_N_Deaths_mnth(self)
+
+        self.ui.graph_Deaths_LatestMonth.addWidget(self.N_Deaths_mnth)
+        self.ui.graph_Deaths_LatestWeek.addWidget(self.N_Deaths_week)
+        self.ui.graph_Deaths_Overall.addWidget(self.N_Deaths_overall)
+        self.ui.graph_Deaths_CustomTimeFrame.addWidget(self.N_Deaths_custom)
 
         
-        #RECOVERED
-        self.graph1_3 = Canvas(self)
-        self.graph2_3 = Canvas(self)
-        self.graph3_3 = Canvas(self)
-        self.graph4_3 = Canvas(self)
+        #NEPAL VACCINE
+        self.N_TotalVaccination = Canvas_N_TotalVaccination(self)
+        self.N_PeopleVaccinated = Canvas_N_PeopleVaccinated(self)
 
-        self.ui.graph_Recovered_LatestMonth.addWidget(self.graph1_3)
-        self.ui.graph_Recovered_LatestWeek.addWidget(self.graph2_3)
-        self.ui.graph_Recovered_Overall.addWidget(self.graph3_3)
-        self.ui.graph_Recovered_CustomTimeFrame.addWidget(self.graph4_3)
+        self.ui.graph1_10.addWidget(self.N_TotalVaccination)
+        self.ui.graph2_10.addWidget(self.N_PeopleVaccinated)
+
 
 
         ######################################
@@ -208,11 +203,6 @@ class MainWindow(QMainWindow):
         self.ui.btn_select_4.clicked.connect(lambda: UIFunctions.getDate_WorldStatistics_Cases(self))
         self.ui.btn_select_5.clicked.connect(lambda: UIFunctions.getDate_WorldStatistics_Deaths(self))
         self.ui.btn_select_6.clicked.connect(lambda: UIFunctions.getDate_WorldStatistics_Recovered(self))
-
-
-
-
-
 
         ################################### UPDATING DASHBOARD #######################
         self.ui.label_44.setText(str(NewCases_N_24))
